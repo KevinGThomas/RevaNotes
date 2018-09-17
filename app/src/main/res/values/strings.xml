@@ -1,0 +1,229 @@
+<resources>
+    <string name="app_name">RevaNotes</string>
+    <string name="title_activity_upload">UploadActivity</string>
+
+    <string name="CS">Computer Science Engineering</string>
+    <string name="Mech">Mechanical Engineering</string>
+    <string name="Arch">Architecture</string>
+    <string name="EE">Electrical and Electronics Engineering</string>
+    <string name="Civil">Civil Engineering</string>
+    <string name="EC">Electronics and Communication Engineering</string>
+    <string name="BCOM">Commerce</string>
+    <string name="BBA">Business Administration</string>
+
+    <string name="First">First Semester</string>
+    <string name="Second">Second Semester</string>
+    <string name="Third">Third Semester</string>
+    <string name="Fourth">Fourth Semester</string>
+    <string name="Fifth">Fifth Semester</string>
+    <string name="Sixth">Sixth Semester</string>
+    <string name="Seventh">Seventh Semester</string>
+    <string name="Eighth">Eighth Semester</string>
+    <string name="Ninth">Ninth Semester</string>
+    <string name="Tenth">Tenth Semester</string>
+
+    <string name="CS_1_Sub1">Multivariable Calculus and Linear Algebra</string>
+    <string name="CS_1_Sub2">Chemistry</string>
+    <string name="CS_1_Sub3">Programming for Problem Solving</string>
+    <string name="CS_1_Sub4">Basic Electrical and Electronics Engineering</string>
+    <string name="CS_1_Sub5">Environmental Science</string>
+    <string name="CS_1_Sub6">Technical English-1</string>
+
+    <string name="CS_2_Sub1">Probability and Statistics</string>
+    <string name="CS_2_Sub2">Physics</string>
+    <string name="CS_2_Sub3">Object Oriented Programming</string>
+    <string name="CS_2_Sub4">Technical English-2</string>
+    <string name="CS_2_Sub5">Indian Constitution and Professional Ethics</string>
+
+    <string name="CS_3_Sub1">Digital Logic Design</string>
+    <string name="CS_3_Sub2">Analog Electronic Circuits</string>
+    <string name="CS_3_Sub3">Programming with Java</string>
+    <string name="CS_3_Sub4">Data Structures</string>
+    <string name="CS_3_Sub5">Discrete Mathematics</string>
+    <string name="CS_3_Sub6">Software Engineering</string>
+
+    <string name="CS_4_Sub1">Design and Analysis of Algorithms</string>
+    <string name="CS_4_Sub2">Graph Theory</string>
+    <string name="CS_4_Sub3">Database Management System</string>
+    <string name="CS_4_Sub4">Computer Organization and Architecture</string>
+    <string name="CS_4_Sub5">Signals and Systems</string>
+    <string name="CS_4_Sub6">System Software</string>
+    <string name="CS_4_Sub7">Embedded System Design</string>
+    <string name="CS_4_Sub8">Operation Research</string>
+    <string name="CS_4_Sub9">Numerical Techniques</string>
+
+    <string name="CS_5_Sub1">Finite Automata and Formal Languages</string>
+    <string name="CS_5_Sub2">Python for Data Analysis</string>
+    <string name="CS_5_Sub3">Computer Networks</string>
+    <string name="CS_5_Sub4">Operating Systems</string>
+    <string name="CS_5_Sub5">Unix System Programming</string>
+    <string name="CS_5_Sub6">Advanced DBMS</string>
+    <string name="CS_5_Sub7">Introduction to Robotics</string>
+    <string name="CS_5_Sub8">High Performance Computing</string>
+    <string name="CS_5_Sub9">Differential and Difference equations</string>
+
+    <string name="CS_6_Sub1">Machine Learning for Data Analytics</string>
+    <string name="CS_6_Sub2">Cloud Computing and Big Data</string>
+    <string name="CS_6_Sub3">Signal Processing</string>
+    <string name="CS_6_Sub4">Principles of Programming languages</string>
+    <string name="CS_6_Sub5">Real Time Systems</string>
+    <string name="CS_6_Sub6">Artificial and Computational Intelligence</string>
+    <string name="CS_6_Sub7">Computer Design with Verilog</string>
+    <string name="CS_6_Sub8">Digital Image Processing</string>
+    <string name="CS_6_Sub9">Advanced Java Programming</string>
+    <string name="CS_6_Sub10">Data Mining and Warehousing</string>
+    <string name="CS_6_Sub11">System Modeling  and Simulation</string>
+    <string name="CS_6_Sub12">Pattern Recognition</string>
+    <string name="CS_6_Sub13">Web and Text Mining</string>
+    <string name="CS_6_Sub14">Pattern Recognition</string>
+    <string name="CS_6_Sub15">Wireless and Mobile Networks</string>
+    <string name="CS_6_Sub16">Parallel Processing and Algorithms</string>
+
+
+
+    <string name="CS_7_Sub1">Web Application Development</string>
+    <string name="CS_7_Sub2">Cryptography and Network Security</string>
+    <string name="CS_7_Sub3">Advanced Storage Area Networks</string>
+    <string name="CS_7_Sub4">Network Programming</string>
+    <string name="CS_7_Sub5">C# and. Net</string>
+    <string name="CS_7_Sub6">Data Compression</string>
+    <string name="CS_7_Sub7">Data Analytics using R</string>
+    <string name="CS_7_Sub8">Deep Learning</string>
+    <string name="CS_7_Sub9">Multimedia Computing and  Networks</string>
+    <string name="CS_7_Sub10">Business  Intelligence and Process Management</string>
+    <string name="CS_7_Sub11">Human Computer Interaction</string>
+    <string name="CS_7_Sub12">Computer Graphics and Animation</string>
+    <string name="CS_7_Sub13">Software Defined Networks and Network Function Virtualization</string>
+    <string name="CS_7_Sub14">E-Commerce</string>
+    <string name="CS_7_Sub15">Big Data Analytics</string>
+    <string name="CS_7_Sub16">Block Chain Technology</string>
+    <string name="CS_7_Sub17">Cloud Security</string>
+    <string name="CS_7_Sub18">Compiler Design</string>
+
+    <string name="CS_8_Sub1">Advanced Web Technology</string>
+    <string name="CS_8_Sub2">Ethical Hacking and IT Security Evaluation</string>
+    <string name="CS_8_Sub3">Cognitive Science and Computing</string>
+    <string name="CS_8_Sub4">Introduction to Natural Language Processing</string>
+    <string name="CS_8_Sub5">Program Analysis</string>
+
+
+    <string name="Mech_1_Sub1">Calculus</string>
+    <string name="Mech_1_Sub2">Applied Chemistry</string>
+    <string name="Mech_1_Sub3">Basic Electrical and Electronics Engineering</string>
+    <string name="Mech_1_Sub4">Computer Aided Engineering Drawing</string>
+    <string name="Mech_1_Sub5">Environmental Studies</string>
+    <string name="Mech_1_Sub6">Technical English-I</string>
+
+    <string name="Mech_2_Sub1">Linear Algebra and Laplace Transform</string>
+    <string name="Mech_2_Sub2">Applied Physics</string>
+    <string name="Mech_2_Sub3">C Programming</string>
+    <string name="Mech_2_Sub4">Manufacturing Technology</string>
+    <string name="Mech_2_Sub5">Engineering Mechanics</string>
+    <string name="Mech_2_Sub6">Constitution of India and Professional Ethics</string>
+    <string name="Mech_2_Sub7">Technical English-II</string>
+
+    <string name="Mech_3_Sub1">Numerical Methods and Probability</string>
+    <string name="Mech_3_Sub2">Mechanics of Materials</string>
+    <string name="Mech_3_Sub3">Engineering Thermodynamics</string>
+    <string name="Mech_3_Sub4">Fluids Mechanics and Fluid Machinery</string>
+    <string name="Mech_3_Sub5">Mechanical Measurements and Metrology</string>
+    <string name="Mech_3_Sub6">Theory of Metal Cutting and Machine Tools</string>
+
+    <string name="Mech_4_Sub1">Applied Mathematics</string>
+    <string name="Mech_4_Sub2">	Kinematics of Machines</string>
+    <string name="Mech_4_Sub3">Applied Thermodynamics</string>
+    <string name="Mech_4_Sub4">Internal Combustion  Engine</string>
+    <string name="Mech_4_Sub5">Advanced Materials</string>
+    <string name="Mech_4_Sub6">Plastic Engineering</string>
+    <string name="Mech_4_Sub7">Principles of Management</string>
+    <string name="Mech_4_Sub8">Object Oriented Programming  with C++</string>
+    <string name="Mech_4_Sub9">Material Science and Metallurgy</string>
+    <string name="Mech_4_Sub10">Computer Aided Machine Drawing</string>
+
+    <string name="Mech_5_Sub1">Design of Machine Elements</string>
+    <string name="Mech_5_Sub2">Turbo Machines</string>
+    <string name="Mech_5_Sub3">Power Plant Engineering</string>
+    <string name="Mech_5_Sub4">Composite Materials</string>
+    <string name="Mech_5_Sub5">Hydraulics and Pneumatics</string>
+    <string name="Mech_5_Sub6">Production  Management</string>
+    <string name="Mech_5_Sub7">Database Management System</string>
+    <string name="Mech_5_Sub8">Renewable Energy Resources</string>
+    <string name="Mech_5_Sub9">Theory of Elasticity</string>
+    <string name="Mech_5_Sub10">Non Traditional Machining</string>
+    <string name="Mech_5_Sub11">Materials Management</string>
+    <string name="Mech_5_Sub12">Java programming</string>
+    <string name="Mech_5_Sub13">Dynamics of Machines</string>
+    <string name="Mech_5_Sub14">Metal Forming Process</string>
+
+    <string name="Mech_6_Sub1">Design of Transmission Elements</string>
+    <string name="Mech_6_Sub2">Bio-Mass Energy System</string>
+    <string name="Mech_6_Sub3">Mechanics of Composite Materials</string>
+    <string name="Mech_6_Sub4">Robotics</string>
+    <string name="Mech_6_Sub5">Theory of Plasticity</string>
+    <string name="Mech_6_Sub6">Machine Learning Program using Python</string>
+    <string name="Mech_6_Sub7">Refrigeration and Air conditioning</string>
+    <string name="Mech_6_Sub8">Experimental Stress Analysis</string>
+    <string name="Mech_6_Sub9">Statistical Quality Control</string>
+    <string name="Mech_6_Sub10">Plant Layout and Material Handling</string>
+    <string name="Mech_6_Sub11">Artificial Intelligence</string>
+    <string name="Mech_6_Sub12">Automotive Engineering</string>
+    <string name="Mech_6_Sub13">Fracture Mechanics</string>
+    <string name="Mech_6_Sub14">Mechatronics and Microprocessor</string>
+    <string name="Mech_6_Sub15">Industrial Engineering</string>
+    <string name="Mech_6_Sub16">Flexible Manufacturing System</string>
+    <string name="Mech_6_Sub17">Heat Transfer</string>
+    <string name="Mech_6_Sub18">CAD/CAM/CIM</string>
+
+    <string name="Mech_7_Sub1">Finite Element Methods</string>
+    <string name="Mech_7_Sub2">Control Engineering</string>
+    <string name="Mech_7_Sub3">Engineering Economics and Financial Management</string>
+    <string name="Mech_7_Sub4">Cryogenic Engineering</string>
+    <string name="Mech_7_Sub5">Tribology and Bearing Design</string>
+    <string name="Mech_7_Sub6">Automation in  Manufacturing</string>
+    <string name="Mech_7_Sub7">Non Destructive Testing</string>
+    <string name="Mech_7_Sub8">Safety Engineering</string>
+    <string name="Mech_7_Sub9">Computational Fluid Dynamics</string>
+    <string name="Mech_7_Sub10">Mechanical Vibrations</string>
+    <string name="Mech_7_Sub11">Operation Research</string>
+    <string name="Mech_7_Sub12">Gas Turbines and Jet Propulsion</string>
+    <string name="Mech_7_Sub13">Data Analytics using R- Programming</string>
+    <string name="Mech_7_Sub14">Project Management</string>
+    <string name="Mech_7_Sub15">Automobile Engineering</string>
+
+    <string name="Mech_8_Sub1">Electric Vehicles and Hybrid Vehicles</string>
+    <string name="Mech_8_Sub2">Advanced Foundry Technology</string>
+    <string name="Mech_8_Sub3">Additive Manufacturing</string>
+    <string name="Mech_8_Sub4">New Venture Planning and Management</string>
+    <string name="Mech_8_Sub5">Project Management</string>
+    <string name="Mech_8_Sub6">Energy Audit and Management</string>
+    <string name="Mech_8_Sub7">Advanced Machine Design</string>
+    <string name="Mech_8_Sub8">Total Quality Management</string>
+
+
+
+
+
+
+
+
+
+
+
+
+    <string name="title_activity_upload_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+
+</resources>
