@@ -27,10 +27,10 @@ public class SemesterActivity extends AppCompatActivity {
         setContentView(R.layout.activity_semester);
 
         semList = new ArrayList<>();
-        recyclerView = (RecyclerView) findViewById(R.id.semRecycler);
+        recyclerView =findViewById(R.id.semRecycler);
         //recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        Toolbar toolbar=findViewById(R.id.semesterToolbar);
+        Toolbar toolbar = findViewById(R.id.semesterToolbar);
         setSupportActionBar(toolbar);
 
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
@@ -51,12 +51,14 @@ public class SemesterActivity extends AppCompatActivity {
             semList.add(new Semester(6, "Sixth Semester"));
             semList.add(new Semester(7, "Seventh Semester"));
             semList.add(new Semester(8, "Eighth Semester"));
+        } else {
+            semList.add(new Semester(8, "Eighth Semester"));
         }
-        semList.add(new Semester(8, "Eighth Semester"));
 
         semAdapter = new SemesterAdapter(this, semList);
         recyclerView.setAdapter(semAdapter);
     }
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         /*switch(item.getItemId()){
@@ -71,8 +73,8 @@ public class SemesterActivity extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        MenuInflater inflater=getMenuInflater();
-        inflater.inflate(R.menu.display_menu,menu);
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.display_menu, menu);
         return true;
     }
 }
