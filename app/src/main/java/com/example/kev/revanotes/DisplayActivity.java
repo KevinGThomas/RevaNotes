@@ -54,13 +54,23 @@ public class DisplayActivity extends AppCompatActivity {
         //dbUploads=FirebaseDatabase.getInstance().getReference("uploads");
         //dbUploads.addListenerForSingleValueEvent();
 
+
+        Query query=FirebaseDatabase.getInstance().getReference("uploads").orderByChild("sub").equalTo("Chemistry");
+        if(Selection.branch.equals("Computer Science Engineering"))
+        {
+            if(Selection.subject.equals("Chemistry"))
+            {
+                query=FirebaseDatabase.getInstance().getReference("uploads").orderByChild("br_sub").equalTo("Computer Science Engineering_Chemistry");
+            }
+            else if(Selection.subject.equals("Multivariable Calculus and Linear Algebra"))
+            {
+                query=FirebaseDatabase.getInstance().getReference("uploads").orderByChild("br_sub").equalTo("Computer Science Engineering_Multivariable Calculus and Linear Algebra");
+            }
+        }
+
         //Select * from files where Subject='CS'
         //Query query=FirebaseDatabase.getInstance().getReference("uploads").orderByChild("sub").equalTo("Chemistry");
-        Query query=FirebaseDatabase.getInstance().getReference("uploads").orderByChild("sub").equalTo("Chemistry");
-
-        // if (movie.branch == 'Computer Science Engineering') {
-        //          console.log(movie);}
-        //query.addListenerForSingleValueEvent();
+        //Query query=FirebaseDatabase.getInstance().getReference("uploads").orderByChild("br_sub").equalTo("Computer Science Engineering_Chemistry");
 
         //Change it to query once complete
         //mDatabaseReference.addValueEventListener(new ValueEventListener() {
