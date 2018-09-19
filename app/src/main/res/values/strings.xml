@@ -208,6 +208,23 @@
     <string name="EE_1_Sub7">Technical English I</string>
     
     
+    <string name="EE_2_Sub1">Engineering Mathematics – II</string>
+    <string name="EE_2_Sub2"> 	Engineering Chemistry</string>
+    <string name="EE_2_Sub3">Electrical Power Generation & Transmission</string>
+    <string name="EE_2_Sub4">Computer Concepts & C++ Programming</string>
+    <string name="EE_2_Sub5">Electrical &Electronic Instrumentation and Measurements</string>
+    <string name="EE_2_Sub6">Environmental Sciences</string>
+    <string name="EE_2_Sub7"> 	Technical English II</string>
+    
+    
+    <string name="EE_3_Sub1">Engineering Mathematics – III</string>
+    <string name="EE_3_Sub2">Electrical Circuit Theory</string>
+    <string name="EE_3_Sub3">Electrical Machines I</string>
+    <string name="EE_3_Sub4">Analog Electronic & Digital Electronic Circuit Design</string>
+    <string name="EE_3_Sub5">Theory and Applications of Linear Integrated Circuits</string>
+    <string name="EE_3_Sub6">Microcontrollers and Applications</string>
+    
+    
 
 
 
