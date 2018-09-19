@@ -43,7 +43,8 @@ public class SubjectAdapter extends RecyclerView.Adapter<SubjectAdapter.SubjectV
         Subject subject = subList.get(position);
         int color1 = generator.getRandomColor();
         holder.subNames.setText(subject.getSubName());
-        TextDrawable drawable2=TextDrawable.builder().buildRound(subject.getImgLetter(), color1);
+        TextDrawable drawable2=TextDrawable.builder().beginConfig().fontSize(50).endConfig().buildRound(subject.getImgLetter(), color1);
+        //drawable2.
         holder.img.setImageDrawable(drawable2);
 
     }

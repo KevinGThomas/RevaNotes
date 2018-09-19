@@ -1,6 +1,7 @@
 package com.example.kev.revanotes;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -12,7 +13,10 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.ArrayAdapter;
+import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 import com.google.firebase.database.ChildEventListener;
@@ -37,6 +41,27 @@ public class DisplayActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_display);
+
+        Window window = this.getWindow();
+        window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+        window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+        RelativeLayout relativeLayout = findViewById(R.id.relativeDisplay);
+        if (Selection.branch.equals("Computer Science Engineering")) {
+            relativeLayout.setBackgroundColor(getResources().getColor(R.color.CS));
+            window.setStatusBarColor(this.getResources().getColor(R.color.CS));
+        } else if (Selection.branch.equals("Mechanical Engineering")) {
+            relativeLayout.setBackgroundColor(getResources().getColor(R.color.Mech));
+            window.setStatusBarColor(this.getResources().getColor(R.color.Mech));
+        } else if (Selection.branch.equals("Electrical and Electronics Engineering")) {
+            relativeLayout.setBackgroundColor(getResources().getColor(R.color.EE));
+            window.setStatusBarColor(this.getResources().getColor(R.color.EE));
+        } else if (Selection.branch.equals("Electronics and Communication Engineering")) {
+            relativeLayout.setBackgroundColor(getResources().getColor(R.color.EC));
+            window.setStatusBarColor(this.getResources().getColor(R.color.EC));
+        } else if (Selection.branch.equals("Civil Engineering")) {
+            relativeLayout.setBackgroundColor(getResources().getColor(R.color.Civil));
+            window.setStatusBarColor(this.getResources().getColor(R.color.Civil));
+        }
 
         Toolbar toolbar = findViewById(R.id.displayToolbar);
         setSupportActionBar(toolbar);
