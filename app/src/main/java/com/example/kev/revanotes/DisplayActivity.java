@@ -38,7 +38,7 @@ public class DisplayActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_display);
 
-        Toolbar toolbar=findViewById(R.id.displayToolbar);
+        Toolbar toolbar = findViewById(R.id.displayToolbar);
         setSupportActionBar(toolbar);
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
@@ -55,8 +55,8 @@ public class DisplayActivity extends AppCompatActivity {
         //dbUploads.addListenerForSingleValueEvent();
 
 
-        Query query=FirebaseDatabase.getInstance().getReference("uploads").orderByChild("sub").equalTo("Chemistry");
-        if(Selection.branch.equals("Computer Science Engineering"))
+        Query query = FirebaseDatabase.getInstance().getReference("uploads").orderByChild("sub").equalTo("Chemistry");
+        /*if(Selection.branch.equals("Computer Science Engineering"))
         {
             if(Selection.subject.equals("Chemistry"))
             {
@@ -66,7 +66,16 @@ public class DisplayActivity extends AppCompatActivity {
             {
                 query=FirebaseDatabase.getInstance().getReference("uploads").orderByChild("br_sub").equalTo("Computer Science Engineering_Multivariable Calculus and Linear Algebra");
             }
+        }*/
+
+        if (Selection.branch.equals("Computer Science Engineering")) {
+            if (Selection.subject.equals(getString(R.string.CS_1_Sub1))) {
+                query = FirebaseDatabase.getInstance().getReference("uploads").orderByChild("br_sub").equalTo("Computer Science Engineering_" + getString(R.string.CS_1_Sub1));
+            } else if (Selection.subject.equals(getString(R.string.CS_1_Sub2))) {
+                query = FirebaseDatabase.getInstance().getReference("uploads").orderByChild("br_sub").equalTo("Computer Science Engineering_" + getString(R.string.CS_1_Sub2));
+            }
         }
+
 
         //Select * from files where Subject='CS'
         //Query query=FirebaseDatabase.getInstance().getReference("uploads").orderByChild("sub").equalTo("Chemistry");
@@ -118,10 +127,10 @@ public class DisplayActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        switch(item.getItemId()){
+        switch (item.getItemId()) {
             case R.id.item1:
                 //Toast.makeText(getApplicationContext(),"This works",Toast.LENGTH_SHORT).show();
-                Intent intent2=new Intent(DisplayActivity.this,UploadLogin.class);
+                Intent intent2 = new Intent(DisplayActivity.this, UploadLogin.class);
                 startActivity(intent2);
                 break;
 
@@ -131,8 +140,8 @@ public class DisplayActivity extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        MenuInflater inflater=getMenuInflater();
-        inflater.inflate(R.menu.display_menu,menu);
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.display_menu, menu);
         return true;
     }
 }
