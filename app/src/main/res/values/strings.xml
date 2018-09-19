@@ -223,10 +223,58 @@
     <string name="EE_3_Sub4">Analog Electronic and Digital Electronic Circuit Design</string>
     <string name="EE_3_Sub5">Theory and Applications of Linear Integrated Circuits</string>
     <string name="EE_3_Sub6">Microcontrollers and Applications</string>
-    
-    
+
+    <string name="EE_4_Sub1"> 	Engineering Mathematics – IV</string>
+    <string name="EE_4_Sub2">Electromagnetic Theory</string>
+    <string name="EE_4_Sub3">Electrical Machines II</string>
+    <string name="EE_4_Sub4">Power Electronics</string>
+    <string name="EE_4_Sub5">Electrical Power Utilization</string>
+    <string name="EE_4_Sub6">Digital system design using VHDL</string>
+    <string name="EE_4_Sub7">Electric drives</string>
+    <string name="EE_4_Sub8">Data Base Management System</string>
+    <string name="EE_4_Sub9">Management and Entrepreneurship</string>
+    <string name="EE_4_Sub10">Electricity Regulation</string>
+    <string name="EE_4_Sub11">Programmable Logic Circuits</string>
+    <string name="EE_4_Sub12">Data Structures using C++</string>
 
 
+    <string name="EE_5_Sub1">Power System Analysis</string>
+    <string name="EE_5_Sub2">Electromagnetic Theory</string>
+    <string name="EE_5_Sub3">Switch Gear and Protection</string>
+    <string name="EE_5_Sub4">High Voltage Engineering</string>
+    <string name="EE_5_Sub5">Design of Electrical Machines</string>
+    <string name="EE_5_Sub6">Advanced Power Electronics</string>
+    <string name="EE_5_Sub7">VLSI Circuits and Design</string>
+    <string name="EE_5_Sub8">Python Programming</string>
+    <string name="EE_5_Sub9">Operation and Research</string>
+    <string name="EE_5_Sub10">Electric and Hybrid Vehicles</string>
+    <string name="EE_5_Sub11">Digital Image Processing</string>
+    <string name="EE_5_Sub12">Web Programming</string>
+    <string name="EE_5_Sub13">Electrical Power Quality</string>
+    <string name="EE_5_Sub14">Electrical standards and Electrical Safety</string>
+    <string name="EE_5_Sub15">Embedded Systems and IOT</string>
+    <string name="EE_5_Sub16">Artificial Intelligence</string>
+
+
+
+
+    <string name="EE_6_Sub1"> 	Computer Aided Power System Analysis and Stability</string>
+    <string name="EE_6_Sub2"> 	Digital Signal Processing</string>
+    <string name="EE_6_Sub3"> 	Control Engineering</string>
+    <string name="EE_6_Sub4">Testing and Commissioning of Electrical Equipment</string>
+    <string name="EE_6_Sub5">Energy storage systems</string>
+    <string name="EE_6_Sub6">Electrical Engineering Materials</string>
+    <string name="EE_6_Sub7">MEMS Technology</string>
+    <string name="EE_6_Sub8">Big Data Analytics and Cloud Computing</string>
+    <string name="EE_6_Sub9">Power System Planning and Reliability</string>
+    <string name="EE_6_Sub10">Modeling and Simulation of Electrical Machines</string>
+    <string name="EE_6_Sub11">Industrial Instrumentation and Automation</string>
+    <string name="EE_6_Sub12">Fundamentals of Robotics</string>
+    <string name="EE_6_Sub13">JAVA Programming</string>
+    <string name="EE_6_Sub14">Reactive power management</string>
+    <string name="EE_6_Sub15">Advanced Electrical Machines</string>
+    <string name="EE_6_Sub16">Analog and Digital Communication Systems</string>
+    <string name="EE_6_Sub17">Multimedia communication and Networks</string>
 
 
 
