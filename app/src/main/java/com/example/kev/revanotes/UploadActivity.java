@@ -199,6 +199,7 @@ public class UploadActivity extends AppCompatActivity {
                     subject5.setVisibility(View.VISIBLE);
 
                 } else if (BranchChosen.equals("Mechanical Engineering")) {
+                    subject1.setText(R.string.Mech_1_Sub1);
 
                 }
             }
@@ -365,9 +366,9 @@ public class UploadActivity extends AppCompatActivity {
                         RadioButton selectBranch = findViewById(rg_branch.getCheckedRadioButtonId());
                         String branchChosen = selectBranch.getText().toString();
                         RadioButton selectSem = findViewById(rg_sem.getCheckedRadioButtonId());
-                        String semChosen = selectBranch.getText().toString();
+                        String semChosen = selectSem.getText().toString();
                         RadioButton selectSub = findViewById(rg_sub.getCheckedRadioButtonId());
-                        String subChosen = selectBranch.getText().toString();
+                        String subChosen = selectSub.getText().toString();
 
 
                         Uploads upload = new Uploads(filen, filed, url, branchChosen, semChosen, subChosen);

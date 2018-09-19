@@ -198,6 +198,16 @@
     <string name="Mech_8_Sub6">Energy Audit and Management</string>
     <string name="Mech_8_Sub7">Advanced Machine Design</string>
     <string name="Mech_8_Sub8">Total Quality Management</string>
+    
+    <string name="EE_1_Sub1">Engineering Mathematics – I</string>
+    <string name="EE_1_Sub2">Engineering Physics</string>
+    <string name="EE_1_Sub3">Engineering Mechanics</string>
+    <string name="EE_1_Sub4">Elements of Mechanical Engineering</string>
+    <string name="EE_1_Sub5">Basic Electrical and Electronics Engineering</string>
+    <string name="EE_1_Sub6">Indian Constitution and Professional Ethics</string>
+    <string name="EE_1_Sub7">Technical English I</string>
+    
+    
 
 
 

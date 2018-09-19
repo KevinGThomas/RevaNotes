@@ -55,11 +55,16 @@ public class DisplayActivity extends AppCompatActivity {
         //dbUploads.addListenerForSingleValueEvent();
 
         //Select * from files where Subject='CS'
-        //Query query=FirebaseDatabase.getInstance().getReference("uploads").orderByChild("subject").equalTo("Mathematics 1");
+        //Query query=FirebaseDatabase.getInstance().getReference("uploads").orderByChild("sub").equalTo("Chemistry");
+        Query query=FirebaseDatabase.getInstance().getReference("uploads").orderByChild("sub").equalTo("Chemistry");
+
+        // if (movie.branch == 'Computer Science Engineering') {
+        //          console.log(movie);}
         //query.addListenerForSingleValueEvent();
 
         //Change it to query once complete
-        mDatabaseReference.addValueEventListener(new ValueEventListener() {
+        //mDatabaseReference.addValueEventListener(new ValueEventListener() {
+        query.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 for (DataSnapshot postSnapshot : dataSnapshot.getChildren()) {
@@ -81,7 +86,7 @@ public class DisplayActivity extends AppCompatActivity {
                     uploadsu[i] = uploadsList.get(i).getUrl();
                     uploadsbranch[i] = uploadsList.get(i).getBranch();
                     uploadssem[i] = uploadsList.get(i).getSem();
-                    uploadssem[i] = uploadsList.get(i).getSub();
+                    uploadssub[i] = uploadsList.get(i).getSub();
 
                     ((DisplayAdapter) recyclerView.getAdapter()).update(uploadsu[i], uploadsn[i], uploadsd[i], uploadsbranch[i], uploadssem[i], uploadssub[i]);
                     //uploadsn[i] = uploadsList.get(i).getName();
