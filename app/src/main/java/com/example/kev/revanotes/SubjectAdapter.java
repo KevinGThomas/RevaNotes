@@ -14,10 +14,13 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.amulyakhare.textdrawable.TextDrawable;
+import com.amulyakhare.textdrawable.util.ColorGenerator;
+import com.google.firebase.database.collection.LLRBNode;
 
 import java.util.List;
 
 public class SubjectAdapter extends RecyclerView.Adapter<SubjectAdapter.SubjectViewHolder> {
+    ColorGenerator generator = ColorGenerator.MATERIAL;
 
     private Context context;
     private List<Subject> subList;
@@ -38,7 +41,10 @@ public class SubjectAdapter extends RecyclerView.Adapter<SubjectAdapter.SubjectV
     @Override
     public void onBindViewHolder(@NonNull SubjectViewHolder holder, int position) {
         Subject subject = subList.get(position);
+        int color1 = generator.getRandomColor();
         holder.subNames.setText(subject.getSubName());
+        TextDrawable drawable2=TextDrawable.builder().buildRound(subject.getImgLetter(), color1);
+        holder.img.setImageDrawable(drawable2);
 
     }
 
@@ -49,15 +55,16 @@ public class SubjectAdapter extends RecyclerView.Adapter<SubjectAdapter.SubjectV
 
     class SubjectViewHolder extends RecyclerView.ViewHolder {
         TextView subNames;
+        ImageView img;
 
 
         public SubjectViewHolder(View itemView) {
             super(itemView);
             subNames = itemView.findViewById(R.id.subjectName);
-            TextDrawable drawable2 = TextDrawable.builder()
-                    .buildRound("A", Color.RED);
-            ImageView image = itemView.findViewById(R.id.image_view);
-            image.setImageDrawable(drawable2);
+            //TextDrawable drawable2 = TextDrawable.builder()
+            //        .buildRound("A", Color.RED);
+            img = itemView.findViewById(R.id.image_view);
+            //image.setImageDrawable(drawable2);
 
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
