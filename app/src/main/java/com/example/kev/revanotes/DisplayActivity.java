@@ -1,6 +1,7 @@
 package com.example.kev.revanotes;
 
 import android.content.Intent;
+import android.content.res.Resources;
 import android.graphics.Color;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -27,6 +28,8 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 
+import java.lang.reflect.Field;
+import java.lang.reflect.Modifier;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -73,34 +76,62 @@ public class DisplayActivity extends AppCompatActivity {
             }
         });
         mDatabaseReference = FirebaseDatabase.getInstance().getReference(Constants.DATABASE_PATH_UPLOADS);
-        //Query query=mDatabaseReference.orderByChild("subject").equalTo("Mathematics 1");
 
         //Select * from files
         //dbUploads=FirebaseDatabase.getInstance().getReference("uploads");
-        //dbUploads.addListenerForSingleValueEvent();
-
-
         Query query = FirebaseDatabase.getInstance().getReference("uploads").orderByChild("sub").equalTo("Chemistry");
-        /*if(Selection.branch.equals("Computer Science Engineering"))
-        {
-            if(Selection.subject.equals("Chemistry"))
-            {
-                query=FirebaseDatabase.getInstance().getReference("uploads").orderByChild("br_sub").equalTo("Computer Science Engineering_Chemistry");
-            }
-            else if(Selection.subject.equals("Multivariable Calculus and Linear Algebra"))
-            {
-                query=FirebaseDatabase.getInstance().getReference("uploads").orderByChild("br_sub").equalTo("Computer Science Engineering_Multivariable Calculus and Linear Algebra");
-            }
-        }*/
 
-        if (Selection.branch.equals("Computer Science Engineering")) {
-            if (Selection.subject.equals(getString(R.string.CS_1_Sub1))) {
-                query = FirebaseDatabase.getInstance().getReference("uploads").orderByChild("br_sub").equalTo("Computer Science Engineering_" + getString(R.string.CS_1_Sub1));
-            } else if (Selection.subject.equals(getString(R.string.CS_1_Sub2))) {
-                query = FirebaseDatabase.getInstance().getReference("uploads").orderByChild("br_sub").equalTo("Computer Science Engineering_" + getString(R.string.CS_1_Sub2));
+        for (Field field : R.string.class.getDeclaredFields()) {
+            if (Modifier.isStatic(field.getModifiers()) && !Modifier.isPrivate(field.getModifiers()) && field.getType().equals(int.class)) {
+                try {
+                    if (Selection.branch.equals(getString(R.string.CS))) {
+                        if (field.getName().startsWith("CS_")) {
+                            int id = field.getInt(null);
+                            String s = getApplicationContext().getString(id);
+                            if (Selection.subject.equals(s)) {
+                                query = FirebaseDatabase.getInstance().getReference("uploads").orderByChild("br_sub").equalTo(getString(R.string.CS) + "_" + s);
+                            }
+                        }
+                    } else if (Selection.branch.equals(getString(R.string.Mech))) {
+                        if (field.getName().startsWith("Mech_")) {
+                            int id = field.getInt(null);
+                            String s = getApplicationContext().getString(id);
+                            if (Selection.subject.equals(s)) {
+                                query = FirebaseDatabase.getInstance().getReference("uploads").orderByChild("br_sub").equalTo(getString(R.string.Mech) + "_" + s);
+                            }
+                        }
+                    } else if (Selection.branch.equals(getString(R.string.EE))) {
+                        if (field.getName().startsWith("EE_")) {
+                            int id = field.getInt(null);
+                            String s = getApplicationContext().getString(id);
+                            if (Selection.subject.equals(s)) {
+                                query = FirebaseDatabase.getInstance().getReference("uploads").orderByChild("br_sub").equalTo(getString(R.string.EE) + "_" + s);
+                            }
+                        }
+                    } else if (Selection.branch.equals(getString(R.string.EC))) {
+                        if (field.getName().startsWith("EC_")) {
+                            int id = field.getInt(null);
+                            String s = getApplicationContext().getString(id);
+                            if (Selection.subject.equals(s)) {
+                                query = FirebaseDatabase.getInstance().getReference("uploads").orderByChild("br_sub").equalTo(getString(R.string.EC) + "_" + s);
+                            }
+                        }
+                    } else if (Selection.branch.equals(getString(R.string.Civil))) {
+                        if (field.getName().startsWith("Civil_")) {
+                            int id = field.getInt(null);
+                            String s = getApplicationContext().getString(id);
+                            if (Selection.subject.equals(s)) {
+                                query = FirebaseDatabase.getInstance().getReference("uploads").orderByChild("br_sub").equalTo(getString(R.string.Civil) + "_" + s);
+                            }
+                        }
+                    }
+                } catch (IllegalArgumentException e) {
+                    // ignore
+                } catch (IllegalAccessException e) {
+                    // ignore
+                }
             }
         }
-
 
         //Select * from files where Subject='CS'
         //Query query=FirebaseDatabase.getInstance().getReference("uploads").orderByChild("sub").equalTo("Chemistry");
