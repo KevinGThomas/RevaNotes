@@ -38,19 +38,19 @@ public class SemesterActivity extends AppCompatActivity {
         RelativeLayout relativeLayout = findViewById(R.id.relativeSemester);
         if (Selection.branch.equals("Computer Science Engineering")) {
             relativeLayout.setBackgroundColor(getResources().getColor(R.color.CS));
-            window.setStatusBarColor(this.getResources().getColor(R.color.CS));
+            window.setStatusBarColor(this.getResources().getColor(R.color.statusbar));
         } else if (Selection.branch.equals("Mechanical Engineering")) {
             relativeLayout.setBackgroundColor(getResources().getColor(R.color.Mech));
-            window.setStatusBarColor(this.getResources().getColor(R.color.Mech));
+            window.setStatusBarColor(this.getResources().getColor(R.color.statusbar));
         } else if (Selection.branch.equals("Electrical and Electronics Engineering")) {
             relativeLayout.setBackgroundColor(getResources().getColor(R.color.EE));
-            window.setStatusBarColor(this.getResources().getColor(R.color.EE));
+            window.setStatusBarColor(this.getResources().getColor(R.color.statusbar));
         } else if (Selection.branch.equals("Electronics and Communication Engineering")) {
             relativeLayout.setBackgroundColor(getResources().getColor(R.color.EC));
-            window.setStatusBarColor(this.getResources().getColor(R.color.EC));
+            window.setStatusBarColor(this.getResources().getColor(R.color.statusbar));
         } else if (Selection.branch.equals("Civil Engineering")) {
             relativeLayout.setBackgroundColor(getResources().getColor(R.color.Civil));
-            window.setStatusBarColor(this.getResources().getColor(R.color.Civil));
+            window.setStatusBarColor(this.getResources().getColor(R.color.statusbar));
         }
 
         semList = new ArrayList<>();
