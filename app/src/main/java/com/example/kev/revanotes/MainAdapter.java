@@ -1,5 +1,6 @@
 package com.example.kev.revanotes;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.support.annotation.NonNull;
@@ -61,7 +62,11 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.MainViewHolder
                     //Toast.makeText(context,Selection.branch,Toast.LENGTH_SHORT).show();
                     Intent intent=new Intent(context,SemesterActivity.class);
                     //intent.putExtra("branch",branch);
+                    Activity activity = (Activity) context;
                     context.startActivity(intent);
+                    activity.overridePendingTransition(R.anim.slide_in_right,R.anim.slide_out_left);
+
+
 
 
 

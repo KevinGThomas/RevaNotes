@@ -47,23 +47,29 @@ public class DisplayActivity extends AppCompatActivity {
 
         Window window = this.getWindow();
         window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
-        window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+
+
         RelativeLayout relativeLayout = findViewById(R.id.relativeDisplay);
         if (Selection.branch.equals("Computer Science Engineering")) {
             relativeLayout.setBackgroundColor(getResources().getColor(R.color.CS));
-            window.setStatusBarColor(this.getResources().getColor(R.color.CS));
+            int dark = ColorUtil.darken(this.getResources().getColor(R.color.CS), 12);
+            window.setStatusBarColor(dark);
         } else if (Selection.branch.equals("Mechanical Engineering")) {
             relativeLayout.setBackgroundColor(getResources().getColor(R.color.Mech));
-            window.setStatusBarColor(this.getResources().getColor(R.color.Mech));
+            int dark = ColorUtil.darken(this.getResources().getColor(R.color.Mech), 12);
+            window.setStatusBarColor(dark);
         } else if (Selection.branch.equals("Electrical and Electronics Engineering")) {
             relativeLayout.setBackgroundColor(getResources().getColor(R.color.EE));
-            window.setStatusBarColor(this.getResources().getColor(R.color.EE));
+            int dark = ColorUtil.darken(this.getResources().getColor(R.color.EE), 12);
+            window.setStatusBarColor(dark);
         } else if (Selection.branch.equals("Electronics and Communication Engineering")) {
             relativeLayout.setBackgroundColor(getResources().getColor(R.color.EC));
-            window.setStatusBarColor(this.getResources().getColor(R.color.EC));
+            int dark = ColorUtil.darken(this.getResources().getColor(R.color.EC), 12);
+            window.setStatusBarColor(dark);
         } else if (Selection.branch.equals("Civil Engineering")) {
             relativeLayout.setBackgroundColor(getResources().getColor(R.color.Civil));
-            window.setStatusBarColor(this.getResources().getColor(R.color.Civil));
+            int dark = ColorUtil.darken(this.getResources().getColor(R.color.Civil), 12);
+            window.setStatusBarColor(dark);
         }
 
         Toolbar toolbar = findViewById(R.id.displayToolbar);
@@ -73,6 +79,7 @@ public class DisplayActivity extends AppCompatActivity {
             public void onClick(View v) {
                 // back button pressed
                 finish();
+                overridePendingTransition(R.anim.slide_in_left,R.anim.slide_out_right);
             }
         });
         mDatabaseReference = FirebaseDatabase.getInstance().getReference(Constants.DATABASE_PATH_UPLOADS);
@@ -199,5 +206,11 @@ public class DisplayActivity extends AppCompatActivity {
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.display_menu, menu);
         return true;
+    }
+
+    @Override
+    public void finish() {
+        super.finish();
+        overridePendingTransition(R.anim.slide_in_left,R.anim.slide_out_right);
     }
 }

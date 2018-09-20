@@ -36,5 +36,6 @@ public class MainActivity extends AppCompatActivity {
 
         mainAdapter=new MainAdapter(this,branchList);
         recyclerView.setAdapter(mainAdapter);
+
     }
 }

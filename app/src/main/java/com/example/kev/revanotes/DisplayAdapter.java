@@ -1,5 +1,6 @@
 package com.example.kev.revanotes;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
@@ -87,7 +88,9 @@ public class DisplayAdapter extends RecyclerView.Adapter<DisplayAdapter.ViewHold
                     Intent intent = new Intent();
                     intent.setType(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(urls.get(position)));
+                    Activity activity = (Activity) context;
                     context.startActivity(intent);
+                    activity.overridePendingTransition(R.anim.slide_in_right,R.anim.slide_out_left);
 
                 }
             });

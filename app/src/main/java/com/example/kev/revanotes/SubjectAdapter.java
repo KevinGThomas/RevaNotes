@@ -1,5 +1,6 @@
 package com.example.kev.revanotes;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
@@ -75,7 +76,9 @@ public class SubjectAdapter extends RecyclerView.Adapter<SubjectAdapter.SubjectV
                     //context.getApplicationContext();
                     Selection.subject = subject;
                     Intent intent = new Intent(context, DisplayActivity.class);
+                    Activity activity = (Activity) context;
                     context.startActivity(intent);
+                    activity.overridePendingTransition(R.anim.slide_in_right,R.anim.slide_out_left);
                 }
             });
         }

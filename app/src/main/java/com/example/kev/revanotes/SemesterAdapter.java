@@ -1,5 +1,6 @@
 package com.example.kev.revanotes;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.support.annotation.NonNull;
@@ -60,7 +61,9 @@ public class SemesterAdapter extends RecyclerView.Adapter<SemesterAdapter.Semest
                     //Toast.makeText(context,Selection.semester,Toast.LENGTH_SHORT).show();
                     Intent intent=new Intent(context,SubjectActivity.class);
                     //intent.putExtra("branch",branch);
+                    Activity activity = (Activity) context;
                     context.startActivity(intent);
+                    activity.overridePendingTransition(R.anim.slide_in_right,R.anim.slide_out_left);
                 }
             });
         }
