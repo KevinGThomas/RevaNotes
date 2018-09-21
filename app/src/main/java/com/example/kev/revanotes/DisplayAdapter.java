@@ -29,7 +29,7 @@ public class DisplayAdapter extends RecyclerView.Adapter<DisplayAdapter.ViewHold
     ArrayList<String> filesem = new ArrayList<>();
     ArrayList<String> filesub = new ArrayList<>();
 
-    public void update(String url, String fname, String fdesc, String fbranch,String fsem,String fsub) {
+    public void update(String url, String fname, String fdesc, String fbranch, String fsem, String fsub) {
         //items.add(name);
         urls.add(url);
         filename.add(fname);
@@ -40,16 +40,16 @@ public class DisplayAdapter extends RecyclerView.Adapter<DisplayAdapter.ViewHold
         notifyDataSetChanged();
     }
 
-    public DisplayAdapter(RecyclerView recyclerView, Context context, ArrayList<String> urls, ArrayList<String> filename, ArrayList<String> filedesc,ArrayList<String> filebranch,ArrayList<String> filesem,ArrayList<String> filesub) {
+    public DisplayAdapter(RecyclerView recyclerView, Context context, ArrayList<String> urls, ArrayList<String> filename, ArrayList<String> filedesc, ArrayList<String> filebranch, ArrayList<String> filesem, ArrayList<String> filesub) {
         this.recyclerView = recyclerView;
         this.context = context;
         //this.items = items;
         this.filename = filename;
         this.filedesc = filedesc;
         this.urls = urls;
-        this.filebranch=filebranch;
-        this.filesem=filesem;
-        this.filesub=filesub;
+        this.filebranch = filebranch;
+        this.filesem = filesem;
+        this.filesub = filesub;
     }
 
     @NonNull
@@ -90,7 +90,7 @@ public class DisplayAdapter extends RecyclerView.Adapter<DisplayAdapter.ViewHold
                     intent.setData(Uri.parse(urls.get(position)));
                     Activity activity = (Activity) context;
                     context.startActivity(intent);
-                    activity.overridePendingTransition(R.anim.slide_in_right,R.anim.slide_out_left);
+                    activity.overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
 
                 }
             });

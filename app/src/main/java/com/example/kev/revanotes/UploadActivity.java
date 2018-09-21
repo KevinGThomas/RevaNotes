@@ -369,10 +369,10 @@ public class UploadActivity extends AppCompatActivity {
                         String semChosen = selectSem.getText().toString();
                         RadioButton selectSub = findViewById(rg_sub.getCheckedRadioButtonId());
                         String subChosen = selectSub.getText().toString();
-                        String multipleBrSem=branchChosen+"_"+subChosen;
+                        String multipleBrSem = branchChosen + "_" + subChosen;
 
 
-                        Uploads upload = new Uploads(filen, filed, url, branchChosen, semChosen, subChosen,multipleBrSem);
+                        Uploads upload = new Uploads(filen, filed, url, branchChosen, semChosen, subChosen, multipleBrSem);
                         mDatabaseReference.child(mDatabaseReference.push().getKey()).setValue(upload);
                     }
                 })
