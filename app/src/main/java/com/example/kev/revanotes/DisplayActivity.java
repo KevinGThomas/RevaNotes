@@ -73,6 +73,7 @@ public class DisplayActivity extends AppCompatActivity {
         }
 
         Toolbar toolbar = findViewById(R.id.displayToolbar);
+        toolbar.setTitle(Selection.subject);
         setSupportActionBar(toolbar);
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override

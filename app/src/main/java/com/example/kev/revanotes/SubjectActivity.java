@@ -1,6 +1,7 @@
 package com.example.kev.revanotes;
 
 import android.graphics.Color;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
@@ -57,6 +58,7 @@ public class SubjectActivity extends AppCompatActivity {
             window.setStatusBarColor(dark);
         }
         //recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        toolbar.setTitle(Selection.semester);
         setSupportActionBar(toolbar);
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
@@ -172,6 +174,9 @@ public class SubjectActivity extends AppCompatActivity {
         } else {
             subList.add(new Subject(1, "Mathematics", ""));
         }
+        recyclerView.addItemDecoration(new SimpleDividerItemDecoration(this));
+        //recyclerView.setBackground(ContextCompat.getDrawable(getApplicationContext(),R.drawable.recycler_corner));
+        //recyclerView.setBackground(ContextCompat.getDrawable(this,com.example.kev.revanotes.R.drawable.recycler_corner));
 
         subAdapter = new SubjectAdapter(this, subList);
         recyclerView.setAdapter(subAdapter);
