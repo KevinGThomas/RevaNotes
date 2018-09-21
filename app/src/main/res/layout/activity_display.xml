@@ -10,11 +10,24 @@
         android:id="@+id/displayToolbar"
         layout="@layout/toolbar" />
 
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/selectDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/displayToolbar"
+        android:layout_marginLeft="5dp"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+
+        android:text="Subject:" />
+
     <ProgressBar
         android:id="@+id/displayProgress"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/displayToolbar"
+        android:layout_below="@id/selectDisplay"
         android:layout_centerHorizontal="true"
 
         />

@@ -15,9 +15,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/semesterToolbar"
-        android:layout_marginLeft="5dp"
-        android:layout_marginTop="5dp"
-        android:text="Semester:" />
+        android:gravity="center"
+
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+
+        android:text="COMPUTER SCIENCE" />
 
     <ScrollView
         android:layout_width="match_parent"

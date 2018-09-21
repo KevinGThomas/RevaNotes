@@ -7,7 +7,8 @@
     android:orientation="vertical"
     android:weightSum="10"
     tools:context=".Semestertest"
-    android:background="@drawable/background_cs">
+    >
+    <!--android:background="@drawable/background_cs"-->
 
     <RelativeLayout
         android:layout_width="match_parent"

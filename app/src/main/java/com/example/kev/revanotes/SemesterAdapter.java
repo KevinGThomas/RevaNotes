@@ -57,8 +57,29 @@ public class SemesterAdapter extends RecyclerView.Adapter<SemesterAdapter.Semest
                 public void onClick(View v) {
                     //int position = recyclerView.getChildLayoutPosition(v);
                     String semester = semNames.getText().toString();
+                    if(semester.equals("1st SEM"))
+                        Selection.semester="First Semester";
+                    else if(semester.equals("2nd SEM"))
+                        Selection.semester="Second Semester";
+                    else if(semester.equals("3rd SEM"))
+                        Selection.semester="Third Semester";
+                    else if(semester.equals("4th SEM"))
+                        Selection.semester="Fourth Semester";
+                    else if(semester.equals("5th SEM"))
+                        Selection.semester="Fifth Semester";
+                    else if(semester.equals("6th SEM"))
+                        Selection.semester="Sixth Semester";
+                    else if(semester.equals("7th SEM"))
+                        Selection.semester="Seventh Semester";
+                    else if(semester.equals("8th SEM"))
+                        Selection.semester="Eighth Semester";
+                    //else if(semester.equals("9th SEM"))
+                     //   Selection.semester="Ninth Semester";
+                    //else if(semester.equals("10th SEM"))
+                     //   Selection.semester="Tenth Semester";
+
                     //context.getApplicationContext();
-                    Selection.semester = semester;
+                    //Selection.semester = semester;
                     //Toast.makeText(context,Selection.semester,Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(context, SubjectActivity.class);
                     //intent.putExtra("branch",branch);

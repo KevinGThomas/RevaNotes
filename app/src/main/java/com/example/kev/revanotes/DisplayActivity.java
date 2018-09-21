@@ -19,6 +19,7 @@ import android.view.WindowManager;
 import android.widget.ArrayAdapter;
 import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.firebase.database.ChildEventListener;
@@ -40,6 +41,7 @@ public class DisplayActivity extends AppCompatActivity {
     DatabaseReference mDatabaseReference;
     DatabaseReference dbUploads;
     List<Uploads> uploadsList = new ArrayList<>();
+    TextView selectedSubject;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,33 +50,41 @@ public class DisplayActivity extends AppCompatActivity {
 
         Window window = this.getWindow();
         window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+        selectedSubject=findViewById(R.id.selectDisplay);
+
 
 
         RelativeLayout relativeLayout = findViewById(R.id.relativeDisplay);
         if (Selection.branch.equals("Computer Science Engineering")) {
-            relativeLayout.setBackgroundColor(getResources().getColor(R.color.CS));
+            relativeLayout.setBackgroundResource(R.drawable.background_cs);
+            selectedSubject.setText(Selection.subject.toUpperCase());
             int dark = ColorUtil.darken(this.getResources().getColor(R.color.CS), 12);
             window.setStatusBarColor(dark);
         } else if (Selection.branch.equals("Mechanical Engineering")) {
-            relativeLayout.setBackgroundColor(getResources().getColor(R.color.Mech));
+            relativeLayout.setBackgroundResource(R.drawable.background_mech);
+            selectedSubject.setText(Selection.subject.toUpperCase());
             int dark = ColorUtil.darken(this.getResources().getColor(R.color.Mech), 12);
             window.setStatusBarColor(dark);
         } else if (Selection.branch.equals("Electrical and Electronics Engineering")) {
-            relativeLayout.setBackgroundColor(getResources().getColor(R.color.EE));
+            relativeLayout.setBackgroundResource(R.drawable.background_ee);
+            selectedSubject.setText(Selection.subject.toUpperCase());
             int dark = ColorUtil.darken(this.getResources().getColor(R.color.EE), 12);
             window.setStatusBarColor(dark);
         } else if (Selection.branch.equals("Electronics and Communication Engineering")) {
-            relativeLayout.setBackgroundColor(getResources().getColor(R.color.EC));
+            relativeLayout.setBackgroundResource(R.drawable.background_ec);
+            selectedSubject.setText(Selection.subject.toUpperCase());
             int dark = ColorUtil.darken(this.getResources().getColor(R.color.EC), 12);
             window.setStatusBarColor(dark);
         } else if (Selection.branch.equals("Civil Engineering")) {
-            relativeLayout.setBackgroundColor(getResources().getColor(R.color.Civil));
+            relativeLayout.setBackgroundResource(R.drawable.background_cv);
+            selectedSubject.setText(Selection.subject.toUpperCase());
             int dark = ColorUtil.darken(this.getResources().getColor(R.color.Civil), 12);
             window.setStatusBarColor(dark);
         }
 
         Toolbar toolbar = findViewById(R.id.displayToolbar);
-        toolbar.setTitle(Selection.subject);
+        toolbar.setTitle("");
+        //toolbar.setTitle(Selection.subject);
         setSupportActionBar(toolbar);
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override

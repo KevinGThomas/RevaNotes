@@ -15,7 +15,11 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/subjectToolbar"
         android:layout_marginLeft="5dp"
-        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"
+        android:textSize="25dp"
+        android:layout_centerHorizontal="true"
+
         android:text="Subject:" />
 
     <ScrollView

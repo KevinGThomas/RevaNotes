@@ -11,6 +11,7 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -22,6 +23,7 @@ public class SubjectActivity extends AppCompatActivity {
     SubjectAdapter subAdapter;
     List<Subject> subList;
     String branch, semester;
+    TextView selectedSemester;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +31,8 @@ public class SubjectActivity extends AppCompatActivity {
         setContentView(R.layout.activity_subject);
 
         Toolbar toolbar = findViewById(R.id.subjectToolbar);
+        selectedSemester=findViewById(R.id.selectSubject);
+        toolbar.setTitle("");
 
 
         Window window = this.getWindow();
@@ -37,28 +41,33 @@ public class SubjectActivity extends AppCompatActivity {
 
         RelativeLayout relativeLayout = findViewById(R.id.relativeSubject);
         if (Selection.branch.equals("Computer Science Engineering")) {
-            relativeLayout.setBackgroundColor(getResources().getColor(R.color.CS));
+            relativeLayout.setBackgroundResource(R.drawable.background_cs);
+            selectedSemester.setText(Selection.semester.toUpperCase());
             int dark = ColorUtil.darken(this.getResources().getColor(R.color.CS), 12);
             window.setStatusBarColor(dark);
         } else if (Selection.branch.equals("Mechanical Engineering")) {
-            relativeLayout.setBackgroundColor(getResources().getColor(R.color.Mech));
+            relativeLayout.setBackgroundResource(R.drawable.background_mech);
+            selectedSemester.setText(Selection.semester.toUpperCase());
             int dark = ColorUtil.darken(this.getResources().getColor(R.color.Mech), 12);
             window.setStatusBarColor(dark);
         } else if (Selection.branch.equals("Electrical and Electronics Engineering")) {
-            relativeLayout.setBackgroundColor(getResources().getColor(R.color.EE));
+            relativeLayout.setBackgroundResource(R.drawable.background_ee);
+            selectedSemester.setText(Selection.semester.toUpperCase());
             int dark = ColorUtil.darken(this.getResources().getColor(R.color.EE), 12);
             window.setStatusBarColor(dark);
         } else if (Selection.branch.equals("Electronics and Communication Engineering")) {
-            relativeLayout.setBackgroundColor(getResources().getColor(R.color.EC));
+            relativeLayout.setBackgroundResource(R.drawable.background_ec);
+            selectedSemester.setText(Selection.semester.toUpperCase());
             int dark = ColorUtil.darken(this.getResources().getColor(R.color.EC), 12);
             window.setStatusBarColor(dark);
         } else if (Selection.branch.equals("Civil Engineering")) {
-            relativeLayout.setBackgroundColor(getResources().getColor(R.color.Civil));
+            relativeLayout.setBackgroundResource(R.drawable.background_cv);
+            selectedSemester.setText(Selection.semester.toUpperCase());
             int dark = ColorUtil.darken(this.getResources().getColor(R.color.Civil), 12);
             window.setStatusBarColor(dark);
         }
         //recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        toolbar.setTitle(Selection.semester);
+        //toolbar.setTitle(Selection.semester);
         setSupportActionBar(toolbar);
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
