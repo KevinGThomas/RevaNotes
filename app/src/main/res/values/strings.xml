@@ -80,7 +80,6 @@
     <string name="CS_6_Sub16">Parallel Processing and Algorithms</string>
 
 
-
     <string name="CS_7_Sub1">Web Application Development</string>
     <string name="CS_7_Sub2">Cryptography and Network Security</string>
     <string name="CS_7_Sub3">Advanced Storage Area Networks</string>
@@ -197,7 +196,7 @@
     <string name="Mech_8_Sub6">Energy Audit and Management</string>
     <string name="Mech_8_Sub7">Advanced Machine Design</string>
     <string name="Mech_8_Sub8">Total Quality Management</string>
-    
+
     <string name="EE_1_Sub1">Engineering Mathematics – I</string>
     <string name="EE_1_Sub2">Engineering Physics</string>
     <string name="EE_1_Sub3">Engineering Mechanics</string>
@@ -205,8 +204,8 @@
     <string name="EE_1_Sub5">Basic Electrical and Electronics Engineering</string>
     <string name="EE_1_Sub6">Indian Constitution and Professional Ethics</string>
     <string name="EE_1_Sub7">Technical English I</string>
-    
-    
+
+
     <string name="EE_2_Sub1">Engineering Mathematics – II</string>
     <string name="EE_2_Sub2">Engineering Chemistry</string>
     <string name="EE_2_Sub3">Electrical Power Generation and Transmission</string>
@@ -214,8 +213,8 @@
     <string name="EE_2_Sub5">Electrical and Electronic Instrumentation and Measurements</string>
     <string name="EE_2_Sub6">Environmental Sciences</string>
     <string name="EE_2_Sub7">Technical English II</string>
-    
-    
+
+
     <string name="EE_3_Sub1">Engineering Mathematics – III</string>
     <string name="EE_3_Sub2">Electrical Circuit Theory</string>
     <string name="EE_3_Sub3">Electrical Machines I</string>
@@ -255,8 +254,6 @@
     <string name="EE_5_Sub16">Artificial Intelligence</string>
 
 
-
-
     <string name="EE_6_Sub1"> 	Computer Aided Power System Analysis and Stability</string>
     <string name="EE_6_Sub2"> 	Digital Signal Processing</string>
     <string name="EE_6_Sub3"> 	Control Engineering</string>
@@ -274,14 +271,6 @@
     <string name="EE_6_Sub15">Advanced Electrical Machines</string>
     <string name="EE_6_Sub16">Analog and Digital Communication Systems</string>
     <string name="EE_6_Sub17">Multimedia communication and Networks</string>
-
-
-
-
-
-
-
-
 
 
     <string name="title_activity_upload_login">Sign in</string>

@@ -60,7 +60,7 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.MainViewHolder
                     //((Selection)context.getApplicationContext()).setBranch(branch);
                     Selection.branch=branch;
                     //Toast.makeText(context,Selection.branch,Toast.LENGTH_SHORT).show();
-                    Intent intent=new Intent(context,SemesterActivity.class);
+                    Intent intent=new Intent(context,Semestertest.class);
                     //intent.putExtra("branch",branch);
                     Activity activity = (Activity) context;
                     context.startActivity(intent);
