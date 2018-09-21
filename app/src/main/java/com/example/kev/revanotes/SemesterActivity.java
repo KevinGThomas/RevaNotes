@@ -1,4 +1,4 @@
-    package com.example.kev.revanotes;
+package com.example.kev.revanotes;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -99,7 +99,6 @@ public class SemesterActivity extends AppCompatActivity {
         semAdapter = new SemesterAdapter(this, semList);
         recyclerView.setAdapter(semAdapter);
     }
-
 
 
     @Override

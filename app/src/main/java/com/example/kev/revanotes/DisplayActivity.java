@@ -17,6 +17,7 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.ArrayAdapter;
+import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
 
@@ -80,7 +81,7 @@ public class DisplayActivity extends AppCompatActivity {
             public void onClick(View v) {
                 // back button pressed
                 finish();
-                overridePendingTransition(R.anim.slide_in_left,R.anim.slide_out_right);
+                overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
             }
         });
         mDatabaseReference = FirebaseDatabase.getInstance().getReference(Constants.DATABASE_PATH_UPLOADS);
@@ -147,9 +148,12 @@ public class DisplayActivity extends AppCompatActivity {
 
         //Change it to query once complete
         //mDatabaseReference.addValueEventListener(new ValueEventListener() {
+        final ProgressBar progressBar = findViewById(R.id.displayProgress);
+
         query.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+
                 for (DataSnapshot postSnapshot : dataSnapshot.getChildren()) {
                     Uploads upload = postSnapshot.getValue(Uploads.class);
                     uploadsList.add(upload);
@@ -172,15 +176,19 @@ public class DisplayActivity extends AppCompatActivity {
                     uploadssub[i] = uploadsList.get(i).getSub();
 
                     ((DisplayAdapter) recyclerView.getAdapter()).update(uploadsu[i], uploadsn[i], uploadsd[i], uploadsbranch[i], uploadssem[i], uploadssub[i]);
+
                     //uploadsn[i] = uploadsList.get(i).getName();
                 }
+                progressBar.setVisibility(View.GONE);
             }
+
 
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError) {
 
             }
         });
+
         recyclerView = findViewById(R.id.recycler_view);
 
         recyclerView.setLayoutManager(new LinearLayoutManager(DisplayActivity.this));
@@ -212,6 +220,6 @@ public class DisplayActivity extends AppCompatActivity {
     @Override
     public void finish() {
         super.finish();
-        overridePendingTransition(R.anim.slide_in_left,R.anim.slide_out_right);
+        overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
     }
 }

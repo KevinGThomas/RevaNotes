@@ -29,14 +29,14 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.MainViewHolder
     @NonNull
     @Override
     public MainViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        LayoutInflater inflater=LayoutInflater.from(context);
-        View view=inflater.inflate(R.layout.activity_main_adapter,parent, false);
+        LayoutInflater inflater = LayoutInflater.from(context);
+        View view = inflater.inflate(R.layout.activity_main_adapter, parent, false);
         return new MainViewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull MainViewHolder holder, int position) {
-        Branch branch=branchList.get(position);
+        Branch branch = branchList.get(position);
         holder.branchNames.setText(branch.getBranchName());
 
     }
@@ -48,27 +48,24 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.MainViewHolder
 
     class MainViewHolder extends RecyclerView.ViewHolder {
         TextView branchNames;
+
         public MainViewHolder(View itemView) {
             super(itemView);
-            branchNames=itemView.findViewById(R.id.branchName);
+            branchNames = itemView.findViewById(R.id.branchName);
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     //int position = recyclerView.getChildLayoutPosition(v);
-                    String branch =branchNames.getText().toString();
+                    String branch = branchNames.getText().toString();
                     //context.getApplicationContext();
                     //((Selection)context.getApplicationContext()).setBranch(branch);
-                    Selection.branch=branch;
+                    Selection.branch = branch;
                     //Toast.makeText(context,Selection.branch,Toast.LENGTH_SHORT).show();
-                    Intent intent=new Intent(context,SemesterActivity.class);
+                    Intent intent = new Intent(context, SemesterActivity.class);
                     //intent.putExtra("branch",branch);
                     Activity activity = (Activity) context;
                     context.startActivity(intent);
-                    activity.overridePendingTransition(R.anim.slide_in_right,R.anim.slide_out_left);
-
-
-
-
+                    activity.overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
 
 
                 }

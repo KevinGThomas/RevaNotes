@@ -44,7 +44,7 @@ public class SubjectAdapter extends RecyclerView.Adapter<SubjectAdapter.SubjectV
         Subject subject = subList.get(position);
         int color1 = generator.getRandomColor();
         holder.subNames.setText(subject.getSubName());
-        TextDrawable drawable2=TextDrawable.builder().beginConfig().fontSize(50).endConfig().buildRound(subject.getImgLetter(), color1);
+        TextDrawable drawable2 = TextDrawable.builder().beginConfig().fontSize(50).endConfig().buildRound(subject.getImgLetter(), color1);
         //drawable2.
         holder.img.setImageDrawable(drawable2);
 
@@ -78,7 +78,7 @@ public class SubjectAdapter extends RecyclerView.Adapter<SubjectAdapter.SubjectV
                     Intent intent = new Intent(context, DisplayActivity.class);
                     Activity activity = (Activity) context;
                     context.startActivity(intent);
-                    activity.overridePendingTransition(R.anim.slide_in_right,R.anim.slide_out_left);
+                    activity.overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
                 }
             });
         }

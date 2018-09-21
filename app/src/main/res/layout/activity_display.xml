@@ -2,19 +2,29 @@
 
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="wrap_content"
     android:id="@+id/relativeDisplay"
+    android:layout_width="wrap_content"
     android:layout_height="wrap_content">
 
-    <include layout="@layout/toolbar"
-        android:id="@+id/displayToolbar"/>
+    <include
+        android:id="@+id/displayToolbar"
+        layout="@layout/toolbar" />
+
+    <ProgressBar
+        android:id="@+id/displayProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/displayToolbar"
+        android:layout_centerHorizontal="true"
+
+        />
 
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_below="@id/displayToolbar"
+        android:layout_height="match_parent"
 
-        android:layout_height="match_parent">
+        android:layout_below="@id/displayProgress">
 
         <android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
             xmlns:app="http://schemas.android.com/apk/res-auto"

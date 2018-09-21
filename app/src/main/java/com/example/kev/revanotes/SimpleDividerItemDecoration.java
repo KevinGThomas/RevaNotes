@@ -11,13 +11,13 @@ public class SimpleDividerItemDecoration extends RecyclerView.ItemDecoration {
     private Drawable mDivider;
 
     public SimpleDividerItemDecoration(Context context) {
-        mDivider = ContextCompat.getDrawable(context,R.drawable.line_divider);
+        mDivider = ContextCompat.getDrawable(context, R.drawable.line_divider);
     }
 
     @Override
     public void onDrawOver(Canvas c, RecyclerView parent, RecyclerView.State state) {
-        int left = parent.getPaddingLeft()+35;
-        int right = parent.getWidth() - parent.getPaddingRight()-35;
+        int left = parent.getPaddingLeft() + 35;
+        int right = parent.getWidth() - parent.getPaddingRight() - 35;
 
         int childCount = parent.getChildCount();
         for (int i = 0; i < childCount; i++) {

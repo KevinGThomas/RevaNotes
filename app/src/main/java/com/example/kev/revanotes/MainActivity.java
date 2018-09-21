@@ -23,26 +23,26 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Toolbar toolbar=findViewById(R.id.mainToolbar);
+        Toolbar toolbar = findViewById(R.id.mainToolbar);
 
         toolbar.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
         setSupportActionBar(toolbar);
 
-        branchList=new ArrayList<>();
-        recyclerView=(RecyclerView)findViewById(R.id.recyclerBranch);
+        branchList = new ArrayList<>();
+        recyclerView = (RecyclerView) findViewById(R.id.recyclerBranch);
         //recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
-        branchList.add(new Branch(1,"Computer Science Engineering"));
-        branchList.add(new Branch(2,"Mechanical Engineering"));
-        branchList.add(new Branch(3,"Electrical and Electronics Engineering"));
-        branchList.add(new Branch(4,"Electronics and Communication Engineering"));
-        branchList.add(new Branch(5,"Civil Engineering"));
+        branchList.add(new Branch(1, "Computer Science Engineering"));
+        branchList.add(new Branch(2, "Mechanical Engineering"));
+        branchList.add(new Branch(3, "Electrical and Electronics Engineering"));
+        branchList.add(new Branch(4, "Electronics and Communication Engineering"));
+        branchList.add(new Branch(5, "Civil Engineering"));
         //branchList.add(new Branch(6,"Architecture"));
         //branchList.add(new Branch(7,"Business Administration"));
         //branchList.add(new Branch(8,"Commerce"));
 
-        mainAdapter=new MainAdapter(this,branchList);
+        mainAdapter = new MainAdapter(this, branchList);
         recyclerView.setAdapter(mainAdapter);
 
     }
