@@ -9,6 +9,7 @@
         android:id="@+id/cardSemester"
         android:layout_width="match_parent"
         android:layout_height="110dp"
+        app:cardCornerRadius="6dp"
         android:layout_margin="5dp"
         tools:context=".SemesterAdapter">
 
