@@ -33,11 +33,11 @@ public class MainActivity extends AppCompatActivity {
         //recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
-        branchList.add(new Branch(1, "Computer Science Engineering"));
-        branchList.add(new Branch(2, "Mechanical Engineering"));
-        branchList.add(new Branch(3, "Electrical and Electronics Engineering"));
-        branchList.add(new Branch(4, "Electronics and Communication Engineering"));
-        branchList.add(new Branch(5, "Civil Engineering"));
+        branchList.add(new Branch(1, getString(R.string.CS)));
+        branchList.add(new Branch(2, getString(R.string.Mech)));
+        branchList.add(new Branch(3, getString(R.string.EE)));
+        branchList.add(new Branch(4, getString(R.string.EC)));
+        branchList.add(new Branch(5, getString(R.string.Civil)));
         //branchList.add(new Branch(6,"Architecture"));
         //branchList.add(new Branch(7,"Business Administration"));
         //branchList.add(new Branch(8,"Commerce"));

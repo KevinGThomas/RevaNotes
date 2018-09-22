@@ -52,31 +52,29 @@ public class DisplayActivity extends AppCompatActivity {
         window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
         selectedSubject=findViewById(R.id.selectDisplay);
 
-
-
         RelativeLayout relativeLayout = findViewById(R.id.relativeDisplay);
-        if (Selection.branch.equals("Computer Science Engineering")) {
+        if (Selection.branch.equals(getString(R.string.CS))) {
             relativeLayout.setBackgroundResource(R.drawable.background_cs);
             selectedSubject.setText(Selection.subject.toUpperCase());
             int dark = ColorUtil.darken(this.getResources().getColor(R.color.CS), 12);
             window.setStatusBarColor(dark);
-        } else if (Selection.branch.equals("Mechanical Engineering")) {
+        } else if (Selection.branch.equals(getString(R.string.Mech))) {
             relativeLayout.setBackgroundResource(R.drawable.background_mech);
             selectedSubject.setText(Selection.subject.toUpperCase());
             int dark = ColorUtil.darken(this.getResources().getColor(R.color.Mech), 12);
             window.setStatusBarColor(dark);
-        } else if (Selection.branch.equals("Electrical and Electronics Engineering")) {
+        } else if (Selection.branch.equals(getString(R.string.EE))) {
             relativeLayout.setBackgroundResource(R.drawable.background_ee);
             selectedSubject.setText(Selection.subject.toUpperCase());
             int dark = ColorUtil.darken(this.getResources().getColor(R.color.EE), 12);
             window.setStatusBarColor(dark);
-        } else if (Selection.branch.equals("Electronics and Communication Engineering")) {
+        } else if (Selection.branch.equals(getString(R.string.EC))) {
             relativeLayout.setBackgroundResource(R.drawable.background_ec);
             selectedSubject.setText(Selection.subject.toUpperCase());
             int dark = ColorUtil.darken(this.getResources().getColor(R.color.EC), 12);
             window.setStatusBarColor(dark);
-        } else if (Selection.branch.equals("Civil Engineering")) {
-            relativeLayout.setBackgroundResource(R.drawable.background_cv);
+        } else if (Selection.branch.equals(getString(R.string.Civil))) {
+            relativeLayout.setBackgroundResource(R.drawable.background_civil);
             selectedSubject.setText(Selection.subject.toUpperCase());
             int dark = ColorUtil.darken(this.getResources().getColor(R.color.Civil), 12);
             window.setStatusBarColor(dark);

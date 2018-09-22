@@ -45,28 +45,28 @@ public class SemesterActivity extends AppCompatActivity {
 
 
         RelativeLayout relativeLayout = findViewById(R.id.relativeSemester);
-        if (Selection.branch.equals("Computer Science Engineering")) {
+        if (Selection.branch.equals(getString(R.string.CS))) {
             relativeLayout.setBackgroundResource(R.drawable.background_cs);
             selectedBranch.setText("COMPUTER SCIENCE");
             int dark = ColorUtil.darken(this.getResources().getColor(R.color.CS), 12);
             window.setStatusBarColor(dark);
-        } else if (Selection.branch.equals("Mechanical Engineering")) {
+        } else if (Selection.branch.equals(getString(R.string.Mech))) {
             relativeLayout.setBackgroundResource(R.drawable.background_mech);
             selectedBranch.setText("MECHANICAL");
             int dark = ColorUtil.darken(this.getResources().getColor(R.color.Mech), 12);
             window.setStatusBarColor(dark);
-        } else if (Selection.branch.equals("Electrical and Electronics Engineering")) {
+        } else if (Selection.branch.equals(getString(R.string.EE))) {
             relativeLayout.setBackgroundResource(R.drawable.background_ee);
             selectedBranch.setText("ELECTRICAL AND ELECTRONICS");
             int dark = ColorUtil.darken(this.getResources().getColor(R.color.EE), 12);
             window.setStatusBarColor(dark);
-        } else if (Selection.branch.equals("Electronics and Communication Engineering")) {
+        } else if (Selection.branch.equals(getString(R.string.EC))) {
             relativeLayout.setBackgroundResource(R.drawable.background_ec);
             selectedBranch.setText("ELECTRICAL AND COMMUNICATION");
             int dark = ColorUtil.darken(this.getResources().getColor(R.color.EC), 12);
             window.setStatusBarColor(dark);
-        } else if (Selection.branch.equals("Civil Engineering")) {
-            relativeLayout.setBackgroundResource(R.drawable.background_cv);
+        } else if (Selection.branch.equals(getString(R.string.Civil))) {
+            relativeLayout.setBackgroundResource(R.drawable.background_civil);
             selectedBranch.setText("CIVIL");
             int dark = ColorUtil.darken(this.getResources().getColor(R.color.Civil), 12);
             window.setStatusBarColor(dark);

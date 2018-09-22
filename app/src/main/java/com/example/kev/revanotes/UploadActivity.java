@@ -146,7 +146,7 @@ public class UploadActivity extends AppCompatActivity {
                 RadioButton selectBranch = findViewById(rg_branch.getCheckedRadioButtonId());
                 String BranchChosen = selectBranch.getText().toString();
                 notification.setText(BranchChosen);
-                if (BranchChosen.equals("Computer Science Engineering") || BranchChosen.equals("Mechanical Engineering") || BranchChosen.equals("Electrical and Electronics Engineering") || BranchChosen.equals("Electronics and Communication Engineering") || BranchChosen.equals("Civil Engineering")) {
+                if (BranchChosen.equals(getString(R.string.CS)) || BranchChosen.equals("Mechanical Engineering") || BranchChosen.equals("Electrical and Electronics Engineering") || BranchChosen.equals("Electronics and Communication Engineering") || BranchChosen.equals("Civil Engineering")) {
                     subject1.setText(R.string.CS_1_Sub1);
                     subject2.setText(R.string.CS_1_Sub2);
                     subject3.setText(R.string.CS_1_Sub3);
@@ -167,7 +167,7 @@ public class UploadActivity extends AppCompatActivity {
             public void onClick(View v) {
                 RadioButton selectBranch = findViewById(rg_branch.getCheckedRadioButtonId());
                 String BranchChosen = selectBranch.getText().toString();
-                if (BranchChosen.equals("Computer Science Engineering") || BranchChosen.equals("Mechanical Engineering") || BranchChosen.equals("Electrical and Electronics Engineering") || BranchChosen.equals("Electronics and Communication Engineering") || BranchChosen.equals("Civil Engineering")) {
+                if (BranchChosen.equals(getString(R.string.CS)) || BranchChosen.equals("Mechanical Engineering") || BranchChosen.equals("Electrical and Electronics Engineering") || BranchChosen.equals("Electronics and Communication Engineering") || BranchChosen.equals("Civil Engineering")) {
                     subject1.setText(R.string.CS_2_Sub1);
                     subject2.setText(R.string.CS_2_Sub2);
                     subject3.setText(R.string.CS_2_Sub3);
@@ -186,7 +186,7 @@ public class UploadActivity extends AppCompatActivity {
             public void onClick(View v) {
                 RadioButton selectBranch = findViewById(rg_branch.getCheckedRadioButtonId());
                 String BranchChosen = selectBranch.getText().toString();
-                if (BranchChosen.equals("Computer Science Engineering")) {
+                if (BranchChosen.equals(getString(R.string.CS))) {
                     subject1.setText(R.string.CS_3_Sub1);
                     subject2.setText(R.string.CS_3_Sub2);
                     subject3.setText(R.string.CS_3_Sub3);
@@ -198,7 +198,7 @@ public class UploadActivity extends AppCompatActivity {
                     subject4.setVisibility(View.VISIBLE);
                     subject5.setVisibility(View.VISIBLE);
 
-                } else if (BranchChosen.equals("Mechanical Engineering")) {
+                } else if (BranchChosen.equals(getString(R.string.Mech))) {
                     subject1.setText(R.string.Mech_1_Sub1);
 
                 }
@@ -209,7 +209,7 @@ public class UploadActivity extends AppCompatActivity {
             public void onClick(View v) {
                 RadioButton selectBranch = findViewById(rg_branch.getCheckedRadioButtonId());
                 String BranchChosen = selectBranch.getText().toString();
-                if (BranchChosen.equals("Computer Science Engineering")) {
+                if (BranchChosen.equals(getString(R.string.CS))) {
                     subject1.setText(R.string.CS_4_Sub1);
                     subject2.setText(R.string.CS_4_Sub2);
                     subject3.setText(R.string.CS_4_Sub3);
@@ -228,7 +228,7 @@ public class UploadActivity extends AppCompatActivity {
             public void onClick(View v) {
                 RadioButton selectBranch = findViewById(rg_branch.getCheckedRadioButtonId());
                 String BranchChosen = selectBranch.getText().toString();
-                if (BranchChosen.equals("Computer Science Engineering")) {
+                if (BranchChosen.equals(getString(R.string.CS))) {
                     subject1.setText(R.string.CS_5_Sub1);
                     subject2.setText(R.string.CS_5_Sub2);
                     subject3.setText(R.string.CS_5_Sub3);
@@ -247,7 +247,7 @@ public class UploadActivity extends AppCompatActivity {
             public void onClick(View v) {
                 RadioButton selectBranch = findViewById(rg_branch.getCheckedRadioButtonId());
                 String BranchChosen = selectBranch.getText().toString();
-                if (BranchChosen.equals("Computer Science Engineering")) {
+                if (BranchChosen.equals(getString(R.string.CS))) {
                     subject1.setText(R.string.CS_6_Sub1);
                     subject2.setText(R.string.CS_6_Sub2);
                     subject3.setText(R.string.CS_6_Sub3);
@@ -266,7 +266,7 @@ public class UploadActivity extends AppCompatActivity {
             public void onClick(View v) {
                 RadioButton selectBranch = findViewById(rg_branch.getCheckedRadioButtonId());
                 String BranchChosen = selectBranch.getText().toString();
-                if (BranchChosen.equals("Computer Science Engineering")) {
+                if (BranchChosen.equals(getString(R.string.CS))) {
                     subject1.setText(R.string.CS_7_Sub1);
                     subject2.setText(R.string.CS_7_Sub2);
                     subject3.setText(R.string.CS_7_Sub3);
@@ -285,7 +285,7 @@ public class UploadActivity extends AppCompatActivity {
             public void onClick(View v) {
                 RadioButton selectBranch = findViewById(rg_branch.getCheckedRadioButtonId());
                 String BranchChosen = selectBranch.getText().toString();
-                if (BranchChosen.equals("Computer Science Engineering")) {
+                if (BranchChosen.equals(getString(R.string.CS))) {
                     subject1.setText(R.string.CS_8_Sub1);
                     subject2.setText(R.string.CS_8_Sub2);
                     subject3.setText(R.string.CS_8_Sub3);

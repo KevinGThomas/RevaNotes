@@ -345,21 +345,21 @@
     <string name="EC_5_Sub16">Mechatronics</string>
 
     <string name="EC_6_Sub1">Antenna and wave Propagation</string>
-    <string name="EC_6_Sub3">CMOS VLSI Circuits</string>
-    <string name="EC_6_Sub4">Computer Communication and Networks(I)</string>
-    <string name="EC_6_Sub5">Embedded Systems</string>
-    <string name="EC_6_Sub6">Relational Data Base Management System</string>
-    <string name="EC_6_Sub7">Image Processing</string>
-    <string name="EC_6_Sub8">Machine Learning and Deep Learning</string>
-    <string name="EC_6_Sub9">Real Time Systems</string>
-    <string name="EC_6_Sub10">Java Programming</string>
-    <string name="EC_6_Sub11">Adaptive Filters</string>
-    <string name="EC_6_Sub12">Project Management</string>
-    <string name="EC_6_Sub13">Component Engineering</string>
-    <string name="EC_6_Sub14">MEMS</string>
-    <string name="EC_6_Sub15">Web Programming</string>
-    <string name="EC_6_Sub16">Information Theory and Coding</string>
-    <string name="EC_6_Sub17">Alternate Engineering</string>
+    <string name="EC_6_Sub2">CMOS VLSI Circuits</string>
+    <string name="EC_6_Sub3">Computer Communication and Networks(I)</string>
+    <string name="EC_6_Sub4">Embedded Systems</string>
+    <string name="EC_6_Sub5">Relational Data Base Management System</string>
+    <string name="EC_6_Sub6">Image Processing</string>
+    <string name="EC_6_Sub7">Machine Learning and Deep Learning</string>
+    <string name="EC_6_Sub8">Real Time Systems</string>
+    <string name="EC_6_Sub9">Java Programming</string>
+    <string name="EC_6_Sub10">Adaptive Filters</string>
+    <string name="EC_6_Sub11">Project Management</string>
+    <string name="EC_6_Sub12">Component Engineering</string>
+    <string name="EC_6_Sub13">MEMS</string>
+    <string name="EC_6_Sub14">Web Programming</string>
+    <string name="EC_6_Sub15">Information Theory and Coding</string>
+    <string name="EC_6_Sub16">Alternate Engineering</string>
 
     <string name="EC_7_Sub1">IOT and Cyber physical systems</string>
     <string name="EC_7_Sub2">Analog Mixed Mode VLSI</string>
