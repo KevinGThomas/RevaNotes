@@ -9,21 +9,21 @@
         android:id="@+id/mainToolbar"
         layout="@layout/toolbar_main" />
 
-    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    <!--TextView xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/selectBranch"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/mainToolbar"
         android:layout_marginLeft="5dp"
         android:layout_marginTop="5dp"
-        android:text="Branch:" />
+        android:text="Branch:" /-->
 
 
     <ScrollView
 
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/selectBranch">
+        android:layout_below="@+id/mainToolbar">
 
 
         <android.support.v7.widget.RecyclerView
@@ -31,7 +31,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
 
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="5dp"
             android:paddingBottom="10dp"
 
             tools:context=".MainActivity">

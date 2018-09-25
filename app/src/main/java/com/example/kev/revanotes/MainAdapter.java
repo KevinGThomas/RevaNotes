@@ -11,6 +11,7 @@ import android.text.Layout;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -20,6 +21,7 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.MainViewHolder
 
     private Context context;
     private List<Branch> branchList;
+
 
     public MainAdapter(Context context, List<Branch> branchList) {
         this.context = context;
@@ -38,7 +40,7 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.MainViewHolder
     public void onBindViewHolder(@NonNull MainViewHolder holder, int position) {
         Branch branch=branchList.get(position);
         holder.branchNames.setText(branch.getBranchName());
-
+        holder.relativeLayout.setBackgroundResource(branch.getBranchImage());
     }
 
     @Override
@@ -48,9 +50,11 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.MainViewHolder
 
     class MainViewHolder extends RecyclerView.ViewHolder {
         TextView branchNames;
+        RelativeLayout relativeLayout;
         public MainViewHolder(View itemView) {
             super(itemView);
             branchNames=itemView.findViewById(R.id.branchName);
+            relativeLayout=itemView.findViewById(R.id.cardRelative);
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {

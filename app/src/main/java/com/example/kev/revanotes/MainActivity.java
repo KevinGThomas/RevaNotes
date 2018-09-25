@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.mainToolbar);
 
         toolbar.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
+        toolbar.setTitleTextColor(getResources().getColor(R.color.color_white));
         setSupportActionBar(toolbar);
 
         branchList = new ArrayList<>();
@@ -33,11 +34,11 @@ public class MainActivity extends AppCompatActivity {
         //recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
-        branchList.add(new Branch(1, getString(R.string.CS)));
-        branchList.add(new Branch(2, getString(R.string.Mech)));
-        branchList.add(new Branch(3, getString(R.string.EE)));
-        branchList.add(new Branch(4, getString(R.string.EC)));
-        branchList.add(new Branch(5, getString(R.string.Civil)));
+        branchList.add(new Branch(1, getString(R.string.CS),R.drawable.cs_card));
+        branchList.add(new Branch(2, getString(R.string.Mech),R.drawable.mech_card));
+        branchList.add(new Branch(3, getString(R.string.EE),R.drawable.ee_card));
+        branchList.add(new Branch(4, getString(R.string.EC),R.drawable.ec_card));
+        branchList.add(new Branch(5, getString(R.string.Civil),R.drawable.civil_card));
         //branchList.add(new Branch(6,"Architecture"));
         //branchList.add(new Branch(7,"Business Administration"));
         //branchList.add(new Branch(8,"Commerce"));

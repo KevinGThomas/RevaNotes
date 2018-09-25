@@ -3,10 +3,12 @@ package com.example.kev.revanotes;
 public class Branch {
     private int id;
     private String branchName;
+    int branchImage;
 
-    public Branch(int id, String branchName) {
+    public Branch(int id, String branchName,int branchImage) {
         this.id = id;
         this.branchName = branchName;
+        this.branchImage=branchImage;
     }
 
     public int getId() {
@@ -15,5 +17,10 @@ public class Branch {
 
     public String getBranchName() {
         return branchName;
+    }
+
+    public int getBranchImage()
+    {
+        return branchImage;
     }
 }
