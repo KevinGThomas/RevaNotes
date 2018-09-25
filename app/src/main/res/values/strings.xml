@@ -385,6 +385,82 @@
     <string name="EC_8_Sub6">Pervasive and Ubiquitous Computing</string>
     <string name="EC_8_Sub7">Network Security</string>
     <string name="EC_8_Sub8">Radar and Navigational Aids</string>
+    
+    <string name="Civil_1_Sub1">Differential Equations and Linear Algebra</string>
+    <string name="Civil_1_Sub2">Applied Physics</string>
+    <string name="Civil_1_Sub3">C++ Programming</string>
+    <string name="Civil_1_Sub4">Building Materials</string>
+    <string name="Civil_1_Sub5">Technical English-1</string>
+    
+    <string name="Civil_2_Sub1">Vector Calculus and Partial Differential Equations</string>
+    <string name="Civil_2_Sub2">Applied Chemistry</string>
+    <string name="Civil_2_Sub3">Basics of Electrical and Electronics Engineering</string>
+    <string name="Civil_2_Sub4">Engineering Mechanics</string>
+    <string name="Civil_2_Sub5">Building Construction </string>
+    <string name="Civil_2_Sub6">Technical English-II</string>
+    
+    <string name="Civil_3_Sub1">Laplace Transform and Fourier series</string>
+    <string name="Civil_3_Sub2">Strength of Materials</string>
+    <string name="Civil_3_Sub3">Applied Surveying</string>
+    <string name="Civil_3_Sub4">Fluid Mechanics</string>
+    <string name="Civil_3_Sub5">Concrete Technology</string>
+    <string name="Civil_3_Sub6">Constitution of India and Professional Ethics</string>
+    
+    <string name="Civil_4_Sub1">Probability and Sampling Theory</string>
+    <string name="Civil_4_Sub2">Structural Analysis</string>
+    <string name="Civil_4_Sub3">Hydrology and Irrigation Engineering</string>
+    <string name="Civil_4_Sub4">Water and Waste Water Engineering</string>
+    <string name="Civil_4_Sub5">Highway Engineering</string>
+    <string name="Civil_4_Sub6">Construction Project Management</string>
+    <string name="Civil_4_Sub7">Rural Infrastructure development</string>
+    <string name="Civil_4_Sub8">Alternative Building materials</string>
+    <string name="Civil_4_Sub9">Advanced Surveying</string>
+    
+    <string name="Civil_5_Sub1">Design of RC structural Elements</string>
+    <string name="Civil_5_Sub2">Basic Geotechnical Engineering</string>
+    <string name="Civil_5_Sub3">Railways, Airways, Waterways and Tunnels</string>
+    <string name="Civil_5_Sub4">Advanced Structural Analysis</string>
+    <string name="Civil_5_Sub5">Traffic Analysis and Design</string>
+    <string name="Civil_5_Sub6">Industrial Waste Water Treatment</string>
+    <string name="Civil_5_Sub7">Fundamentals of Remote Sensing and GIS</string>
+    <string name="Civil_5_Sub8">Structural Dynamics and seismic Analysis</string>
+    <string name="Civil_5_Sub9">Rural Water supply and sanitation</string>
+    <string name="Civil_5_Sub10">Water Resource systems and Management</string>
+    <string name="Civil_5_Sub11">Construction Planning and Equipment</string>
+    <string name="Civil_5_Sub12">Hydraulic Machines</string>
+    <string name="Civil_5_Sub13">Occupational Safety and Health Hazards</string>
+    <string name="Civil_5_Sub14">Renewable Energy</string>
+    <string name="Civil_5_Sub15">Non Destructive Testing Methods</string>
+    
+    <string name="Civil_6_Sub1">Design of Steel Structures</string>
+    <string name="Civil_6_Sub2">Applied Geotechnical Engineering</string>
+    <string name="Civil_6_Sub3">Estimating, Costing and Valuation</string>
+    <string name="Civil_6_Sub4">Design of Bridge Structures</string>
+    <string name="Civil_6_Sub5">Repair and Rehabilitation of Structures</string>
+    <string name="Civil_6_Sub6">Air and Noise Pollution</string>
+    <string name="Civil_6_Sub7">Pavement Design and construction</string>
+    <string name="Civil_6_Sub8">Design of Hydraulic Structures</string>
+    <string name="Civil_6_Sub9">Design of Masonry Structures</string>
+    <string name="Civil_6_Sub10">Intelligent Transport System</string>
+    <string name="Civil_6_Sub11">Ground Improvement Techniques</string>
+    <string name="Civil_6_Sub12">Disaster Management and Mitigation</string>
+    
+    <string name="Civil_7_Sub1">Financial Management and Entrepreneurship</string>
+    <string name="Civil_7_Sub2">Solid Waste Management</string>
+    <string name="Civil_7_Sub3">Design of Prestressed and Prefabricated Structures</string>
+    <string name="Civil_7_Sub4">Building Materials and Construction</string>
+    <string name="Civil_7_Sub5">Rainwater Harvesting and Ground Water Recharge</string>
+    <string name="Civil_7_Sub6">Water Supply and Sanitation</string>
+    <string name="Civil_7_Sub7">Earthquake Resistant Design of RC Structures</string>
+    <string name="Civil_7_Sub8">Green Building Technology</string>
+    <string name="Civil_7_Sub9">Geometric Design of Roads</string>
+    <string name="Civil_7_Sub10">Open Channel Hydraulics</string>
+    <string name="Civil_7_Sub11">Numerical Methods in Civil Engineering</string>
+    <string name="Civil_7_Sub12">Earth and Earth Retaining Structures</string>
+    <string name="Civil_7_Sub13">Urban transport and smart city</string>
+    <string name="Civil_7_Sub14">Environmental Assessment Methodologies</string>
+    
+    <string name="Civil_8_Sub1">Project Work with Seminar</string>
 
 
 
