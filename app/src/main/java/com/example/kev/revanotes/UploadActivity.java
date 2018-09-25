@@ -41,7 +41,7 @@ public class UploadActivity extends AppCompatActivity {
     RadioGroup rg_branch, rg_sem, rg_sub;
     RadioButton branch1, branch2, branch3, branch4, branch5, branch6, branch7, branch8, branch9, branch10;
     RadioButton sem1, sem2, sem3, sem4, sem5, sem6, sem7, sem8, sem9, sem10;
-    RadioButton subject1, subject2, subject3, subject4, subject5, subject6, subject7, subject8;
+    RadioButton subject1, subject2, subject3, subject4, subject5, subject6, subject7, subject8, subject9, subject10, subject11, subject12, subject13, subject14, subject15, subject16, subject17, subject18, subject19, subject20;
 
 
     Uri pdfUri;
@@ -108,6 +108,19 @@ public class UploadActivity extends AppCompatActivity {
         subject6 = findViewById(R.id.subject6);
         subject7 = findViewById(R.id.subject7);
         subject8 = findViewById(R.id.subject8);
+        subject9 = findViewById(R.id.subject9);
+        subject10 = findViewById(R.id.subject10);
+        subject11 = findViewById(R.id.subject11);
+        subject12 = findViewById(R.id.subject12);
+        subject13 = findViewById(R.id.subject13);
+        subject14 = findViewById(R.id.subject14);
+        subject15 = findViewById(R.id.subject15);
+        subject16 = findViewById(R.id.subject16);
+        subject17 = findViewById(R.id.subject17);
+        subject18 = findViewById(R.id.subject18);
+        subject19 = findViewById(R.id.subject19);
+        subject20 = findViewById(R.id.subject20);
+
 
         branch1.setText(R.string.CS);
         branch2.setText(R.string.Mech);
@@ -146,7 +159,7 @@ public class UploadActivity extends AppCompatActivity {
                 RadioButton selectBranch = findViewById(rg_branch.getCheckedRadioButtonId());
                 String BranchChosen = selectBranch.getText().toString();
                 notification.setText(BranchChosen);
-                if (BranchChosen.equals(getString(R.string.CS)) || BranchChosen.equals("Electrical and Electronics Engineering") || BranchChosen.equals("Electronics and Communication Engineering") || BranchChosen.equals("Civil Engineering")) {
+                if (BranchChosen.equals(getString(R.string.CS)) || BranchChosen.equals("Electronics and Communication Engineering") || BranchChosen.equals("Civil Engineering")) {
                     subject1.setText(R.string.CS_1_Sub1);
                     subject2.setText(R.string.CS_1_Sub2);
                     subject3.setText(R.string.CS_1_Sub3);
@@ -160,7 +173,7 @@ public class UploadActivity extends AppCompatActivity {
                     subject5.setVisibility(View.VISIBLE);
                     subject6.setVisibility(View.VISIBLE);
                 }
-                else if(BranchChosen.equals(getString(R.string.Mech) {
+                else if(BranchChosen.equals(getString(R.string.Mech))) {
                     subject1.setText(R.string.Mech_1_Sub1);
                     subject2.setText(R.string.Mech_1_Sub2);
                     subject3.setText(R.string.Mech_1_Sub3);
@@ -174,6 +187,22 @@ public class UploadActivity extends AppCompatActivity {
                     subject5.setVisibility(View.VISIBLE);
                     subject6.setVisibility(View.VISIBLE);
                 }
+                else if(BranchChosen.equals(getString(R.string.EE))) {
+                    subject1.setText(R.string.EE_1_Sub1);
+                    subject2.setText(R.string.EE_1_Sub2);
+                    subject3.setText(R.string.EE_1_Sub3);
+                    subject4.setText(R.string.EE_1_Sub4);
+                    subject5.setText(R.string.EE_1_Sub5);
+                    subject6.setText(R.string.EE_1_Sub6);
+                    subject7.setText(R.string.EE_1_Sub6);
+                    subject1.setVisibility(View.VISIBLE);
+                    subject2.setVisibility(View.VISIBLE);
+                    subject3.setVisibility(View.VISIBLE);
+                    subject4.setVisibility(View.VISIBLE);
+                    subject5.setVisibility(View.VISIBLE);
+                    subject6.setVisibility(View.VISIBLE);
+                    subject7.setVisibility(View.VISIBLE);
+                }
             }
         });
         sem2.setOnClickListener(new View.OnClickListener() {
@@ -181,7 +210,7 @@ public class UploadActivity extends AppCompatActivity {
             public void onClick(View v) {
                 RadioButton selectBranch = findViewById(rg_branch.getCheckedRadioButtonId());
                 String BranchChosen = selectBranch.getText().toString();
-                if (BranchChosen.equals(getString(R.string.CS)) || BranchChosen.equals("Electrical and Electronics Engineering") || BranchChosen.equals("Electronics and Communication Engineering") || BranchChosen.equals("Civil Engineering")) {
+                if (BranchChosen.equals(getString(R.string.CS)) || BranchChosen.equals("Electronics and Communication Engineering") || BranchChosen.equals("Civil Engineering")) {
                     subject1.setText(R.string.CS_2_Sub1);
                     subject2.setText(R.string.CS_2_Sub2);
                     subject3.setText(R.string.CS_2_Sub3);
@@ -193,7 +222,7 @@ public class UploadActivity extends AppCompatActivity {
                     subject4.setVisibility(View.VISIBLE);
                     subject5.setVisibility(View.VISIBLE);
                 }
-                else if(BranchChosen.equals(getString(R.string.Mech) {
+                else if(BranchChosen.equals(getString(R.string.Mech))) {
                     subject1.setText(R.string.Mech_2_Sub1);
                     subject2.setText(R.string.Mech_2_Sub2);
                     subject3.setText(R.string.Mech_2_Sub3);
@@ -201,6 +230,22 @@ public class UploadActivity extends AppCompatActivity {
                     subject5.setText(R.string.Mech_2_Sub5);
                     subject6.setText(R.string.Mech_2_Sub6);
                     subject7.setText(R.string.Mech_2_Sub7);
+                    subject1.setVisibility(View.VISIBLE);
+                    subject2.setVisibility(View.VISIBLE);
+                    subject3.setVisibility(View.VISIBLE);
+                    subject4.setVisibility(View.VISIBLE);
+                    subject5.setVisibility(View.VISIBLE);
+                    subject6.setVisibility(View.VISIBLE);
+                    subject7.setVisibility(View.VISIBLE);
+                }
+                else if(BranchChosen.equals(getString(R.string.EE))) {
+                    subject1.setText(R.string.EE_2_Sub1);
+                    subject2.setText(R.string.EE_2_Sub2);
+                    subject3.setText(R.string.EE_2_Sub3);
+                    subject4.setText(R.string.EE_2_Sub4);
+                    subject5.setText(R.string.EE_2_Sub5);
+                    subject6.setText(R.string.EE_2_Sub6);
+                    subject7.setText(R.string.EE_2_Sub7);
                     subject1.setVisibility(View.VISIBLE);
                     subject2.setVisibility(View.VISIBLE);
                     subject3.setVisibility(View.VISIBLE);
@@ -231,7 +276,7 @@ public class UploadActivity extends AppCompatActivity {
                     subject6.setVisibility(View.VISIBLE);
 
                 } 
-                else if(BranchChosen.equals(getString(R.string.Mech) {
+                else if(BranchChosen.equals(getString(R.string.Mech))) {
                     subject1.setText(R.string.Mech_3_Sub1);
                     subject2.setText(R.string.Mech_3_Sub2);
                     subject3.setText(R.string.Mech_3_Sub3);
@@ -244,6 +289,21 @@ public class UploadActivity extends AppCompatActivity {
                     subject4.setVisibility(View.VISIBLE);
                     subject5.setVisibility(View.VISIBLE);
                     subject6.setVisibility(View.VISIBLE);
+                }
+                else if (BranchChosen.equals(getString(R.string.EE))) {
+                    subject1.setText(R.string.EE_3_Sub1);
+                    subject2.setText(R.string.EE_3_Sub2);
+                    subject3.setText(R.string.EE_3_Sub3);
+                    subject4.setText(R.string.EE_3_Sub4);
+                    subject5.setText(R.string.EE_3_Sub5);
+                    subject6.setText(R.string.EE_3_Sub6);
+                    subject1.setVisibility(View.VISIBLE);
+                    subject2.setVisibility(View.VISIBLE);
+                    subject3.setVisibility(View.VISIBLE);
+                    subject4.setVisibility(View.VISIBLE);
+                    subject5.setVisibility(View.VISIBLE);
+                    subject6.setVisibility(View.VISIBLE);
+
                 }
             }
         });
@@ -273,7 +333,7 @@ public class UploadActivity extends AppCompatActivity {
                     subject9.setVisibility(View.VISIBLE);
                     
                 }
-                else if(BranchChosen.equals(getString(R.string.Mech) {
+                else if(BranchChosen.equals(getString(R.string.Mech))) {
                     subject1.setText(R.string.Mech_4_Sub1);
                     subject2.setText(R.string.Mech_4_Sub2);
                     subject3.setText(R.string.Mech_4_Sub3);
@@ -294,6 +354,32 @@ public class UploadActivity extends AppCompatActivity {
                     subject8.setVisibility(View.VISIBLE);
                     subject9.setVisibility(View.VISIBLE);
                     subject10.setVisibility(View.VISIBLE);
+                }
+                else if(BranchChosen.equals(getString(R.string.EE))) {
+                    subject1.setText(R.string.EE_4_Sub1);
+                    subject2.setText(R.string.EE_4_Sub2);
+                    subject3.setText(R.string.EE_4_Sub3);
+                    subject4.setText(R.string.EE_4_Sub4);
+                    subject5.setText(R.string.EE_4_Sub5);
+                    subject6.setText(R.string.EE_4_Sub6);
+                    subject7.setText(R.string.EE_4_Sub7);
+                    subject8.setText(R.string.EE_4_Sub8);
+                    subject9.setText(R.string.EE_4_Sub9);
+                    subject10.setText(R.string.EE_4_Sub10);
+                    subject11.setText(R.string.EE_4_Sub11);
+                    subject12.setText(R.string.EE_4_Sub12);
+                    subject1.setVisibility(View.VISIBLE);
+                    subject2.setVisibility(View.VISIBLE);
+                    subject3.setVisibility(View.VISIBLE);
+                    subject4.setVisibility(View.VISIBLE);
+                    subject5.setVisibility(View.VISIBLE);
+                    subject6.setVisibility(View.VISIBLE);
+                    subject7.setVisibility(View.VISIBLE);
+                    subject8.setVisibility(View.VISIBLE);
+                    subject9.setVisibility(View.VISIBLE);
+                    subject10.setVisibility(View.VISIBLE);
+                    subject11.setVisibility(View.VISIBLE);
+                    subject12.setVisibility(View.VISIBLE);
                 }
             }
         });
@@ -322,7 +408,7 @@ public class UploadActivity extends AppCompatActivity {
                     subject8.setVisibility(View.VISIBLE);
                     subject9.setVisibility(View.VISIBLE);
                 }
-                else if(BranchChosen.equals(getString(R.string.Mech) {
+                else if(BranchChosen.equals(getString(R.string.Mech))) {
                     subject1.setText(R.string.Mech_5_Sub1);
                     subject2.setText(R.string.Mech_5_Sub2);
                     subject3.setText(R.string.Mech_5_Sub3);
@@ -351,6 +437,40 @@ public class UploadActivity extends AppCompatActivity {
                     subject12.setVisibility(View.VISIBLE);
                     subject13.setVisibility(View.VISIBLE);
                     subject14.setVisibility(View.VISIBLE);
+                }
+                else if(BranchChosen.equals(getString(R.string.EE))) {
+                    subject1.setText(R.string.EE_5_Sub1);
+                    subject2.setText(R.string.EE_5_Sub2);
+                    subject3.setText(R.string.EE_5_Sub3);
+                    subject4.setText(R.string.EE_5_Sub4);
+                    subject5.setText(R.string.EE_5_Sub5);
+                    subject6.setText(R.string.EE_5_Sub6);
+                    subject7.setText(R.string.EE_5_Sub7);
+                    subject8.setText(R.string.EE_5_Sub8);
+                    subject9.setText(R.string.EE_5_Sub9);
+                    subject10.setText(R.string.EE_5_Sub10);
+                    subject11.setText(R.string.EE_5_Sub11);
+                    subject12.setText(R.string.EE_5_Sub12);
+                    subject13.setText(R.string.EE_5_Sub13);
+                    subject14.setText(R.string.EE_5_Sub14);
+                    subject15.setText(R.string.EE_5_Sub15);
+                    subject16.setText(R.string.EE_5_Sub16);
+                    subject1.setVisibility(View.VISIBLE);
+                    subject2.setVisibility(View.VISIBLE);
+                    subject3.setVisibility(View.VISIBLE);
+                    subject4.setVisibility(View.VISIBLE);
+                    subject5.setVisibility(View.VISIBLE);
+                    subject6.setVisibility(View.VISIBLE);
+                    subject7.setVisibility(View.VISIBLE);
+                    subject8.setVisibility(View.VISIBLE);
+                    subject9.setVisibility(View.VISIBLE);
+                    subject10.setVisibility(View.VISIBLE);
+                    subject11.setVisibility(View.VISIBLE);
+                    subject12.setVisibility(View.VISIBLE);
+                    subject13.setVisibility(View.VISIBLE);
+                    subject14.setVisibility(View.VISIBLE);
+                    subject15.setVisibility(View.VISIBLE);
+                    subject16.setVisibility(View.VISIBLE);
                 }
             }
         });
@@ -393,7 +513,7 @@ public class UploadActivity extends AppCompatActivity {
                     subject15.setVisibility(View.VISIBLE);
                     subject16.setVisibility(View.VISIBLE);
                 }
-                else if(BranchChosen.equals(getString(R.string.Mech) {
+                else if(BranchChosen.equals(getString(R.string.Mech))) {
                     subject1.setText(R.string.Mech_6_Sub1);
                     subject2.setText(R.string.Mech_6_Sub2);
                     subject3.setText(R.string.Mech_6_Sub3);
@@ -477,7 +597,7 @@ public class UploadActivity extends AppCompatActivity {
                     subject18.setVisibility(View.VISIBLE);
                     
                 }
-                else if(BranchChosen.equals(getString(R.string.Mech) {
+                else if(BranchChosen.equals(getString(R.string.Mech))) {
                     subject1.setText(R.string.Mech_7_Sub1);
                     subject2.setText(R.string.Mech_7_Sub2);
                     subject3.setText(R.string.Mech_7_Sub3);
@@ -529,7 +649,7 @@ public class UploadActivity extends AppCompatActivity {
                     subject4.setVisibility(View.VISIBLE);
                     subject5.setVisibility(View.VISIBLE);
                 }
-                else if(BranchChosen.equals(getString(R.string.Mech) {
+                else if(BranchChosen.equals(getString(R.string.Mech))) {
                     subject1.setText(R.string.Mech_8_Sub1);
                     subject2.setText(R.string.Mech_8_Sub2);
                     subject3.setText(R.string.Mech_8_Sub3);

@@ -481,8 +481,92 @@ public class SubjectActivity extends AppCompatActivity {
                 subList.add(new Subject(7, getString(R.string.EC_8_Sub7), "DS"));
                 subList.add(new Subject(8, getString(R.string.EC_8_Sub8), "DS"));
             }
-        } else {
-            subList.add(new Subject(1, "Mathematics", ""));
+        } else if (branch.equals(getString(R.string.Civil))) {
+            if (semester.equals(getString(R.string.First))) {
+                subList.add(new Subject(1, getString(R.string.Civil_1_Sub1), "M-1"));
+                subList.add(new Subject(2, getString(R.string.Civil_1_Sub2), "C"));
+                subList.add(new Subject(3, getString(R.string.Civil_1_Sub3), "PPS"));
+                subList.add(new Subject(4, getString(R.string.Civil_1_Sub4), "BEE"));
+                subList.add(new Subject(5, getString(R.string.Civil_1_Sub5), "ES"));
+            }
+            else if (semester.equals(getString(R.string.Second))) {
+                subList.add(new Subject(1, getString(R.string.Civil_2_Sub1), "M-1"));
+                subList.add(new Subject(2, getString(R.string.Civil_2_Sub2), "C"));
+                subList.add(new Subject(3, getString(R.string.Civil_2_Sub3), "PPS"));
+                subList.add(new Subject(4, getString(R.string.Civil_2_Sub4), "BEE"));
+                subList.add(new Subject(5, getString(R.string.Civil_2_Sub5), "ES"));
+                subList.add(new Subject(6, getString(R.string.Civil_2_Sub6), "ES"));
+            }
+            else if (semester.equals(getString(R.string.Third))) {
+                subList.add(new Subject(1, getString(R.string.Civil_3_Sub1), "M-1"));
+                subList.add(new Subject(2, getString(R.string.Civil_3_Sub2), "C"));
+                subList.add(new Subject(3, getString(R.string.Civil_3_Sub3), "PPS"));
+                subList.add(new Subject(4, getString(R.string.Civil_3_Sub4), "BEE"));
+                subList.add(new Subject(5, getString(R.string.Civil_3_Sub5), "ES"));
+                subList.add(new Subject(6, getString(R.string.Civil_3_Sub6), "ES"));
+            }
+            else if (semester.equals(getString(R.string.Fourth))) {
+                subList.add(new Subject(1, getString(R.string.Civil_4_Sub1), "M-1"));
+                subList.add(new Subject(2, getString(R.string.Civil_4_Sub2), "C"));
+                subList.add(new Subject(3, getString(R.string.Civil_4_Sub3), "PPS"));
+                subList.add(new Subject(4, getString(R.string.Civil_4_Sub4), "BEE"));
+                subList.add(new Subject(5, getString(R.string.Civil_4_Sub5), "ES"));
+                subList.add(new Subject(6, getString(R.string.Civil_4_Sub6), "ES"));
+                subList.add(new Subject(7, getString(R.string.Civil_4_Sub7), "ES"));
+                subList.add(new Subject(8, getString(R.string.Civil_4_Sub8), "ES"));
+                subList.add(new Subject(9, getString(R.string.Civil_4_Sub9), "ES"));
+            }
+            else if (semester.equals(getString(R.string.Fifth))) {
+                subList.add(new Subject(1, getString(R.string.Civil_5_Sub1), "M-1"));
+                subList.add(new Subject(2, getString(R.string.Civil_5_Sub2), "C"));
+                subList.add(new Subject(3, getString(R.string.Civil_5_Sub3), "PPS"));
+                subList.add(new Subject(4, getString(R.string.Civil_5_Sub4), "BEE"));
+                subList.add(new Subject(5, getString(R.string.Civil_5_Sub5), "ES"));
+                subList.add(new Subject(6, getString(R.string.Civil_5_Sub6), "ES"));
+                subList.add(new Subject(7, getString(R.string.Civil_5_Sub7), "ES"));
+                subList.add(new Subject(8, getString(R.string.Civil_5_Sub8), "ES"));
+                subList.add(new Subject(9, getString(R.string.Civil_5_Sub9), "ES"));
+                subList.add(new Subject(10, getString(R.string.Civil_5_Sub10), "ES"));
+                subList.add(new Subject(11, getString(R.string.Civil_5_Sub11), "ES"));
+                subList.add(new Subject(12, getString(R.string.Civil_5_Sub12), "ES"));
+                subList.add(new Subject(13, getString(R.string.Civil_5_Sub13), "ES"));
+                subList.add(new Subject(14, getString(R.string.Civil_5_Sub14), "ES"));
+                subList.add(new Subject(15, getString(R.string.Civil_5_Sub15), "ES"));
+            }
+            else if (semester.equals(getString(R.string.Sixth))) {
+                subList.add(new Subject(1, getString(R.string.Civil_6_Sub1), "M-1"));
+                subList.add(new Subject(2, getString(R.string.Civil_6_Sub2), "C"));
+                subList.add(new Subject(3, getString(R.string.Civil_6_Sub3), "PPS"));
+                subList.add(new Subject(4, getString(R.string.Civil_6_Sub4), "BEE"));
+                subList.add(new Subject(5, getString(R.string.Civil_6_Sub5), "ES"));
+                subList.add(new Subject(6, getString(R.string.Civil_6_Sub6), "ES"));
+                subList.add(new Subject(7, getString(R.string.Civil_6_Sub7), "ES"));
+                subList.add(new Subject(8, getString(R.string.Civil_6_Sub8), "ES"));
+                subList.add(new Subject(9, getString(R.string.Civil_6_Sub9), "ES"));
+                subList.add(new Subject(10, getString(R.string.Civil_6_Sub10), "ES"));
+                subList.add(new Subject(11, getString(R.string.Civil_6_Sub11), "ES"));
+                subList.add(new Subject(12, getString(R.string.Civil_6_Sub12), "ES"));
+            }
+            else if (semester.equals(getString(R.string.Seventh))) {
+                subList.add(new Subject(1, getString(R.string.Civil_7_Sub1), "M-1"));
+                subList.add(new Subject(2, getString(R.string.Civil_7_Sub2), "C"));
+                subList.add(new Subject(3, getString(R.string.Civil_7_Sub3), "PPS"));
+                subList.add(new Subject(4, getString(R.string.Civil_7_Sub4), "BEE"));
+                subList.add(new Subject(5, getString(R.string.Civil_7_Sub5), "ES"));
+                subList.add(new Subject(6, getString(R.string.Civil_7_Sub6), "ES"));
+                subList.add(new Subject(7, getString(R.string.Civil_7_Sub7), "ES"));
+                subList.add(new Subject(8, getString(R.string.Civil_7_Sub8), "ES"));
+                subList.add(new Subject(9, getString(R.string.Civil_7_Sub9), "ES"));
+                subList.add(new Subject(10, getString(R.string.Civil_7_Sub10), "ES"));
+                subList.add(new Subject(11, getString(R.string.Civil_7_Sub11), "ES"));
+                subList.add(new Subject(12, getString(R.string.Civil_7_Sub12), "ES"));
+                subList.add(new Subject(13, getString(R.string.Civil_7_Sub13), "ES"));
+                subList.add(new Subject(14, getString(R.string.Civil_7_Sub14), "ES"));
+            }
+            else if (semester.equals(getString(R.string.Eighth))) {
+                subList.add(new Subject(1, getString(R.string.Civil_8_Sub1), "M-1"));
+            }
+
         }
         recyclerView.addItemDecoration(new SimpleDividerItemDecoration(this));
         //recyclerView.setBackground(ContextCompat.getDrawable(getApplicationContext(),R.drawable.recycler_corner));

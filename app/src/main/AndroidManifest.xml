@@ -37,7 +37,8 @@
         <activity android:name=".SemesterAdapter" />
         <activity android:name=".SubjectActivity" />
         <activity android:name=".SubjectAdapter" />
-        <activity android:name=".UploadLogin"></activity>
+        <activity android:name=".UploadLogin" />
+        <activity android:name=".Semestertest"></activity>
     </application>
 
 </manifest>
