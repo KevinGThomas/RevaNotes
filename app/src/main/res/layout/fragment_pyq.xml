@@ -1,34 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/relativeDisplay"
+    android:id="@+id/relativePYQ"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content">
 
-    <include
+    <!--include
         android:id="@+id/displayToolbar"
-        layout="@layout/toolbar" />
+        layout="@layout/toolbar" /-->
 
-    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
-        android:id="@+id/selectDisplay"
+    <TextView
+        android:id="@+id/pyqText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/displayToolbar"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/black"
         android:layout_marginLeft="5dp"
-        android:gravity="center"
-        android:layout_marginBottom="20dp"
-        android:textSize="20dp"
-        android:layout_centerHorizontal="true"
-
-        android:text="Subject:" />
+        android:text="Previous Year Questions"
+        android:textSize="25dp"
+        android:textStyle="bold" />
 
     <ProgressBar
-        android:id="@+id/displayProgress"
+        android:id="@+id/PYQProgress"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/selectDisplay"
+        android:layout_below="@+id/pyqText"
         android:layout_centerHorizontal="true"
+
+        android:layout_marginTop="10dp"
 
         />
 
@@ -37,17 +36,16 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
 
-        android:layout_below="@id/displayProgress">
+        android:layout_below="@id/PYQProgress">
 
         <android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
             xmlns:app="http://schemas.android.com/apk/res-auto"
             xmlns:tools="http://schemas.android.com/tools"
 
-            android:id="@+id/recycler_view"
+            android:id="@+id/recycler_view_pyq"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            tools:context=".DisplayActivity">
+            android:layout_margin="10dp">
 
         </android.support.v7.widget.RecyclerView>
     </ScrollView>

@@ -75,7 +75,8 @@ public class SubjectAdapter extends RecyclerView.Adapter<SubjectAdapter.SubjectV
                     String subject = subNames.getText().toString();
                     //context.getApplicationContext();
                     Selection.subject = subject;
-                    Intent intent = new Intent(context, DisplayActivity.class);
+                    //Intent intent = new Intent(context, DisplayActivity.class);
+                    Intent intent = new Intent(context, DisplayTabs.class);
                     Activity activity = (Activity) context;
                     context.startActivity(intent);
                     activity.overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);

@@ -1,28 +1,16 @@
 package com.example.kev.revanotes;
 
-import android.content.Intent;
-import android.content.res.Resources;
-import android.graphics.Color;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.Toolbar;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
+import android.view.LayoutInflater;
 import android.view.View;
-import android.view.Window;
-import android.view.WindowManager;
-import android.widget.ArrayAdapter;
+import android.view.ViewGroup;
 import android.widget.ProgressBar;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -35,67 +23,40 @@ import java.lang.reflect.Modifier;
 import java.util.ArrayList;
 import java.util.List;
 
-public class DisplayActivity extends AppCompatActivity {
-
+public class NotesFragment extends Fragment {
     RecyclerView recyclerView;
     DatabaseReference mDatabaseReference;
     DatabaseReference dbUploads;
     List<Uploads> uploadsList = new ArrayList<>();
     TextView selectedSubject;
+    /**
+     * The fragment argument representing the section number for this
+     * fragment.
+     */
+    private static final String ARG_SECTION_NUMBER = "section_number";
+
+    public NotesFragment() {
+    }
+
+    /**
+     * Returns a new instance of this fragment for the given section
+     * number.
+     */
+    public static NotesFragment newInstance() {
+        NotesFragment fragment = new NotesFragment();
+        Bundle args = new Bundle();
+        //args.putInt(ARG_SECTION_NUMBER, sectionNumber);
+        fragment.setArguments(args);
+        return fragment;
+    }
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_display);
-
-        Window window = this.getWindow();
-        window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
-        selectedSubject=findViewById(R.id.selectDisplay);
-
-        RelativeLayout relativeLayout = findViewById(R.id.relativeDisplay);
-        if (Selection.branch.equals(getString(R.string.CS))) {
-            relativeLayout.setBackgroundResource(R.drawable.background_cs);
-            selectedSubject.setText(Selection.subject.toUpperCase());
-            int dark = ColorUtil.darken(this.getResources().getColor(R.color.CS), 12);
-            window.setStatusBarColor(dark);
-        } else if (Selection.branch.equals(getString(R.string.Mech))) {
-            relativeLayout.setBackgroundResource(R.drawable.background_mech);
-            selectedSubject.setText(Selection.subject.toUpperCase());
-            int dark = ColorUtil.darken(this.getResources().getColor(R.color.Mech), 12);
-            window.setStatusBarColor(dark);
-        } else if (Selection.branch.equals(getString(R.string.EE))) {
-            relativeLayout.setBackgroundResource(R.drawable.background_ee);
-            selectedSubject.setText(Selection.subject.toUpperCase());
-            int dark = ColorUtil.darken(this.getResources().getColor(R.color.EE), 12);
-            window.setStatusBarColor(dark);
-        } else if (Selection.branch.equals(getString(R.string.EC))) {
-            relativeLayout.setBackgroundResource(R.drawable.background_ec);
-            selectedSubject.setText(Selection.subject.toUpperCase());
-            int dark = ColorUtil.darken(this.getResources().getColor(R.color.EC), 12);
-            window.setStatusBarColor(dark);
-        } else if (Selection.branch.equals(getString(R.string.Civil))) {
-            relativeLayout.setBackgroundResource(R.drawable.background_civil);
-            selectedSubject.setText(Selection.subject.toUpperCase());
-            int dark = ColorUtil.darken(this.getResources().getColor(R.color.Civil), 12);
-            window.setStatusBarColor(dark);
-        }
-
-        Toolbar toolbar = findViewById(R.id.displayToolbar);
-        toolbar.setTitle("");
-        //toolbar.setTitle(Selection.subject);
-        setSupportActionBar(toolbar);
-        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // back button pressed
-                finish();
-                overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
-            }
-        });
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        // tv=getActivity().findViewById(R.id.test);
+        //tv.setText("Java file is parsed");
+        View rootView = inflater.inflate(R.layout.fragment_notes, container, false);
         mDatabaseReference = FirebaseDatabase.getInstance().getReference(Constants.DATABASE_PATH_UPLOADS);
-
-        //Select * from files
-        //dbUploads=FirebaseDatabase.getInstance().getReference("uploads");
         Query query = FirebaseDatabase.getInstance().getReference("uploads").orderByChild("sub").equalTo("Chemistry");
 
         for (Field field : R.string.class.getDeclaredFields()) {
@@ -104,7 +65,8 @@ public class DisplayActivity extends AppCompatActivity {
                     if (Selection.branch.equals(getString(R.string.CS))) {
                         if (field.getName().startsWith("CS_")) {
                             int id = field.getInt(null);
-                            String s = getApplicationContext().getString(id);
+                            //String s = getApplicationContext().getString(id);
+                            String s = getActivity().getString(id);
                             if (Selection.subject.equals(s)) {
                                 query = FirebaseDatabase.getInstance().getReference("uploads").orderByChild("br_sub").equalTo(getString(R.string.CS) + "_" + s);
                             }
@@ -112,7 +74,7 @@ public class DisplayActivity extends AppCompatActivity {
                     } else if (Selection.branch.equals(getString(R.string.Mech))) {
                         if (field.getName().startsWith("Mech_")) {
                             int id = field.getInt(null);
-                            String s = getApplicationContext().getString(id);
+                            String s = getActivity().getString(id);
                             if (Selection.subject.equals(s)) {
                                 query = FirebaseDatabase.getInstance().getReference("uploads").orderByChild("br_sub").equalTo(getString(R.string.Mech) + "_" + s);
                             }
@@ -120,7 +82,7 @@ public class DisplayActivity extends AppCompatActivity {
                     } else if (Selection.branch.equals(getString(R.string.EE))) {
                         if (field.getName().startsWith("EE_")) {
                             int id = field.getInt(null);
-                            String s = getApplicationContext().getString(id);
+                            String s = getActivity().getString(id);
                             if (Selection.subject.equals(s)) {
                                 query = FirebaseDatabase.getInstance().getReference("uploads").orderByChild("br_sub").equalTo(getString(R.string.EE) + "_" + s);
                             }
@@ -128,7 +90,7 @@ public class DisplayActivity extends AppCompatActivity {
                     } else if (Selection.branch.equals(getString(R.string.EC))) {
                         if (field.getName().startsWith("EC_")) {
                             int id = field.getInt(null);
-                            String s = getApplicationContext().getString(id);
+                            String s = getActivity().getString(id);
                             if (Selection.subject.equals(s)) {
                                 query = FirebaseDatabase.getInstance().getReference("uploads").orderByChild("br_sub").equalTo(getString(R.string.EC) + "_" + s);
                             }
@@ -136,7 +98,7 @@ public class DisplayActivity extends AppCompatActivity {
                     } else if (Selection.branch.equals(getString(R.string.Civil))) {
                         if (field.getName().startsWith("Civil_")) {
                             int id = field.getInt(null);
-                            String s = getApplicationContext().getString(id);
+                            String s = getActivity().getString(id);
                             if (Selection.subject.equals(s)) {
                                 query = FirebaseDatabase.getInstance().getReference("uploads").orderByChild("br_sub").equalTo(getString(R.string.Civil) + "_" + s);
                             }
@@ -156,7 +118,7 @@ public class DisplayActivity extends AppCompatActivity {
 
         //Change it to query once complete
         //mDatabaseReference.addValueEventListener(new ValueEventListener() {
-        final ProgressBar progressBar = findViewById(R.id.displayProgress);
+        final ProgressBar progressBar = rootView.findViewById(R.id.notesProgress);
 
         query.addValueEventListener(new ValueEventListener() {
             @Override
@@ -183,7 +145,7 @@ public class DisplayActivity extends AppCompatActivity {
                     uploadssem[i] = uploadsList.get(i).getSem();
                     uploadssub[i] = uploadsList.get(i).getSub();
 
-                    ((DisplayAdapter) recyclerView.getAdapter()).update(uploadsu[i], uploadsn[i], uploadsd[i], uploadsbranch[i], uploadssem[i], uploadssub[i]);
+                    ((NotesAdapter) recyclerView.getAdapter()).update(uploadsu[i], uploadsn[i], uploadsd[i], uploadsbranch[i], uploadssem[i], uploadssub[i]);
 
                     //uploadsn[i] = uploadsList.get(i).getName();
                 }
@@ -197,37 +159,15 @@ public class DisplayActivity extends AppCompatActivity {
             }
         });
 
-        recyclerView = findViewById(R.id.recycler_view);
+        recyclerView = rootView.findViewById(R.id.recycler_view_notes);
 
-        recyclerView.setLayoutManager(new LinearLayoutManager(DisplayActivity.this));
-        DisplayAdapter displayAdapter = new DisplayAdapter(recyclerView, DisplayActivity.this, new ArrayList<String>(), new ArrayList<String>(), new ArrayList<String>(), new ArrayList<String>(), new ArrayList<String>(), new ArrayList<String>());
-        recyclerView.setAdapter(displayAdapter);
+        recyclerView.setLayoutManager(new LinearLayoutManager(NotesFragment.this.getActivity()));
+        NotesAdapter notesAdapter = new NotesAdapter(recyclerView, NotesFragment.this.getActivity(), new ArrayList<String>(), new ArrayList<String>(), new ArrayList<String>(), new ArrayList<String>(), new ArrayList<String>(), new ArrayList<String>());
+        recyclerView.setAdapter(notesAdapter);
 
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case R.id.item1:
-                //Toast.makeText(getApplicationContext(),"This works",Toast.LENGTH_SHORT).show();
-                Intent intent2 = new Intent(DisplayActivity.this, UploadLogin.class);
-                startActivity(intent2);
-                break;
-
-        }
-        return super.onOptionsItemSelected(item);
-    }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.display_menu, menu);
-        return true;
-    }
-
-    @Override
-    public void finish() {
-        super.finish();
-        overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
+        //TextView textView = (TextView) rootView.findViewById(R.id.test);
+        //textView.setText("Java file is parsed");
+        //textView.setText(getString(R.string.section_format, getArguments().getInt(ARG_SECTION_NUMBER)));
+        return rootView;
     }
 }

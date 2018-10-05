@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-
-
-
-
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
@@ -30,7 +26,7 @@
         <TextView
             android:id="@+id/boldtext"
             android:layout_width="wrap_content"
-            android:layout_below="@+id/scrollView"
+
             android:layout_height="wrap_content"
             android:text="UPLOAD FILE"
 
@@ -68,11 +64,38 @@
             android:layout_below="@+id/button_upload"
             android:text="Progress" />
 
+            <TextView
+                android:id="@+id/Type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/notification"
+                android:text="Select Type: " />
+
+            <RadioGroup
+                android:id="@+id/radiogp_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Type">
+
+                <RadioButton
+                    android:id="@+id/Notes"
+                    android:text="Notes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RadioButton
+                    android:id="@+id/PYQ"
+                    android:text="PYQ"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RadioGroup>
+
         <TextView
             android:id="@+id/branch"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/notification"
+            android:layout_below="@+id/radiogp_type"
             android:text="Select Branch: " />
 
         <RadioGroup
@@ -146,8 +169,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/semester"
-
-
             >
 
             <RadioButton

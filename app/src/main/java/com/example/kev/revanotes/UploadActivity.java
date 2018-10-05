@@ -38,7 +38,7 @@ public class UploadActivity extends AppCompatActivity {
     Button btn_select, btn_upload, btn_display;
     TextView notification;
     EditText file_name, file_desc;
-    RadioGroup rg_branch, rg_sem, rg_sub;
+    RadioGroup rg_branch, rg_sem, rg_sub, rg_type;
     RadioButton branch1, branch2, branch3, branch4, branch5, branch6, branch7, branch8, branch9, branch10;
     RadioButton sem1, sem2, sem3, sem4, sem5, sem6, sem7, sem8, sem9, sem10;
     RadioButton subject1, subject2, subject3, subject4, subject5, subject6, subject7, subject8, subject9, subject10, subject11, subject12, subject13, subject14, subject15, subject16, subject17, subject18, subject19, subject20;
@@ -77,6 +77,7 @@ public class UploadActivity extends AppCompatActivity {
         rg_branch = findViewById(R.id.radiogp_branch);
         rg_sem = findViewById(R.id.radiogp_sem);
         rg_sub = findViewById(R.id.radiogp_sub);
+        rg_type = findViewById(R.id.radiogp_type);
 
         branch1 = findViewById(R.id.branch1);
         branch2 = findViewById(R.id.branch2);
@@ -1320,11 +1321,9 @@ public class UploadActivity extends AppCompatActivity {
         btn_display.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(UploadActivity.this, DisplayActivity.class));
+                startActivity(new Intent(UploadActivity.this, DisplayTabs.class));
             }
         });
-
-
     }
 
     private void uploadFile(final Uri pdfUri)//,String filen,String filed
@@ -1362,6 +1361,10 @@ public class UploadActivity extends AppCompatActivity {
                         RadioButton selectSub = findViewById(rg_sub.getCheckedRadioButtonId());
                         String subChosen = selectSub.getText().toString();
                         String multipleBrSem = branchChosen + "_" + subChosen;
+                        RadioButton selectType = findViewById(rg_type.getCheckedRadioButtonId());
+                        String typeChosen = selectType.getText().toString();
+                        if (typeChosen.equals("PYQ"))
+                            multipleBrSem = branchChosen + "_" + subChosen + "_" + typeChosen;
 
 
                         Uploads upload = new Uploads(filen, filed, url, branchChosen, semChosen, subChosen, multipleBrSem);
