@@ -1,10 +1,13 @@
 package com.example.kev.revanotes;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.Window;
 import android.view.WindowManager;
 
@@ -46,5 +49,28 @@ public class MainActivity extends AppCompatActivity {
         mainAdapter = new MainAdapter(this, branchList);
         recyclerView.setAdapter(mainAdapter);
 
+    }
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.main_menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        switch (item.getItemId()) {
+            case R.id.item1:
+                //Toast.makeText(getApplicationContext(),"This works",Toast.LENGTH_SHORT).show();
+                Intent intent2 = new Intent(MainActivity.this, ContactUs.class);
+                startActivity(intent2);
+                break;
+
+        }
+
+        return super.onOptionsItemSelected(item);
     }
 }
