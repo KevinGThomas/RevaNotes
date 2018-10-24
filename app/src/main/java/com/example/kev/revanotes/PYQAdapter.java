@@ -9,7 +9,9 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -50,11 +52,15 @@ public class PYQAdapter extends RecyclerView.Adapter<PYQAdapter.ViewHolder>{
         this.filesub = filesub;
     }
 
+
+
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 
+        //View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.fragment_pyq_adapter, parent, false);
         View view = LayoutInflater.from(context).inflate(R.layout.fragment_pyq_adapter, parent, false);
+
         return new ViewHolder(view);
 
     }
@@ -63,6 +69,8 @@ public class PYQAdapter extends RecyclerView.Adapter<PYQAdapter.ViewHolder>{
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         holder.nameOfFile.setText(filename.get(position));
         holder.descOfFile.setText(filedesc.get(position));
+        holder.buttonView.setText("VIEW");
+
 
     }
 
@@ -74,15 +82,35 @@ public class PYQAdapter extends RecyclerView.Adapter<PYQAdapter.ViewHolder>{
     public class ViewHolder extends RecyclerView.ViewHolder {
 
         TextView nameOfFile, descOfFile;
+        Button buttonView;
 
-        public ViewHolder(View itemView) {
+        public ViewHolder(final View itemView) {
             super(itemView);
+
             nameOfFile = itemView.findViewById(R.id.PYQCardText);
             descOfFile = itemView.findViewById(R.id.PYQCardDesc);
+            buttonView =itemView.findViewById(R.id.PYQView);
+            /*buttonView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Toast.makeText(context,"Reached here",Toast.LENGTH_SHORT).show();
+                    v=itemView.getRootView();
+                    int position = recyclerView.getChildLayoutPosition(v);
+                    Intent intent = new Intent();
+                    intent.setType(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse(urls.get(position)));
+                    Activity activity = (Activity) context;
+                    context.startActivity(intent);
+                    activity.overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
+                }
+            });*/
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
+                    //Toast.makeText(context,"Reached here",Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(context,v.toString(),Toast.LENGTH_SHORT).show();
                     int position = recyclerView.getChildLayoutPosition(v);
+
                     Intent intent = new Intent();
                     intent.setType(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(urls.get(position)));

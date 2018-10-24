@@ -162,6 +162,7 @@ public class PYQFragment extends Fragment {
         recyclerView = rootView.findViewById(R.id.recycler_view_pyq);
 
         recyclerView.setLayoutManager(new LinearLayoutManager(PYQFragment.this.getActivity()));
+        recyclerView.addItemDecoration(new SimpleDividerItemDecoration(this.getActivity()));
         PYQAdapter pyqAdapter = new PYQAdapter(recyclerView, PYQFragment.this.getActivity(), new ArrayList<String>(), new ArrayList<String>(), new ArrayList<String>(), new ArrayList<String>(), new ArrayList<String>(), new ArrayList<String>());
         recyclerView.setAdapter(pyqAdapter);
 

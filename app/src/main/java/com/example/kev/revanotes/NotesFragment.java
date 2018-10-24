@@ -162,6 +162,7 @@ public class NotesFragment extends Fragment {
         recyclerView = rootView.findViewById(R.id.recycler_view_notes);
 
         recyclerView.setLayoutManager(new LinearLayoutManager(NotesFragment.this.getActivity()));
+        recyclerView.addItemDecoration(new SimpleDividerItemDecoration(this.getActivity()));
         NotesAdapter notesAdapter = new NotesAdapter(recyclerView, NotesFragment.this.getActivity(), new ArrayList<String>(), new ArrayList<String>(), new ArrayList<String>(), new ArrayList<String>(), new ArrayList<String>(), new ArrayList<String>());
         recyclerView.setAdapter(notesAdapter);
 

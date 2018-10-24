@@ -5,14 +5,26 @@ import android.app.DownloadManager;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
+import android.os.Environment;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.storage.FileDownloadTask;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
+
+import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
+
+import static android.content.Context.MODE_WORLD_WRITEABLE;
 
 public class NotesAdapter extends RecyclerView.Adapter<NotesAdapter.ViewHolder> {
 
@@ -55,7 +67,10 @@ public class NotesAdapter extends RecyclerView.Adapter<NotesAdapter.ViewHolder> 
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 
+
+
         View view = LayoutInflater.from(context).inflate(R.layout.fragment_notes_adapter, parent, false);
+        //return new NotesAdapter.ViewHolder(view);
         return new ViewHolder(view);
 
     }
@@ -75,12 +90,14 @@ public class NotesAdapter extends RecyclerView.Adapter<NotesAdapter.ViewHolder> 
     public class ViewHolder extends RecyclerView.ViewHolder {
 
         TextView nameOfFile, descOfFile;
+        Button buttonView;
 
         public ViewHolder(View itemView) {
             super(itemView);
             nameOfFile = itemView.findViewById(R.id.NotesCardText);
             descOfFile = itemView.findViewById(R.id.NotesCardDesc);
-            itemView.setOnClickListener(new View.OnClickListener() {
+            buttonView =itemView.findViewById(R.id.NotesView);
+            buttonView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     int position = recyclerView.getChildLayoutPosition(v);
@@ -90,7 +107,32 @@ public class NotesAdapter extends RecyclerView.Adapter<NotesAdapter.ViewHolder> 
                     //DownloadManager.Request request = new DownloadManager.Request(uri);
                     //request.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED);
                     //request.setDestinationInExternalFilesDir(context, "test", filename.get(position) + ".pdf");
-                    Intent intent = new Intent();
+
+                    /*FirebaseStorage storage = FirebaseStorage.getInstance();
+
+                    StorageReference httpsReference = storage.getReferenceFromUrl(urls.get(position));
+                    File dir = new File(Environment.getExternalStorageDirectory() + "/Download/RevaNotes/");
+                    dir.mkdirs(); // creates needed dirs
+                    File localFile = null;
+                    try {
+                        localFile = File.createTempFile("Example", "pdf", Environment.getExternalStorageDirectory());
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+
+                    httpsReference.getFile(localFile).addOnSuccessListener(new OnSuccessListener<FileDownloadTask.TaskSnapshot>() {
+                        @Override
+                        public void onSuccess(FileDownloadTask.TaskSnapshot taskSnapshot) {
+                            // Local temp file has been created
+                        }
+                    }).addOnFailureListener(new OnFailureListener() {
+                        @Override
+                        public void onFailure(@NonNull Exception exception) {
+                            // Handle any errors
+                        }
+                    });*/
+
+                   Intent intent = new Intent();
                     intent.setType(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(urls.get(position)));
                     Activity activity = (Activity) context;
