@@ -97,7 +97,7 @@ public class NotesAdapter extends RecyclerView.Adapter<NotesAdapter.ViewHolder> 
             nameOfFile = itemView.findViewById(R.id.NotesCardText);
             descOfFile = itemView.findViewById(R.id.NotesCardDesc);
             buttonView =itemView.findViewById(R.id.NotesView);
-            buttonView.setOnClickListener(new View.OnClickListener() {
+            itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     int position = recyclerView.getChildLayoutPosition(v);

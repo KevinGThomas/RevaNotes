@@ -44,6 +44,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:enabled="false"
+            android:visibility="gone"
             android:background="@color/colorPrimary"
             android:textColor="@color/color_white"
             android:layout_alignParentTop="true"

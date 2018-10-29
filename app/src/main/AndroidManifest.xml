@@ -21,11 +21,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".UploadActivity"
@@ -45,7 +41,14 @@
             android:label="@string/title_activity_display_tabs"
             android:theme="@style/AppTheme" />
         <activity android:name=".ContactUs" />
-        <activity android:name=".ContactAdapter"></activity>
+        <activity android:name=".ContactAdapter" />
+        <activity android:name=".HomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
