@@ -1,10 +1,12 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:visibility="invisible"
     tools:context="com.example.kev.revanotes.DisplayTabs">
-    <item android:id="@+id/item1"
+    <item
+        android:id="@+id/item1"
+        android:checkable="false"
+        android:enabled="true"
         android:title="Upload File"
-        app:showAsAction="never">
-
-    </item>
+        app:showAsAction="never"></item>
 </menu>
