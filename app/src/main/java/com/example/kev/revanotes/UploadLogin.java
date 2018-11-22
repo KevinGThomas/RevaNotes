@@ -26,7 +26,7 @@ public class UploadLogin extends AppCompatActivity {
             public void onClick(View v) {
                 uname = username.getText().toString();
                 pword = password.getText().toString();
-                if (uname.equals("harsha_v_mnopq") && pword.equals("peacebro")) {
+                if (uname.equals(Credentials.username) && pword.equals(Credentials.password)) {
                     Intent intent = new Intent(UploadLogin.this, UploadActivity.class);
                     startActivity(intent);
                 }
