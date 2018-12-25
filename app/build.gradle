@@ -6,7 +6,7 @@ android {
     }
     compileSdkVersion 27
     defaultConfig {
-        applicationId "com.example.kev.revanotes"
+        applicationId "com.kevharsha.kev.revanotes"
         minSdkVersion 21
         targetSdkVersion 27
         versionCode 1
