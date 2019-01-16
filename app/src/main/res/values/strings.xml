@@ -310,22 +310,14 @@
     <string name="EC_5_Sub15">Digital signal Processor Architecture</string>
     <string name="EC_5_Sub16">Mechatronics</string>
 
-    <string name="EC_6_Sub1">Antenna and wave Propagation</string>
-    <string name="EC_6_Sub2">CMOS VLSI Circuits</string>
-    <string name="EC_6_Sub3">Computer Communication and Networks(I)</string>
-    <string name="EC_6_Sub4">Embedded Systems</string>
-    <string name="EC_6_Sub5">Relational Data Base Management System</string>
-    <string name="EC_6_Sub6">Image Processing</string>
-    <string name="EC_6_Sub7">Machine Learning and Deep Learning</string>
-    <string name="EC_6_Sub8">Real Time Systems</string>
-    <string name="EC_6_Sub9">Java Programming</string>
-    <string name="EC_6_Sub10">Adaptive Filters</string>
-    <string name="EC_6_Sub11">Project Management</string>
-    <string name="EC_6_Sub12">Component Engineering</string>
-    <string name="EC_6_Sub13">MEMS</string>
-    <string name="EC_6_Sub14">Web Programming</string>
-    <string name="EC_6_Sub15">Information Theory and Coding</string>
-    <string name="EC_6_Sub16">Alternate Engineering</string>
+    <string name="EC_6_Sub1">Spread Spectrum Communication</string>
+    <string name="EC_6_Sub2">Data Mining</string>
+    <string name="EC_6_Sub3">Java Programming</string>
+    <string name="EC_6_Sub4">Optical Fiber Communication</string>
+    <string name="EC_6_Sub5">Database Management Systems</string>
+    <string name="EC_6_Sub6">CMOS VLSI</string>
+    <string name="EC_6_Sub7">Digital Communication</string>
+    <string name="EC_6_Sub8">Antennas and Wave Propogation</string>
 
     <string name="EC_7_Sub1">IOT and Cyber physical systems</string>
     <string name="EC_7_Sub2">Analog Mixed Mode VLSI</string>
@@ -343,14 +335,12 @@
     <string name="EC_7_Sub14">Reliability Engineering</string>
     <string name="EC_7_Sub15">Embedded Systems</string>
 
-    <string name="EC_8_Sub1">Low power VLSI</string>
-    <string name="EC_8_Sub2">Parallel Processing</string>
-    <string name="EC_8_Sub3">Ad-hoc Networks</string>
-    <string name="EC_8_Sub4">Avionics</string>
-    <string name="EC_8_Sub5">Digital Testing and Testability</string>
-    <string name="EC_8_Sub6">Pervasive and Ubiquitous Computing</string>
-    <string name="EC_8_Sub7">Network Security</string>
-    <string name="EC_8_Sub8">Radar and Navigational Aids</string>
+    <string name="EC_8_Sub1">Automotive Electronic Systems</string>
+    <string name="EC_8_Sub2">Big Data Analytics</string>
+    <string name="EC_8_Sub3">Cryptography and Network Security</string>
+    <string name="EC_8_Sub4">Grid Computing</string>
+    <string name="EC_8_Sub5">Multimedia communications and Networks</string>
+    <string name="EC_8_Sub6">Wireless Communication and Networking</string>
 
     <string name="Civil_1_Sub1">Differential Equations and Linear Algebra</string>
     <string name="Civil_1_Sub2">Applied Physics</string>
@@ -358,12 +348,12 @@
     <string name="Civil_1_Sub4">Building Materials</string>
     <string name="Civil_1_Sub5">Technical English-1</string>
 
-    <string name="Civil_2_Sub1">Vector Calculus and Partial Differential Equations</string>
-    <string name="Civil_2_Sub2">Applied Chemistry</string>
-    <string name="Civil_2_Sub3">Basics of Electrical and Electronics Engineering</string>
-    <string name="Civil_2_Sub4">Engineering Mechanics</string>
-    <string name="Civil_2_Sub5">Building Construction </string>
-    <string name="Civil_2_Sub6">Technical English-II</string>
+    <string name="Civil_2_Sub1">Applied Traffic Engineering</string>
+    <string name="Civil_2_Sub2">Pavement Analysis and Design</string>
+    <string name="Civil_2_Sub3">Urban Transport Planning</string>
+    <string name="Civil_2_Sub4">Highway Economics and Finance</string>
+    <string name="Civil_2_Sub5">Pavement Evaluation and Management System</string>
+    <string name="Civil_2_Sub6">Highway Construction and Maintenance</string>
 
     <string name="Civil_3_Sub1">Laplace Transform and Fourier series</string>
     <string name="Civil_3_Sub2">Strength of Materials</string>
@@ -372,15 +362,12 @@
     <string name="Civil_3_Sub5">Concrete Technology</string>
     <string name="Civil_3_Sub6">Constitution of India and Professional Ethics</string>
 
-    <string name="Civil_4_Sub1">Probability and Sampling Theory</string>
-    <string name="Civil_4_Sub2">Structural Analysis</string>
-    <string name="Civil_4_Sub3">Hydrology and Irrigation Engineering</string>
-    <string name="Civil_4_Sub4">Water and Waste Water Engineering</string>
-    <string name="Civil_4_Sub5">Highway Engineering</string>
-    <string name="Civil_4_Sub6">Construction Project Management</string>
-    <string name="Civil_4_Sub7">Rural Infrastructure development</string>
-    <string name="Civil_4_Sub8">Alternative Building materials</string>
-    <string name="Civil_4_Sub9">Advanced Surveying</string>
+    <string name="Civil_4_Sub1">Engineering Mathematics IV</string>
+    <string name="Civil_4_Sub2">Water Supply and Sanitary Engineering</string>
+    <string name="Civil_4_Sub3">Structural Analysis</string>
+    <string name="Civil_4_Sub4">RCC Design of Structures</string>
+    <string name="Civil_4_Sub5">Railways, Airways, Waterways and Tunnels</string>
+    <string name="Civil_4_Sub6">Hydrology and Irrigation Engineering</string>
 
     <string name="Civil_5_Sub1">Design of RC structural Elements</string>
     <string name="Civil_5_Sub2">Basic Geotechnical Engineering</string>
@@ -398,18 +385,20 @@
     <string name="Civil_5_Sub14">Renewable Energy</string>
     <string name="Civil_5_Sub15">Non Destructive Testing Methods</string>
 
-    <string name="Civil_6_Sub1">Design of Steel Structures</string>
-    <string name="Civil_6_Sub2">Applied Geotechnical Engineering</string>
-    <string name="Civil_6_Sub3">Estimating, Costing and Valuation</string>
-    <string name="Civil_6_Sub4">Design of Bridge Structures</string>
-    <string name="Civil_6_Sub5">Repair and Rehabilitation of Structures</string>
-    <string name="Civil_6_Sub6">Air and Noise Pollution</string>
-    <string name="Civil_6_Sub7">Pavement Design and construction</string>
-    <string name="Civil_6_Sub8">Design of Hydraulic Structures</string>
-    <string name="Civil_6_Sub9">Design of Masonry Structures</string>
-    <string name="Civil_6_Sub10">Intelligent Transport System</string>
-    <string name="Civil_6_Sub11">Ground Improvement Techniques</string>
-    <string name="Civil_6_Sub12">Disaster Management and Mitigation</string>
+    <string name="Civil_6_Sub1">Steel Structures</string>
+    <string name="Civil_6_Sub2">Prestressed Concrete and Prefabricated Structures</string>
+    <string name="Civil_6_Sub3">Design of Tall Structures</string>
+    <string name="Civil_6_Sub4">Advanced Geotechnical Engineering</string>
+    <string name="Civil_6_Sub5">Pavement Materials and Analysis</string>
+    <string name="Civil_6_Sub6">Applications of GPS</string>
+    <string name="Civil_6_Sub7">Matrix Methods of Analysis</string>
+    <string name="Civil_6_Sub8">Ground Improvement Techniques</string>
+    <string name="Civil_6_Sub9">Traffic Engineering</string>
+    <string name="Civil_6_Sub10">Open Channel Hydraulics</string>
+    <string name="Civil_6_Sub11">Theory of Elasticity</string>
+    <string name="Civil_6_Sub12">Hydraulic Machinery</string>
+    <string name="Civil_6_Sub13">Occupational Hazard and Industrial Safety</string>
+    <string name="Civil_6_Sub14">Basics of Structural Dynamics</string>
 
     <string name="Civil_7_Sub1">Financial Management and Entrepreneurship</string>
     <string name="Civil_7_Sub2">Solid Waste Management</string>

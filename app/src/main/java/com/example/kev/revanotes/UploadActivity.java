@@ -615,18 +615,12 @@ public class UploadActivity extends AppCompatActivity {
                     subject4.setText(R.string.Civil_4_Sub4);
                     subject5.setText(R.string.Civil_4_Sub5);
                     subject6.setText(R.string.Civil_4_Sub6);
-                    subject7.setText(R.string.Civil_4_Sub7);
-                    subject8.setText(R.string.Civil_4_Sub8);
-                    subject9.setText(R.string.Civil_4_Sub9);
                     subject1.setVisibility(View.VISIBLE);
                     subject2.setVisibility(View.VISIBLE);
                     subject3.setVisibility(View.VISIBLE);
                     subject4.setVisibility(View.VISIBLE);
                     subject5.setVisibility(View.VISIBLE);
                     subject6.setVisibility(View.VISIBLE);
-                    subject7.setVisibility(View.VISIBLE);
-                    subject8.setVisibility(View.VISIBLE);
-                    subject9.setVisibility(View.VISIBLE);
                 }
             }
         });
@@ -900,14 +894,6 @@ public class UploadActivity extends AppCompatActivity {
                     subject6.setText(R.string.EC_6_Sub6);
                     subject7.setText(R.string.EC_6_Sub7);
                     subject8.setText(R.string.EC_6_Sub8);
-                    subject9.setText(R.string.EC_6_Sub9);
-                    subject10.setText(R.string.EC_6_Sub10);
-                    subject11.setText(R.string.EC_6_Sub11);
-                    subject12.setText(R.string.EC_6_Sub12);
-                    subject13.setText(R.string.EC_6_Sub13);
-                    subject14.setText(R.string.EC_6_Sub14);
-                    subject15.setText(R.string.EC_6_Sub15);
-                    subject16.setText(R.string.EC_6_Sub16);
                     subject1.setVisibility(View.VISIBLE);
                     subject2.setVisibility(View.VISIBLE);
                     subject3.setVisibility(View.VISIBLE);
@@ -916,14 +902,6 @@ public class UploadActivity extends AppCompatActivity {
                     subject6.setVisibility(View.VISIBLE);
                     subject7.setVisibility(View.VISIBLE);
                     subject8.setVisibility(View.VISIBLE);
-                    subject9.setVisibility(View.VISIBLE);
-                    subject10.setVisibility(View.VISIBLE);
-                    subject11.setVisibility(View.VISIBLE);
-                    subject12.setVisibility(View.VISIBLE);
-                    subject13.setVisibility(View.VISIBLE);
-                    subject14.setVisibility(View.VISIBLE);
-                    subject15.setVisibility(View.VISIBLE);
-                    subject16.setVisibility(View.VISIBLE);
                 } else if (BranchChosen.equals(getString(R.string.Civil))) {
                     for (int i = 0; i < 20; i++) {
                         TextView tv = (TextView) findViewById(textViews[i]);
@@ -941,6 +919,8 @@ public class UploadActivity extends AppCompatActivity {
                     subject10.setText(R.string.Civil_6_Sub10);
                     subject11.setText(R.string.Civil_6_Sub11);
                     subject12.setText(R.string.Civil_6_Sub12);
+                    subject13.setText(R.string.Civil_6_Sub13);
+                    subject14.setText(R.string.Civil_6_Sub14);
                     subject1.setVisibility(View.VISIBLE);
                     subject2.setVisibility(View.VISIBLE);
                     subject3.setVisibility(View.VISIBLE);
@@ -953,6 +933,8 @@ public class UploadActivity extends AppCompatActivity {
                     subject10.setVisibility(View.VISIBLE);
                     subject11.setVisibility(View.VISIBLE);
                     subject12.setVisibility(View.VISIBLE);
+                    subject13.setVisibility(View.VISIBLE);
+                    subject14.setVisibility(View.VISIBLE);
                 }
             }
         });
@@ -1204,16 +1186,12 @@ public class UploadActivity extends AppCompatActivity {
                     subject4.setText(R.string.EC_8_Sub4);
                     subject5.setText(R.string.EC_8_Sub5);
                     subject6.setText(R.string.EC_8_Sub6);
-                    subject7.setText(R.string.EC_8_Sub7);
-                    subject8.setText(R.string.EC_8_Sub8);
                     subject1.setVisibility(View.VISIBLE);
                     subject2.setVisibility(View.VISIBLE);
                     subject3.setVisibility(View.VISIBLE);
                     subject4.setVisibility(View.VISIBLE);
                     subject5.setVisibility(View.VISIBLE);
                     subject6.setVisibility(View.VISIBLE);
-                    subject7.setVisibility(View.VISIBLE);
-                    subject8.setVisibility(View.VISIBLE);
                 } else if (BranchChosen.equals(getString(R.string.Civil))) {
                     for (int i = 0; i < 20; i++) {
                         TextView tv = (TextView) findViewById(textViews[i]);
