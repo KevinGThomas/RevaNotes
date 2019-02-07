@@ -90,11 +90,12 @@
     <string name="CS_7_Sub17">Cloud Security</string>
     <string name="CS_7_Sub18">Compiler Design</string>
 
-    <string name="CS_8_Sub1">Advanced Web Technology</string>
-    <string name="CS_8_Sub2">Ethical Hacking and IT Security Evaluation</string>
-    <string name="CS_8_Sub3">Cognitive Science and Computing</string>
-    <string name="CS_8_Sub4">Introduction to Natural Language Processing</string>
-    <string name="CS_8_Sub5">Program Analysis</string>
+    <string name="CS_8_Sub1">Storage Area Networks</string>
+    <string name="CS_8_Sub2">Mobile Computing and Application Development</string>
+    <string name="CS_8_Sub3">User Interface Design and Development</string>
+    <string name="CS_8_Sub4">Data Analytics Tools</string>
+    <string name="CS_8_Sub5">System Modeling and simulation</string>
+    <string name="CS_8_Sub6">C# and .Net</string>
 
     <string name="Mech_1_Sub1">Calculus</string>
     <string name="Mech_1_Sub2">Applied Chemistry</string>

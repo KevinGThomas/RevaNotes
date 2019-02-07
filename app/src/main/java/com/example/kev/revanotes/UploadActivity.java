@@ -1134,11 +1134,13 @@ public class UploadActivity extends AppCompatActivity {
                     subject3.setText(R.string.CS_8_Sub3);
                     subject4.setText(R.string.CS_8_Sub4);
                     subject5.setText(R.string.CS_8_Sub5);
+                    subject6.setText(R.string.CS_8_Sub6);
                     subject1.setVisibility(View.VISIBLE);
                     subject2.setVisibility(View.VISIBLE);
                     subject3.setVisibility(View.VISIBLE);
                     subject4.setVisibility(View.VISIBLE);
                     subject5.setVisibility(View.VISIBLE);
+                    subject6.setVisibility(View.VISIBLE);
                 } else if (BranchChosen.equals(getString(R.string.Mech))) {
                     for (int i = 0; i < 20; i++) {
                         TextView tv = (TextView) findViewById(textViews[i]);

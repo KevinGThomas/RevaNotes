@@ -162,11 +162,12 @@ public class SubjectActivity extends AppCompatActivity {
                 subList.add(new Subject(18, getString(R.string.CS_7_Sub18), "CD"));
                 //subList.add(new Subject(1, "Mathematics",""));
             } else if (semester.equals(getString(R.string.Eighth))) {
-                subList.add(new Subject(1, getString(R.string.CS_8_Sub1), "AWT"));
-                subList.add(new Subject(2, getString(R.string.CS_8_Sub2), "EH&ITSE"));
-                subList.add(new Subject(3, getString(R.string.CS_8_Sub3), "CSC"));
-                subList.add(new Subject(4, getString(R.string.CS_8_Sub4), "NLP"));
-                subList.add(new Subject(5, getString(R.string.CS_8_Sub5), "PA"));
+                subList.add(new Subject(1, getString(R.string.CS_8_Sub1), "SAN"));
+                subList.add(new Subject(2, getString(R.string.CS_8_Sub2), "MCAD"));
+                subList.add(new Subject(3, getString(R.string.CS_8_Sub3), "UIDD"));
+                subList.add(new Subject(4, getString(R.string.CS_8_Sub4), "DAT"));
+                subList.add(new Subject(5, getString(R.string.CS_8_Sub5), "SMS"));
+                subList.add(new Subject(6, getString(R.string.CS_8_Sub6), "CN"));
                 //subList.add(new Subject(1, "Mathematics",""));
             }
 
