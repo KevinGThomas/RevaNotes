@@ -49,15 +49,13 @@
     <string name="CS_4_Sub5">Finite Automata and Formal Language</string>
     <string name="CS_4_Sub6">System Software</string>
 
-    <string name="CS_5_Sub1">Finite Automata and Formal Languages</string>
-    <string name="CS_5_Sub2">Python for Data Analysis</string>
-    <string name="CS_5_Sub3">Computer Networks</string>
-    <string name="CS_5_Sub4">Operating Systems</string>
-    <string name="CS_5_Sub5">Unix System Programming</string>
-    <string name="CS_5_Sub6">Advanced DBMS</string>
-    <string name="CS_5_Sub7">Introduction to Robotics</string>
-    <string name="CS_5_Sub8">High Performance Computing</string>
-    <string name="CS_5_Sub9">Differential and Difference equations</string>
+    <string name="CS_5_Sub1">Operating Systems and Unix Internals</string>
+    <string name="CS_5_Sub2">Object Oriented Programming using C++</string>
+    <string name="CS_5_Sub3">Database Management System</string>
+    <string name="CS_5_Sub4">Software Ethics and Project Management</string>
+    <string name="CS_5_Sub5">Computer Network Concepts and Protocols</string>
+    <string name="CS_5_Sub6">Programming Languages and Compilers</string>
+    <string name="CS_5_Sub7">Object Oriented Modelling and Design</string>
 
     <string name="CS_6_Sub1">Software Engineering and Testing</string>
     <string name="CS_6_Sub2">Virtualization and Cloud Computing</string>
@@ -71,24 +69,11 @@
     <string name="CS_6_Sub10">Programming with JAVA</string>
 
 
-    <string name="CS_7_Sub1">Web Application Development</string>
-    <string name="CS_7_Sub2">Cryptography and Network Security</string>
-    <string name="CS_7_Sub3">Advanced Storage Area Networks</string>
-    <string name="CS_7_Sub4">Network Programming</string>
-    <string name="CS_7_Sub5">C# and .Net</string>
-    <string name="CS_7_Sub6">Data Compression</string>
-    <string name="CS_7_Sub7">Data Analytics using R</string>
-    <string name="CS_7_Sub8">Deep Learning</string>
-    <string name="CS_7_Sub9">Multimedia Computing and  Networks</string>
-    <string name="CS_7_Sub10">Business  Intelligence and Process Management</string>
-    <string name="CS_7_Sub11">Human Computer Interaction</string>
-    <string name="CS_7_Sub12">Computer Graphics and Animation</string>
-    <string name="CS_7_Sub13">Software Defined Networks and Network Function Virtualization</string>
-    <string name="CS_7_Sub14">E-Commerce</string>
-    <string name="CS_7_Sub15">Big Data Analytics</string>
-    <string name="CS_7_Sub16">Block Chain Technology</string>
-    <string name="CS_7_Sub17">Cloud Security</string>
-    <string name="CS_7_Sub18">Compiler Design</string>
+    <string name="CS_7_Sub1">Machine Learning and Data Analytics</string>
+    <string name="CS_7_Sub2">Big Data and Hadoop</string>
+    <string name="CS_7_Sub3">Pattern Recognition</string>
+    <string name="CS_7_Sub4">Web Technology</string>
+    <string name="CS_7_Sub5">Programming with Python</string>
 
     <string name="CS_8_Sub1">Storage Area Networks</string>
     <string name="CS_8_Sub2">Mobile Computing and Application Development</string>
@@ -113,11 +98,11 @@
     <string name="Mech_2_Sub7">Technical English-II</string>
 
     <string name="Mech_3_Sub1">Numerical Methods and Probability</string>
-    <string name="Mech_3_Sub2">Mechanics of Materials</string>
-    <string name="Mech_3_Sub3">Engineering Thermodynamics</string>
-    <string name="Mech_3_Sub4">Fluids Mechanics and Fluid Machinery</string>
+    <string name="Mech_3_Sub2">Strength of Materials</string>
+    <string name="Mech_3_Sub3">Basic Thermodynamics</string>
+    <string name="Mech_3_Sub4">Fluid Machinery</string>
     <string name="Mech_3_Sub5">Mechanical Measurements and Metrology</string>
-    <string name="Mech_3_Sub6">Theory of Metal Cutting and Machine Tools</string>
+    <string name="Mech_3_Sub6">Computer Aided Machine Drawing</string>
 
     <string name="Mech_4_Sub1">Mathematics IV</string>
     <string name="Mech_4_Sub2">Mechanical Measurements and Metrology</string>
@@ -126,20 +111,15 @@
     <string name="Mech_4_Sub5">Manufacturing Technology II</string>
     <string name="Mech_4_Sub6">Fluid Mechanics</string>
 
-    <string name="Mech_5_Sub1">Design of Machine Elements</string>
-    <string name="Mech_5_Sub2">Turbo Machines</string>
-    <string name="Mech_5_Sub3">Power Plant Engineering</string>
-    <string name="Mech_5_Sub4">Composite Materials</string>
-    <string name="Mech_5_Sub5">Hydraulics and Pneumatics</string>
-    <string name="Mech_5_Sub6">Production Management</string>
-    <string name="Mech_5_Sub7">Database Management System</string>
-    <string name="Mech_5_Sub8">Renewable Energy Resources</string>
-    <string name="Mech_5_Sub9">Theory of Elasticity</string>
-    <string name="Mech_5_Sub10">Non Traditional Machining</string>
-    <string name="Mech_5_Sub11">Materials Management</string>
-    <string name="Mech_5_Sub12">Java programming</string>
-    <string name="Mech_5_Sub13">Dynamics of Machines</string>
-    <string name="Mech_5_Sub14">Metal Forming Process</string>
+    <string name="Mech_5_Sub1">Finite Element Method</string>
+    <string name="Mech_5_Sub2">Heat and Mass Transfer</string>
+    <string name="Mech_5_Sub3">Machine Design I</string>
+    <string name="Mech_5_Sub4">Hydraulics and Pneumatics</string>
+    <string name="Mech_5_Sub5">Principles of Management</string>
+    <string name="Mech_5_Sub6">Internal Combustion Engine</string>
+    <string name="Mech_5_Sub7">Processing of Materials in Manufacturing</string>
+    <string name="Mech_5_Sub8">Statistical Quality Control</string>
+    <string name="Mech_5_Sub9">Power Plant Engineering</string>
 
     <string name="Mech_6_Sub1">Finite Element Method</string>
     <string name="Mech_6_Sub2">Heat and Mass Transfer</string>
@@ -152,21 +132,17 @@
     <string name="Mech_6_Sub9">Mechatronics and Microprocessor</string>
     <string name="Mech_6_Sub10">Industrial Engineering</string>
 
-    <string name="Mech_7_Sub1">Finite Element Methods</string>
-    <string name="Mech_7_Sub2">Control Engineering</string>
-    <string name="Mech_7_Sub3">Engineering Economics and Financial Management</string>
+    <string name="Mech_7_Sub1">Control Systems</string>
+    <string name="Mech_7_Sub2">Mechanical Vibrations</string>
+    <string name="Mech_7_Sub3">Operation Research</string>
     <string name="Mech_7_Sub4">Cryogenic Engineering</string>
-    <string name="Mech_7_Sub5">Tribology and Bearing Design</string>
-    <string name="Mech_7_Sub6">Automation in Manufacturing</string>
-    <string name="Mech_7_Sub7">Non Destructive Testing</string>
-    <string name="Mech_7_Sub8">Safety Engineering</string>
-    <string name="Mech_7_Sub9">Computational Fluid Dynamics</string>
-    <string name="Mech_7_Sub10">Mechanical Vibrations</string>
-    <string name="Mech_7_Sub11">Operation Research</string>
-    <string name="Mech_7_Sub12">Gas Turbines and Jet Propulsion</string>
-    <string name="Mech_7_Sub13">Data Analytics using R- Programming</string>
-    <string name="Mech_7_Sub14">Project Management</string>
-    <string name="Mech_7_Sub15">Automobile Engineering</string>
+    <string name="Mech_7_Sub5">Product Design and Development</string>
+    <string name="Mech_7_Sub6">Engineering Economics and Financial Management</string>
+    <string name="Mech_7_Sub7">Theory of Plasticity</string>
+    <string name="Mech_7_Sub8">Computational Fluid Dynamics</string>
+    <string name="Mech_7_Sub9">Nano Technology and Applications</string>
+    <string name="Mech_7_Sub10">Tribology and Bearing Design</string>
+    <string name="Mech_7_Sub11">Automation in Manufacturing</string>
 
     <string name="Mech_8_Sub1">Safety Measures in Mechanical Engineering</string>
     <string name="Mech_8_Sub2">Automotive Engineering</string>
@@ -209,23 +185,18 @@
     <string name="EE_4_Sub6">Electromagnetic Theory</string>
 
 
-    <string name="EE_5_Sub1">Power System Analysis</string>
-    <string name="EE_5_Sub2">Electromagnetic Theory</string>
-    <string name="EE_5_Sub3">Switch Gear and Protection</string>
-    <string name="EE_5_Sub4">High Voltage Engineering</string>
-    <string name="EE_5_Sub5">Design of Electrical Machines</string>
-    <string name="EE_5_Sub6">Advanced Power Electronics</string>
-    <string name="EE_5_Sub7">VLSI Circuits and Design</string>
-    <string name="EE_5_Sub8">Python Programming</string>
-    <string name="EE_5_Sub9">Operation and Research</string>
-    <string name="EE_5_Sub10">Electric and Hybrid Vehicles</string>
-    <string name="EE_5_Sub11">Digital Image Processing</string>
-    <string name="EE_5_Sub12">Web Programming</string>
-    <string name="EE_5_Sub13">Electrical Power Quality</string>
-    <string name="EE_5_Sub14">Electrical standards and Electrical Safety</string>
-    <string name="EE_5_Sub15">Embedded Systems and IOT</string>
-    <string name="EE_5_Sub16">Artificial Intelligence</string>
-
+    <string name="EE_5_Sub1">Control Engineering</string>
+    <string name="EE_5_Sub2">Transmission and Distribution</string>
+    <string name="EE_5_Sub3">Signals and Systems</string>
+    <string name="EE_5_Sub4">Electrical Machines II</string>
+    <string name="EE_5_Sub5">Electrical Power Utilization</string>
+    <string name="EE_5_Sub6">Electrical Drives</string>
+    <string name="EE_5_Sub7">Digital system design using VHDL</string>
+    <string name="EE_5_Sub8">Computer Networks Concepts and Protocols</string>
+    <string name="EE_5_Sub9">Design of Electrical Machines</string>
+    <string name="EE_5_Sub10">Advanced Power Electronics</string>
+    <string name="EE_5_Sub11">Programmable Logic Controllers</string>
+    <string name="EE_5_Sub12">Data Structures using C++</string>
 
     <string name="EE_6_Sub1">Power System Analysis</string>
     <string name="EE_6_Sub2">High Voltage Engineering</string>
@@ -243,16 +214,12 @@
     <string name="EE_6_Sub14">Programming in JAVA</string>
 
 
-    <string name="EE_7_Sub1">Computer Aided Electrical Drawing</string>
-    <string name="EE_7_Sub2">Advanced Control Engineering</string>
-    <string name="EE_7_Sub3">Electrical Energy Conservation</string>
-    <string name="EE_7_Sub4">Computer Control of Electric drives</string>
-    <string name="EE_7_Sub5">Advanced microcontrollers</string>
-    <string name="EE_7_Sub6">Software testing</string>
-    <string name="EE_7_Sub7">HVDC</string>
-    <string name="EE_7_Sub8">Operation and Control of Power Systems</string>
-    <string name="EE_7_Sub9">Optic Fiber Communications</string>
-    <string name="EE_7_Sub10">Computer Networks Concepts and Protocols</string>
+    <string name="EE_7_Sub1">Computer Aided Power System Analysis and Stability</string>
+    <string name="EE_7_Sub2">CAED</string>
+    <string name="EE_7_Sub3">Power System Protection</string>
+    <string name="EE_7_Sub4">Operating System</string>
+    <string name="EE_7_Sub5">Testing and Commissioning of Electrical Equipment</string>
+    <string name="EE_7_Sub6">Non Conventional Energy Sources</string>
 
     <string name="EE_8_Sub1">Introduction to Flexible AC transmission system</string>
     <string name="EE_8_Sub2">Estimation and Design of Electrical Installation</string>
@@ -266,7 +233,7 @@
     <string name="EC_1_Sub2">Engineering Physics</string>
     <string name="EC_1_Sub3">Elements of Mechanical Engineering</string>
     <string name="EC_1_Sub4">Basic Electrical and Electronics</string>
-    <string name="EC_1_Sub5">Computer Concepts and C Programming (I)</string>
+    <string name="EC_1_Sub5">Computer Concepts and C Programming</string>
     <string name="EC_1_Sub6">Constitution of India and Professional Ethics</string>
     <string name="EC_1_Sub7">Technical English-1</string>
 
@@ -282,10 +249,9 @@
     <string name="EC_3_Sub2">Linear Integrated Circuits</string>
     <string name="EC_3_Sub3">Digital Electronics and VHDL</string>
     <string name="EC_3_Sub4">Signals and Systems(I)</string>
-    <string name="EC_3_Sub5">Network Theory</string>
+    <string name="EC_3_Sub5">Network Analysis</string>
     <string name="EC_3_Sub6">Instrumentation Engineering</string>
-    <string name="EC_3_Sub7">Computer Architecture</string>
-    <string name="EC_3_Sub8">Object Oriented Programming Using C++</string>
+    <string name="EC_3_Sub7">Object Oriented Programming Using C++</string>
 
     <string name="EC_4_Sub1">Engineering  Mathematics-IV</string>
     <string name="EC_4_Sub2">Digital System Design using HDL</string>
@@ -294,22 +260,13 @@
     <string name="EC_4_Sub5">Signals and Systems</string>
     <string name="EC_4_Sub6">Computer Organization and Operating Systems</string>
 
-    <string name="EC_5_Sub1">Digital Communication</string>
-    <string name="EC_5_Sub2">RF and Microwave Engineering</string>
-    <string name="EC_5_Sub3">Digital Signal Processing(I)</string>
-    <string name="EC_5_Sub4">Entrepreneurship innovator skills</string>
-    <string name="EC_5_Sub5">Microelectronics</string>
-    <string name="EC_5_Sub6">UNIX and Operating System</string>
-    <string name="EC_5_Sub7">Optical Fiber Communication</string>
-    <string name="EC_5_Sub8">Research Methodology and IPR</string>
-    <string name="EC_5_Sub9">ARM Processors and applications</string>
-    <string name="EC_5_Sub10">Theory of Algorithms</string>
-    <string name="EC_5_Sub11">Biomedical Signal Processing</string>
-    <string name="EC_5_Sub12">Automotive Electronics</string>
-    <string name="EC_5_Sub13">System Verilog</string>
-    <string name="EC_5_Sub14">Data Mining</string>
-    <string name="EC_5_Sub15">Digital signal Processor Architecture</string>
-    <string name="EC_5_Sub16">Mechatronics</string>
+    <string name="EC_5_Sub1">Entrepreneurship Management and Ethical Practices</string>
+    <string name="EC_5_Sub2">Analog Communication</string>
+    <string name="EC_5_Sub3">Digital Signal Processing</string>
+    <string name="EC_5_Sub4">RF and Microwave Engineering</string>
+    <string name="EC_5_Sub5">Instrumentation and Control Engineering</string>
+    <string name="EC_5_Sub6">Theory of Algorithms and Computer based solutions</string>
+    <string name="EC_5_Sub7">Consumer and Entertainment Electronics</string>
 
     <string name="EC_6_Sub1">Spread Spectrum Communication</string>
     <string name="EC_6_Sub2">Data Mining</string>
@@ -320,21 +277,17 @@
     <string name="EC_6_Sub7">Digital Communication</string>
     <string name="EC_6_Sub8">Antennas and Wave Propogation</string>
 
-    <string name="EC_7_Sub1">IOT and Cyber physical systems</string>
-    <string name="EC_7_Sub2">Analog Mixed Mode VLSI</string>
-    <string name="EC_7_Sub3">Cloud Computing</string>
-    <string name="EC_7_Sub4">Wireless Communication</string>
-    <string name="EC_7_Sub5">Robotics and Automation</string>
-    <string name="EC_7_Sub6">Software Engineering</string>
-    <string name="EC_7_Sub7">ASIC Design</string>
-    <string name="EC_7_Sub8">Big data and Data Science</string>
-    <string name="EC_7_Sub9">Satellite Communication</string>
-    <string name="EC_7_Sub10">Medical Electronics</string>
-    <string name="EC_7_Sub11">SOC Design</string>
-    <string name="EC_7_Sub12">Grid computing</string>
-    <string name="EC_7_Sub13">Multi Media Communication</string>
-    <string name="EC_7_Sub14">Reliability Engineering</string>
-    <string name="EC_7_Sub15">Embedded Systems</string>
+    <string name="EC_7_Sub1">Information Theory and Coding</string>
+    <string name="EC_7_Sub2">Computer Communication Networks</string>
+    <string name="EC_7_Sub3">Embedded Systems</string>
+    <string name="EC_7_Sub4">Virtualization and Cloud Computing</string>
+    <string name="EC_7_Sub5">Satellite Communication</string>
+    <string name="EC_7_Sub6">Web Programming</string>
+    <string name="EC_7_Sub7">SOC Design</string>
+    <string name="EC_7_Sub8">ASIC Design</string>
+    <string name="EC_7_Sub9">Parallel Processing</string>
+    <string name="EC_7_Sub10">Pervasive and Ubiquitous Computing</string>
+    <string name="EC_7_Sub11">Digital Signal Compression</string>
 
     <string name="EC_8_Sub1">Automotive Electronic Systems</string>
     <string name="EC_8_Sub2">Big Data Analytics</string>
@@ -370,21 +323,18 @@
     <string name="Civil_4_Sub5">Railways, Airways, Waterways and Tunnels</string>
     <string name="Civil_4_Sub6">Hydrology and Irrigation Engineering</string>
 
-    <string name="Civil_5_Sub1">Design of RC structural Elements</string>
-    <string name="Civil_5_Sub2">Basic Geotechnical Engineering</string>
-    <string name="Civil_5_Sub3">Railways, Airways, Waterways and Tunnels</string>
-    <string name="Civil_5_Sub4">Advanced Structural Analysis</string>
-    <string name="Civil_5_Sub5">Traffic Analysis and Design</string>
-    <string name="Civil_5_Sub6">Industrial Waste Water Treatment</string>
-    <string name="Civil_5_Sub7">Fundamentals of Remote Sensing and GIS</string>
-    <string name="Civil_5_Sub8">Structural Dynamics and seismic Analysis</string>
-    <string name="Civil_5_Sub9">Rural Water supply and sanitation</string>
-    <string name="Civil_5_Sub10">Water Resource systems and Management</string>
-    <string name="Civil_5_Sub11">Construction Planning and Equipment</string>
-    <string name="Civil_5_Sub12">Hydraulic Machines</string>
-    <string name="Civil_5_Sub13">Occupational Safety and Health Hazards</string>
-    <string name="Civil_5_Sub14">Renewable Energy</string>
-    <string name="Civil_5_Sub15">Non Destructive Testing Methods</string>
+    <string name="Civil_5_Sub1">Highway Engineering</string>
+    <string name="Civil_5_Sub2">Soil Mechanics and Foundation Engineering</string>
+    <string name="Civil_5_Sub3">Advanced Structural Analysis</string>
+    <string name="Civil_5_Sub4">Industrial Waste Water Treatment</string>
+    <string name="Civil_5_Sub5">Town and country planning</string>
+    <string name="Civil_5_Sub6">Principles of planning and construction management</string>
+    <string name="Civil_5_Sub7">Design of Masonry structures</string>
+    <string name="Civil_5_Sub8">Air and noise pollution</string>
+    <string name="Civil_5_Sub9">Remote sensing and GIS</string>
+    <string name="Civil_5_Sub10">Design of Earthquake Resistant structures</string>
+    <string name="Civil_5_Sub11">Water resources Engineering</string>
+    <string name="Civil_5_Sub12">Non destructive testing</string>
 
     <string name="Civil_6_Sub1">Steel Structures</string>
     <string name="Civil_6_Sub2">Prestressed Concrete and Prefabricated Structures</string>
@@ -401,20 +351,14 @@
     <string name="Civil_6_Sub13">Occupational Hazard and Industrial Safety</string>
     <string name="Civil_6_Sub14">Basics of Structural Dynamics</string>
 
-    <string name="Civil_7_Sub1">Financial Management and Entrepreneurship</string>
-    <string name="Civil_7_Sub2">Solid Waste Management</string>
-    <string name="Civil_7_Sub3">Design of Prestressed and Prefabricated Structures</string>
-    <string name="Civil_7_Sub4">Building Materials and Construction</string>
-    <string name="Civil_7_Sub5">Rainwater Harvesting and Ground Water Recharge</string>
-    <string name="Civil_7_Sub6">Water Supply and Sanitation</string>
-    <string name="Civil_7_Sub7">Earthquake Resistant Design of RC Structures</string>
-    <string name="Civil_7_Sub8">Green Building Technology</string>
-    <string name="Civil_7_Sub9">Geometric Design of Roads</string>
-    <string name="Civil_7_Sub10">Open Channel Hydraulics</string>
-    <string name="Civil_7_Sub11">Numerical Methods in Civil Engineering</string>
-    <string name="Civil_7_Sub12">Earth and Earth Retaining Structures</string>
-    <string name="Civil_7_Sub13">Urban transport and smart city</string>
-    <string name="Civil_7_Sub14">Environmental Assessment Methodologies</string>
+    <string name="Civil_7_Sub1">Solid Waste Management</string>
+    <string name="Civil_7_Sub2">Design of Industrial Structures</string>
+    <string name="Civil_7_Sub3">Pavement Design and Construction</string>
+    <string name="Civil_7_Sub4">Offshore Structures and Coastal Management</string>
+    <string name="Civil_7_Sub5">Ground Water Engineering</string>
+    <string name="Civil_7_Sub6">Highway Geometric Design</string>
+    <string name="Civil_7_Sub7">Urban Transport Planning</string>
+    <string name="Civil_7_Sub8">Construction Equipments</string>
 
     <string name="Civil_8_Sub1">Project Work with Seminar</string>
 
