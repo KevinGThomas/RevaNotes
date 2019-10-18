@@ -36,6 +36,7 @@
         <android.support.design.widget.TabLayout
             android:id="@+id/tabs"
             android:layout_width="match_parent"
+
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             app:tabTextColor="@color/black"
@@ -69,5 +70,11 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <Button
+        android:id="@+id/displayButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/container"/>
 
 </RelativeLayout>

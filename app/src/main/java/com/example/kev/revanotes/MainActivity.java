@@ -69,6 +69,11 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent2 = new Intent(MainActivity.this, ContactUs.class);
                 startActivity(intent2);
                 break;
+            case R.id.item2:
+                //Toast.makeText(getApplicationContext(),"This works",Toast.LENGTH_SHORT).show();
+                Intent intent3 = new Intent(MainActivity.this, HelpActivity.class);
+                startActivity(intent3);
+                break;
 
         }
 

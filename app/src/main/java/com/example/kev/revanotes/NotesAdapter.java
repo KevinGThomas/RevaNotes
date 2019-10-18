@@ -133,8 +133,12 @@ public class NotesAdapter extends RecyclerView.Adapter<NotesAdapter.ViewHolder> 
                     });*/
 
                    Intent intent = new Intent();
-                    intent.setType(Intent.ACTION_VIEW);
-                    intent.setData(Uri.parse(urls.get(position)));
+                    //intent.setType(Intent.ACTION_VIEW);
+                    //intent.setData(Uri.parse(urls.get(position)));
+                    //intent.setType("application/pdf");
+                    intent.setDataAndType(Uri.parse(urls.get(position)),"application/pdf");
+
+                    intent.setPackage("com.google.android.apps.docs");
                     Activity activity = (Activity) context;
                     context.startActivity(intent);
                     activity.overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);

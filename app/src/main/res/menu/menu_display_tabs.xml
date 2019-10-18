@@ -9,4 +9,10 @@
         android:enabled="true"
         android:title="Upload File"
         app:showAsAction="never"></item>
+
+    <item android:id="@+id/item2"
+        android:title="Help"
+        app:showAsAction="never">
+
+    </item>
 </menu>

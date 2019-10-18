@@ -44,7 +44,8 @@ public class ContactUs extends AppCompatActivity {
 
         contactList.add(new Contacts(1, "Kevin George Thomas","Email: kevingt2007@gmail.com",R.drawable.kevin));
         contactList.add(new Contacts(2, "Harsha Vardhan MN","Email: harsa007123@gmail.com",R.drawable.harsha_pic));
-        contactList.add(new Contacts(3, "Prof. Rathan","Email: rathan.muralidhar@gmail.com",R.drawable.rathan_sir));
+        contactList.add(new Contacts(3, "Prof. Surekha Thota", "Email: surekha.thota@reva.edu.in",R.drawable.surekha_pic));
+        contactList.add(new Contacts(4, "Prof. Rathan","Email: rathan.muralidhar@gmail.com",R.drawable.rathan_sir));
 
         contactAdapter = new ContactAdapter(this, contactList);
         recyclerView.setAdapter(contactAdapter);

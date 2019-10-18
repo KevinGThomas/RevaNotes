@@ -112,8 +112,10 @@ public class PYQAdapter extends RecyclerView.Adapter<PYQAdapter.ViewHolder>{
                     int position = recyclerView.getChildLayoutPosition(v);
 
                     Intent intent = new Intent();
-                    intent.setType(Intent.ACTION_VIEW);
-                    intent.setData(Uri.parse(urls.get(position)));
+                    //intent.setType(Intent.ACTION_VIEW);
+                    //intent.setData(Uri.parse(urls.get(position)));
+                    intent.setDataAndType(Uri.parse(urls.get(position)),"application/pdf");
+                    intent.setPackage("com.google.android.apps.docs");
                     Activity activity = (Activity) context;
                     context.startActivity(intent);
                     activity.overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
@@ -122,6 +124,4 @@ public class PYQAdapter extends RecyclerView.Adapter<PYQAdapter.ViewHolder>{
             });
         }
     }
-
-
 }

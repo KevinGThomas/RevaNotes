@@ -119,15 +119,13 @@ public class SubjectActivity extends AppCompatActivity {
                 subList.add(new Subject(6, getString(R.string.CS_4_Sub6), "SS"));
                 //subList.add(new Subject(1, "Mathematics",""));
             } else if (semester.equals(getString(R.string.Fifth))) {
-                subList.add(new Subject(1, getString(R.string.CS_5_Sub1), "FAFL"));
-                subList.add(new Subject(2, getString(R.string.CS_5_Sub2), "PDA"));
-                subList.add(new Subject(3, getString(R.string.CS_5_Sub3), "CN"));
-                subList.add(new Subject(4, getString(R.string.CS_5_Sub4), "OS"));
-                subList.add(new Subject(5, getString(R.string.CS_5_Sub5), "USP"));
-                subList.add(new Subject(6, getString(R.string.CS_5_Sub6), "ADBMS"));
-                subList.add(new Subject(7, getString(R.string.CS_5_Sub7), "IR"));
-                subList.add(new Subject(8, getString(R.string.CS_5_Sub8), "HPC"));
-                subList.add(new Subject(9, getString(R.string.CS_5_Sub9), "DDE"));
+                subList.add(new Subject(1, getString(R.string.CS_5_Sub1), "OSUI"));
+                subList.add(new Subject(2, getString(R.string.CS_5_Sub2), "OOPC"));
+                subList.add(new Subject(3, getString(R.string.CS_5_Sub3), "DBMS"));
+                subList.add(new Subject(4, getString(R.string.CS_5_Sub4), "SEPM"));
+                subList.add(new Subject(5, getString(R.string.CS_5_Sub5), "CNCP"));
+                subList.add(new Subject(6, getString(R.string.CS_5_Sub6), "PLC"));
+                subList.add(new Subject(7, getString(R.string.CS_5_Sub7), "OOMD"));
                 //subList.add(new Subject(1, "Mathematics",""));
             } else if (semester.equals(getString(R.string.Sixth))) {
                 subList.add(new Subject(1, getString(R.string.CS_6_Sub1), "SET"));
@@ -142,24 +140,11 @@ public class SubjectActivity extends AppCompatActivity {
                 subList.add(new Subject(10, getString(R.string.CS_6_Sub10), "JAVA"));
                 //subList.add(new Subject(1, "Mathematics",""));
             } else if (semester.equals(getString(R.string.Seventh))) {
-                subList.add(new Subject(1, getString(R.string.CS_7_Sub1), "WAD"));
-                subList.add(new Subject(2, getString(R.string.CS_7_Sub2), "CNS"));
-                subList.add(new Subject(3, getString(R.string.CS_7_Sub3), "ASAN"));
-                subList.add(new Subject(4, getString(R.string.CS_7_Sub4), "NP"));
-                subList.add(new Subject(5, getString(R.string.CS_7_Sub5), "CAN"));
-                subList.add(new Subject(6, getString(R.string.CS_6_Sub6), "ACI"));
-                subList.add(new Subject(7, getString(R.string.CS_6_Sub7), "CDV"));
-                subList.add(new Subject(8, getString(R.string.CS_7_Sub8), "DL"));
-                subList.add(new Subject(9, getString(R.string.CS_7_Sub9), "MCN"));
-                subList.add(new Subject(10, getString(R.string.CS_7_Sub10), "BIPM"));
-                subList.add(new Subject(11, getString(R.string.CS_7_Sub11), "HCI"));
-                subList.add(new Subject(12, getString(R.string.CS_7_Sub12), "CGA"));
-                subList.add(new Subject(13, getString(R.string.CS_7_Sub13), "SDNNFV"));
-                subList.add(new Subject(14, getString(R.string.CS_7_Sub14), "EC"));
-                subList.add(new Subject(15, getString(R.string.CS_7_Sub15), "BDA"));
-                subList.add(new Subject(16, getString(R.string.CS_7_Sub16), "BCT"));
-                subList.add(new Subject(17, getString(R.string.CS_7_Sub17), "CS"));
-                subList.add(new Subject(18, getString(R.string.CS_7_Sub18), "CD"));
+                subList.add(new Subject(1, getString(R.string.CS_7_Sub1), "MLDA"));
+                subList.add(new Subject(2, getString(R.string.CS_7_Sub2), "BDH"));
+                subList.add(new Subject(3, getString(R.string.CS_7_Sub3), "PR"));
+                subList.add(new Subject(4, getString(R.string.CS_7_Sub4), "WT"));
+                subList.add(new Subject(5, getString(R.string.CS_7_Sub5), "PP"));
                 //subList.add(new Subject(1, "Mathematics",""));
             } else if (semester.equals(getString(R.string.Eighth))) {
                 subList.add(new Subject(1, getString(R.string.CS_8_Sub1), "SAN"));
@@ -175,7 +160,7 @@ public class SubjectActivity extends AppCompatActivity {
         } else if (branch.equals(getString(R.string.Mech))) {
             if (semester.equals(getString(R.string.First))) {
                 subList.add(new Subject(1, getString(R.string.Mech_1_Sub1), "M-1"));
-                subList.add(new Subject(2, getString(R.string.Mech_1_Sub2), "C"));
+                subList.add(new Subject(2, getString(R.string.Mech_1_Sub2), "AC"));
                 subList.add(new Subject(3, getString(R.string.Mech_1_Sub3), "BEE"));
                 subList.add(new Subject(4, getString(R.string.Mech_1_Sub4), "CAED"));
                 subList.add(new Subject(5, getString(R.string.Mech_1_Sub5), "ES"));
@@ -193,11 +178,11 @@ public class SubjectActivity extends AppCompatActivity {
                 //subList.add(new Subject(1, "Mathematics",""));
             } else if (semester.equals(getString(R.string.Third))) {
                 subList.add(new Subject(1, getString(R.string.Mech_3_Sub1), "NMP"));
-                subList.add(new Subject(2, getString(R.string.Mech_3_Sub2), "MM"));
-                subList.add(new Subject(3, getString(R.string.Mech_3_Sub3), "ET"));
-                subList.add(new Subject(4, getString(R.string.Mech_3_Sub4), "FMFM"));
-                subList.add(new Subject(5, getString(R.string.Mech_3_Sub5), "MMM"));
-                subList.add(new Subject(6, getString(R.string.Mech_3_Sub6), "TMCMT"));
+                subList.add(new Subject(2, getString(R.string.Mech_3_Sub2), "SOM"));
+                subList.add(new Subject(3, getString(R.string.Mech_3_Sub3), "BTD"));
+                subList.add(new Subject(4, getString(R.string.Mech_3_Sub4), "FM"));
+                subList.add(new Subject(5, getString(R.string.Mech_3_Sub5), "MSM"));
+                subList.add(new Subject(6, getString(R.string.Mech_3_Sub6), "CAMD"));
                 //subList.add(new Subject(1, "Mathematics",""));
             } else if (semester.equals(getString(R.string.Fourth))) {
                 subList.add(new Subject(1, getString(R.string.Mech_4_Sub1), "M-4"));
@@ -208,20 +193,15 @@ public class SubjectActivity extends AppCompatActivity {
                 subList.add(new Subject(6, getString(R.string.Mech_4_Sub6), "FM"));
                 //subList.add(new Subject(1, "Mathematics",""));
             } else if (semester.equals(getString(R.string.Fifth))) {
-                subList.add(new Subject(1, getString(R.string.Mech_5_Sub1), "DME"));
-                subList.add(new Subject(2, getString(R.string.Mech_5_Sub2), "TM"));
-                subList.add(new Subject(3, getString(R.string.Mech_5_Sub3), "PPE"));
-                subList.add(new Subject(4, getString(R.string.Mech_5_Sub4), "CM"));
-                subList.add(new Subject(5, getString(R.string.Mech_5_Sub5), "HP"));
-                subList.add(new Subject(6, getString(R.string.Mech_5_Sub6), "PM"));
-                subList.add(new Subject(7, getString(R.string.Mech_5_Sub7), "DBMS"));
-                subList.add(new Subject(8, getString(R.string.Mech_5_Sub8), "RER"));
-                subList.add(new Subject(9, getString(R.string.Mech_5_Sub9), "TE"));
-                subList.add(new Subject(10, getString(R.string.Mech_5_Sub10), "NTM"));
-                subList.add(new Subject(11, getString(R.string.Mech_5_Sub11), "MM"));
-                subList.add(new Subject(12, getString(R.string.Mech_5_Sub12), "JP"));
-                subList.add(new Subject(13, getString(R.string.Mech_5_Sub13), "DM"));
-                subList.add(new Subject(14, getString(R.string.Mech_5_Sub14), "MFP"));
+                subList.add(new Subject(1, getString(R.string.Mech_5_Sub1), "FEM"));
+                subList.add(new Subject(2, getString(R.string.Mech_5_Sub2), "HMT"));
+                subList.add(new Subject(3, getString(R.string.Mech_5_Sub3), "MD1"));
+                subList.add(new Subject(4, getString(R.string.Mech_5_Sub4), "HP"));
+                subList.add(new Subject(5, getString(R.string.Mech_5_Sub5), "POM"));
+                subList.add(new Subject(6, getString(R.string.Mech_5_Sub6), "ICE"));
+                subList.add(new Subject(7, getString(R.string.Mech_5_Sub7), "PMM"));
+                subList.add(new Subject(8, getString(R.string.Mech_5_Sub8), "SQC"));
+                subList.add(new Subject(9, getString(R.string.Mech_5_Sub9), "PPE"));
                 //subList.add(new Subject(1, "Mathematics",""));
             } else if (semester.equals(getString(R.string.Sixth))) {
                 subList.add(new Subject(1, getString(R.string.Mech_6_Sub1), "FEM"));
@@ -236,21 +216,17 @@ public class SubjectActivity extends AppCompatActivity {
                 subList.add(new Subject(10, getString(R.string.Mech_6_Sub10), "IE"));
                 //subList.add(new Subject(1, "Mathematics",""));
             } else if (semester.equals(getString(R.string.Seventh))) {
-                subList.add(new Subject(1, getString(R.string.Mech_7_Sub1), "FEM"));
-                subList.add(new Subject(2, getString(R.string.Mech_7_Sub2), "CE"));
-                subList.add(new Subject(3, getString(R.string.Mech_7_Sub3), "EEFM"));
-                subList.add(new Subject(4, getString(R.string.Mech_7_Sub4), "CE"));
-                subList.add(new Subject(5, getString(R.string.Mech_7_Sub5), "TBD"));
-                subList.add(new Subject(6, getString(R.string.Mech_6_Sub6), "MLP"));
-                subList.add(new Subject(7, getString(R.string.Mech_6_Sub7), "RAC"));
-                subList.add(new Subject(8, getString(R.string.Mech_7_Sub8), "SE"));
-                subList.add(new Subject(9, getString(R.string.Mech_7_Sub9), "CFD"));
-                subList.add(new Subject(10, getString(R.string.Mech_7_Sub10), "MV"));
-                subList.add(new Subject(11, getString(R.string.Mech_7_Sub11), "OR"));
-                subList.add(new Subject(12, getString(R.string.Mech_7_Sub12), "GTJP"));
-                subList.add(new Subject(13, getString(R.string.Mech_7_Sub13), "DARP"));
-                subList.add(new Subject(14, getString(R.string.Mech_7_Sub14), "PM"));
-                subList.add(new Subject(15, getString(R.string.Mech_7_Sub15), "AE"));
+                subList.add(new Subject(1, getString(R.string.Mech_7_Sub1), "CS"));
+                subList.add(new Subject(2, getString(R.string.Mech_7_Sub2), "MV"));
+                subList.add(new Subject(3, getString(R.string.Mech_7_Sub3), "OR"));
+                subList.add(new Subject(4, getString(R.string.Mech_7_Sub4), "CRE"));
+                subList.add(new Subject(5, getString(R.string.Mech_7_Sub5), "PDD"));
+                subList.add(new Subject(6, getString(R.string.Mech_7_Sub6), "EEF"));
+                subList.add(new Subject(7, getString(R.string.Mech_7_Sub7), "TOP"));
+                subList.add(new Subject(8, getString(R.string.Mech_7_Sub8), "CFD"));
+                subList.add(new Subject(9, getString(R.string.Mech_7_Sub9), "NTA"));
+                subList.add(new Subject(10, getString(R.string.Mech_7_Sub10), "TBD"));
+                subList.add(new Subject(11, getString(R.string.Mech_7_Sub11), "AM"));
                 //subList.add(new Subject(1, "Mathematics",""));
             } else if (semester.equals(getString(R.string.Eighth))) {
                 subList.add(new Subject(1, getString(R.string.Mech_8_Sub1), "SMME"));
@@ -299,22 +275,18 @@ public class SubjectActivity extends AppCompatActivity {
                 subList.add(new Subject(6, getString(R.string.EE_4_Sub6), "EMT"));
                 //subList.add(new Subject(1, "Mathematics",""));
             } else if (semester.equals(getString(R.string.Fifth))) {
-                subList.add(new Subject(1, getString(R.string.EE_5_Sub1), "PSA"));
-                subList.add(new Subject(2, getString(R.string.EE_5_Sub2), "ET"));
-                subList.add(new Subject(3, getString(R.string.EE_5_Sub3), "SGP"));
-                subList.add(new Subject(4, getString(R.string.EE_5_Sub4), "HVE"));
-                subList.add(new Subject(5, getString(R.string.EE_5_Sub5), "DEM"));
-                subList.add(new Subject(6, getString(R.string.EE_5_Sub6), "APE"));
-                subList.add(new Subject(7, getString(R.string.EE_5_Sub7), "VLSI"));
-                subList.add(new Subject(8, getString(R.string.EE_5_Sub8), "P"));
-                subList.add(new Subject(9, getString(R.string.EE_5_Sub9), "OR"));
-                subList.add(new Subject(10, getString(R.string.EE_5_Sub10), "EHV"));
-                subList.add(new Subject(11, getString(R.string.EE_5_Sub11), "DIP"));
-                subList.add(new Subject(12, getString(R.string.EE_5_Sub12), "WP"));
-                subList.add(new Subject(13, getString(R.string.EE_5_Sub13), "EPQ"));
-                subList.add(new Subject(14, getString(R.string.EE_5_Sub14), "ESES"));
-                subList.add(new Subject(15, getString(R.string.EE_5_Sub15), "ESI"));
-                subList.add(new Subject(16, getString(R.string.EE_5_Sub16), "AI"));
+                subList.add(new Subject(1, getString(R.string.EE_5_Sub1), "CE"));
+                subList.add(new Subject(2, getString(R.string.EE_5_Sub2), "T&D"));
+                subList.add(new Subject(3, getString(R.string.EE_5_Sub3), "S&S"));
+                subList.add(new Subject(4, getString(R.string.EE_5_Sub4), "EM2"));
+                subList.add(new Subject(5, getString(R.string.EE_5_Sub5), "EPU"));
+                subList.add(new Subject(6, getString(R.string.EE_5_Sub6), "ED"));
+                subList.add(new Subject(7, getString(R.string.EE_5_Sub7), "VHDL"));
+                subList.add(new Subject(8, getString(R.string.EE_5_Sub8), "CNCP"));
+                subList.add(new Subject(9, getString(R.string.EE_5_Sub9), "DEM"));
+                subList.add(new Subject(10, getString(R.string.EE_5_Sub10), "APE"));
+                subList.add(new Subject(11, getString(R.string.EE_5_Sub11), "PLC"));
+                subList.add(new Subject(12, getString(R.string.EE_5_Sub12), "DSC"));
                 //subList.add(new Subject(1, "Mathematics",""));
             } else if (semester.equals(getString(R.string.Sixth))) {
                 subList.add(new Subject(1, getString(R.string.EE_6_Sub1), "PSA"));
@@ -333,16 +305,12 @@ public class SubjectActivity extends AppCompatActivity {
                 subList.add(new Subject(14, getString(R.string.EE_6_Sub14), "JAVA"));
                 //subList.add(new Subject(1, "Mathematics",""));
             } else if (semester.equals(getString(R.string.Seventh))) {
-                subList.add(new Subject(1, getString(R.string.EE_7_Sub1), "CAED"));
-                subList.add(new Subject(2, getString(R.string.EE_7_Sub2), "ACE"));
-                subList.add(new Subject(3, getString(R.string.EE_7_Sub3), "EEC"));
-                subList.add(new Subject(4, getString(R.string.EE_7_Sub4), "CCED"));
-                subList.add(new Subject(5, getString(R.string.EE_7_Sub5), "AM"));
-                subList.add(new Subject(6, getString(R.string.EE_6_Sub6), "EEM"));
-                subList.add(new Subject(7, getString(R.string.EE_6_Sub7), "MEMS"));
-                subList.add(new Subject(8, getString(R.string.EE_7_Sub8), "OCPS"));
-                subList.add(new Subject(9, getString(R.string.EE_7_Sub9), "OFC"));
-                subList.add(new Subject(10, getString(R.string.EE_7_Sub10), "CNCP"));
+                subList.add(new Subject(1, getString(R.string.EE_7_Sub1), "CAPSAS"));
+                subList.add(new Subject(2, getString(R.string.EE_7_Sub2), "CAED"));
+                subList.add(new Subject(3, getString(R.string.EE_7_Sub3), "PSP"));
+                subList.add(new Subject(4, getString(R.string.EE_7_Sub4), "OS"));
+                subList.add(new Subject(5, getString(R.string.EE_7_Sub5), "TCEE"));
+                subList.add(new Subject(6, getString(R.string.EE_7_Sub6), "NCES"));
                 //subList.add(new Subject(1, "Mathematics",""));
             } else if (semester.equals(getString(R.string.Eighth))) {
                 subList.add(new Subject(1, getString(R.string.EE_8_Sub1), "FACTS"));
@@ -377,11 +345,10 @@ public class SubjectActivity extends AppCompatActivity {
                 subList.add(new Subject(1, getString(R.string.EC_3_Sub1), "M-3"));
                 subList.add(new Subject(2, getString(R.string.EC_3_Sub2), "LIC"));
                 subList.add(new Subject(3, getString(R.string.EC_3_Sub3), "DEV"));
-                subList.add(new Subject(4, getString(R.string.EC_3_Sub4), "SS"));
-                subList.add(new Subject(5, getString(R.string.EC_3_Sub5), "NT"));
+                subList.add(new Subject(4, getString(R.string.EC_3_Sub4), "SS-1"));
+                subList.add(new Subject(5, getString(R.string.EC_3_Sub5), "NA"));
                 subList.add(new Subject(6, getString(R.string.EC_3_Sub6), "IE"));
-                subList.add(new Subject(7, getString(R.string.EC_3_Sub7), "CA"));
-                subList.add(new Subject(8, getString(R.string.EC_3_Sub8), "OOPC"));
+                subList.add(new Subject(7, getString(R.string.EC_3_Sub7), "OOPC"));
                 //subList.add(new Subject(1, "Mathematics",""));
             } else if (semester.equals(getString(R.string.Fourth))) {
                 subList.add(new Subject(1, getString(R.string.EC_4_Sub1), "M-4"));
@@ -392,22 +359,13 @@ public class SubjectActivity extends AppCompatActivity {
                 subList.add(new Subject(6, getString(R.string.EC_4_Sub6), "CO&OS"));
                 //subList.add(new Subject(1, "Mathematics",""));
             } else if (semester.equals(getString(R.string.Fifth))) {
-                subList.add(new Subject(1, getString(R.string.EC_5_Sub1), "DC"));
-                subList.add(new Subject(2, getString(R.string.EC_5_Sub2), "RFME"));
+                subList.add(new Subject(1, getString(R.string.EC_5_Sub1), "EMEP"));
+                subList.add(new Subject(2, getString(R.string.EC_5_Sub2), "AC"));
                 subList.add(new Subject(3, getString(R.string.EC_5_Sub3), "DSP"));
-                subList.add(new Subject(4, getString(R.string.EC_5_Sub4), "EIS"));
-                subList.add(new Subject(5, getString(R.string.EC_5_Sub5), "ME"));
-                subList.add(new Subject(6, getString(R.string.EC_5_Sub6), "UOS"));
-                subList.add(new Subject(7, getString(R.string.EC_5_Sub7), "OFC"));
-                subList.add(new Subject(8, getString(R.string.EC_5_Sub8), "RMI"));
-                subList.add(new Subject(9, getString(R.string.EC_5_Sub9), "APA"));
-                subList.add(new Subject(10, getString(R.string.EC_5_Sub10), "TA"));
-                subList.add(new Subject(11, getString(R.string.EC_5_Sub11), "BSP"));
-                subList.add(new Subject(12, getString(R.string.EC_5_Sub12), "AE"));
-                subList.add(new Subject(13, getString(R.string.EC_5_Sub13), "SV"));
-                subList.add(new Subject(14, getString(R.string.EC_5_Sub14), "DM"));
-                subList.add(new Subject(15, getString(R.string.EC_5_Sub15), "DSPA"));
-                subList.add(new Subject(16, getString(R.string.EC_5_Sub16), "M"));
+                subList.add(new Subject(4, getString(R.string.EC_5_Sub4), "RFME"));
+                subList.add(new Subject(5, getString(R.string.EC_5_Sub5), "ICE"));
+                subList.add(new Subject(6, getString(R.string.EC_5_Sub6), "TA&CBS"));
+                subList.add(new Subject(7, getString(R.string.EC_5_Sub7), "CEE"));
                 //subList.add(new Subject(1, "Mathematics",""));
             } else if (semester.equals(getString(R.string.Sixth))) {
                 subList.add(new Subject(1, getString(R.string.EC_6_Sub1), "SSC"));
@@ -420,21 +378,17 @@ public class SubjectActivity extends AppCompatActivity {
                 subList.add(new Subject(8, getString(R.string.EC_6_Sub8), "AWP"));
                 //subList.add(new Subject(1, "Mathematics",""));
             } else if (semester.equals(getString(R.string.Seventh))) {
-                subList.add(new Subject(1, getString(R.string.EC_7_Sub1), "ICPS"));
-                subList.add(new Subject(2, getString(R.string.EC_7_Sub2), "AMMV"));
-                subList.add(new Subject(3, getString(R.string.EC_7_Sub3), "CC"));
-                subList.add(new Subject(4, getString(R.string.EC_7_Sub4), "WC"));
-                subList.add(new Subject(5, getString(R.string.EC_7_Sub5), "RA"));
-                subList.add(new Subject(6, getString(R.string.EC_6_Sub6), "IP"));
-                subList.add(new Subject(7, getString(R.string.EC_6_Sub7), "MLDL"));
-                subList.add(new Subject(8, getString(R.string.EC_7_Sub8), "BDDS"));
-                subList.add(new Subject(9, getString(R.string.EC_7_Sub9), "SC"));
-                subList.add(new Subject(10, getString(R.string.EC_7_Sub10), "ME"));
-                subList.add(new Subject(11, getString(R.string.EC_7_Sub11), "SOC"));
-                subList.add(new Subject(12, getString(R.string.EC_7_Sub12), "GC"));
-                subList.add(new Subject(13, getString(R.string.EC_7_Sub13), "MMC"));
-                subList.add(new Subject(14, getString(R.string.EC_7_Sub14), "RE"));
-                subList.add(new Subject(15, getString(R.string.EC_7_Sub15), "ES"));
+                subList.add(new Subject(1, getString(R.string.EC_7_Sub1), "ITC"));
+                subList.add(new Subject(2, getString(R.string.EC_7_Sub2), "CCN"));
+                subList.add(new Subject(3, getString(R.string.EC_7_Sub3), "ES"));
+                subList.add(new Subject(4, getString(R.string.EC_7_Sub4), "VCC"));
+                subList.add(new Subject(5, getString(R.string.EC_7_Sub5), "SC"));
+                subList.add(new Subject(6, getString(R.string.EC_7_Sub6), "WP"));
+                subList.add(new Subject(7, getString(R.string.EC_7_Sub7), "SOC"));
+                subList.add(new Subject(8, getString(R.string.EC_7_Sub8), "ASIC"));
+                subList.add(new Subject(9, getString(R.string.EC_7_Sub9), "PP"));
+                subList.add(new Subject(10, getString(R.string.EC_7_Sub10), "PUC"));
+                subList.add(new Subject(11, getString(R.string.EC_7_Sub11), "DSC"));
             } else if (semester.equals(getString(R.string.Eighth))) {
                 subList.add(new Subject(1, getString(R.string.EC_8_Sub1), "AES"));
                 subList.add(new Subject(2, getString(R.string.EC_8_Sub2), "BDA"));
@@ -476,21 +430,18 @@ public class SubjectActivity extends AppCompatActivity {
                 subList.add(new Subject(6, getString(R.string.Civil_4_Sub6), "HIE"));
             }
             else if (semester.equals(getString(R.string.Fifth))) {
-                subList.add(new Subject(1, getString(R.string.Civil_5_Sub1), "DRCS"));
-                subList.add(new Subject(2, getString(R.string.Civil_5_Sub2), "BGE"));
-                subList.add(new Subject(3, getString(R.string.Civil_5_Sub3), "RAWT"));
-                subList.add(new Subject(4, getString(R.string.Civil_5_Sub4), "ASA"));
-                subList.add(new Subject(5, getString(R.string.Civil_5_Sub5), "TAD"));
-                subList.add(new Subject(6, getString(R.string.Civil_5_Sub6), "IWWT"));
-                subList.add(new Subject(7, getString(R.string.Civil_5_Sub7), "FRSG"));
-                subList.add(new Subject(8, getString(R.string.Civil_5_Sub8), "SDSA"));
-                subList.add(new Subject(9, getString(R.string.Civil_5_Sub9), "RWSS"));
-                subList.add(new Subject(10, getString(R.string.Civil_5_Sub10), "WRSM"));
-                subList.add(new Subject(11, getString(R.string.Civil_5_Sub11), "CPE"));
-                subList.add(new Subject(12, getString(R.string.Civil_5_Sub12), "HM"));
-                subList.add(new Subject(13, getString(R.string.Civil_5_Sub13), "OSHH"));
-                subList.add(new Subject(14, getString(R.string.Civil_5_Sub14), "RE"));
-                subList.add(new Subject(15, getString(R.string.Civil_5_Sub15), "NDTM"));
+                subList.add(new Subject(1, getString(R.string.Civil_5_Sub1), "HE"));
+                subList.add(new Subject(2, getString(R.string.Civil_5_Sub2), "SMFE"));
+                subList.add(new Subject(3, getString(R.string.Civil_5_Sub3), "ASA"));
+                subList.add(new Subject(4, getString(R.string.Civil_5_Sub4), "IWWT"));
+                subList.add(new Subject(5, getString(R.string.Civil_5_Sub5), "TCP"));
+                subList.add(new Subject(6, getString(R.string.Civil_5_Sub6), "PPCM"));
+                subList.add(new Subject(7, getString(R.string.Civil_5_Sub7), "DMS"));
+                subList.add(new Subject(8, getString(R.string.Civil_5_Sub8), "ANP"));
+                subList.add(new Subject(9, getString(R.string.Civil_5_Sub9), "RS&GIS"));
+                subList.add(new Subject(10, getString(R.string.Civil_5_Sub10), "DERS"));
+                subList.add(new Subject(11, getString(R.string.Civil_5_Sub11), "WRE"));
+                subList.add(new Subject(12, getString(R.string.Civil_5_Sub12), "NDT"));
             }
             else if (semester.equals(getString(R.string.Sixth))) {
                 subList.add(new Subject(1, getString(R.string.Civil_6_Sub1), "SS"));
@@ -509,20 +460,14 @@ public class SubjectActivity extends AppCompatActivity {
                 subList.add(new Subject(14, getString(R.string.Civil_6_Sub14), "BSD"));
             }
             else if (semester.equals(getString(R.string.Seventh))) {
-                subList.add(new Subject(1, getString(R.string.Civil_7_Sub1), "FME"));
-                subList.add(new Subject(2, getString(R.string.Civil_7_Sub2), "SWM"));
-                subList.add(new Subject(3, getString(R.string.Civil_7_Sub3), "DPPS"));
-                subList.add(new Subject(4, getString(R.string.Civil_7_Sub4), "BMC"));
-                subList.add(new Subject(5, getString(R.string.Civil_7_Sub5), "RHGWR"));
-                subList.add(new Subject(6, getString(R.string.Civil_7_Sub6), "WSS"));
-                subList.add(new Subject(7, getString(R.string.Civil_7_Sub7), "ERDRCS"));
-                subList.add(new Subject(8, getString(R.string.Civil_7_Sub8), "GBT"));
-                subList.add(new Subject(9, getString(R.string.Civil_7_Sub9), "GDR"));
-                subList.add(new Subject(10, getString(R.string.Civil_7_Sub10), "OCH"));
-                subList.add(new Subject(11, getString(R.string.Civil_7_Sub11), "NMCE"));
-                subList.add(new Subject(12, getString(R.string.Civil_7_Sub12), "EERS"));
-                subList.add(new Subject(13, getString(R.string.Civil_7_Sub13), "UTSC"));
-                subList.add(new Subject(14, getString(R.string.Civil_7_Sub14), "EAM"));
+                subList.add(new Subject(1, getString(R.string.Civil_7_Sub1), "SWM"));
+                subList.add(new Subject(2, getString(R.string.Civil_7_Sub2), "DIS"));
+                subList.add(new Subject(3, getString(R.string.Civil_7_Sub3), "PDC"));
+                subList.add(new Subject(4, getString(R.string.Civil_7_Sub4), "OSCM"));
+                subList.add(new Subject(5, getString(R.string.Civil_7_Sub5), "GWE"));
+                subList.add(new Subject(6, getString(R.string.Civil_7_Sub6), "HGD"));
+                subList.add(new Subject(7, getString(R.string.Civil_7_Sub7), "UTP"));
+                subList.add(new Subject(8, getString(R.string.Civil_7_Sub8), "CE"));
             }
             else if (semester.equals(getString(R.string.Eighth))) {
                 subList.add(new Subject(1, getString(R.string.Civil_8_Sub1), "PW"));

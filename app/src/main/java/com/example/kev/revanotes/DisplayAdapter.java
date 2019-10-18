@@ -88,6 +88,7 @@ public class DisplayAdapter extends RecyclerView.Adapter<DisplayAdapter.ViewHold
                     Intent intent = new Intent();
                     intent.setType(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(urls.get(position)));
+                    intent.setPackage("com.google.android.apps.docs");
                     Activity activity = (Activity) context;
                     context.startActivity(intent);
                     activity.overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);

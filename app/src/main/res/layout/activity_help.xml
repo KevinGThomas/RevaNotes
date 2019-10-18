@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+    android:id="@+id/scrollHelp"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/relativeHelpTab"
+    tools:context="com.example.kev.revanotes.SubmitNotes">
+
+    <include
+        android:id="@+id/helpToolbarTab"
+        layout="@layout/toolbar" />
+
+    <TextView
+        android:id="@+id/tvSubmit"
+        android:text="HELP"
+        android:layout_below="@id/helpToolbarTab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_white"
+        android:layout_marginLeft="5dp"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true" />
+
+
+    <TextView
+        android:paddingTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/color_white"
+        android:id="@+id/tv5Submit"
+        android:layout_below="@id/tvSubmit"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:text="If you are facing any errors or doubts, please fill in the information below and we will get back to you."
+        android:paddingLeft="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:paddingTop="20dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/color_white"
+        android:id="@+id/tv3Submit"
+        android:layout_below="@id/tv5Submit"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:text="Phone name: "
+        android:paddingLeft="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+    <EditText
+        android:id="@+id/etSubmit"
+        android:layout_below="@id/tv3Submit"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:paddingLeft="5dp"
+        android:text="Brand+model: "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv1Submit"
+        android:paddingTop="20dp"
+        android:background="@color/color_white"
+        android:paddingLeft="5dp"
+        android:textColor="@color/black"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="18dp"
+        android:text="Android version: "
+        android:layout_below="@+id/etSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/et1Submit"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv1Submit"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:backgroundTintMode="screen"
+        android:text="Version: "
+        android:paddingLeft="5dp"
+         />
+
+    <TextView
+        android:id="@+id/tv2Submit"
+        android:background="@color/color_white"
+        android:paddingTop="20dp"
+        android:paddingLeft="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:text="Problem/Doubt: "
+        android:layout_below="@+id/et1Submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/et2Submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv2Submit"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:paddingLeft="5dp"
+        android:paddingBottom="15dp"
+        android:text="Problem: " />
+
+    <TextView
+        android:id="@+id/tv4Submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="3dp"
+        android:textSize="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@id/et2Submit"
+        android:background="@color/color_white"/>
+
+
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv4Submit"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/color_white"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:text="Submit"
+        android:id="@+id/btSubmit"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btSubmit"
+
+
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="Note: Clicking submit will redirect you to the 'REVA Notes' Whatsapp chat."/>
+
+
+
+</RelativeLayout>
+
+</ScrollView>

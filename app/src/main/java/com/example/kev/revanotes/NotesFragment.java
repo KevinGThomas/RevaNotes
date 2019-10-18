@@ -1,5 +1,6 @@
 package com.example.kev.revanotes;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
@@ -8,6 +9,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
@@ -29,6 +31,7 @@ public class NotesFragment extends Fragment {
     DatabaseReference dbUploads;
     List<Uploads> uploadsList = new ArrayList<>();
     TextView selectedSubject;
+    Button bt;
     /**
      * The fragment argument representing the section number for this
      * fragment.
@@ -55,7 +58,22 @@ public class NotesFragment extends Fragment {
                              Bundle savedInstanceState) {
         // tv=getActivity().findViewById(R.id.test);
         //tv.setText("Java file is parsed");
+
+
+
         View rootView = inflater.inflate(R.layout.fragment_notes, container, false);
+
+        bt= (Button) rootView.findViewById(R.id.fragNotesButton);
+        bt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), SubmitNotes.class);
+                startActivity(intent);
+                getActivity().overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
+            }
+        });
+
+
         mDatabaseReference = FirebaseDatabase.getInstance().getReference(Constants.DATABASE_PATH_UPLOADS);
         Query query = FirebaseDatabase.getInstance().getReference("uploads").orderByChild("sub").equalTo("Chemistry");
 
@@ -63,6 +81,7 @@ public class NotesFragment extends Fragment {
             if (Modifier.isStatic(field.getModifiers()) && !Modifier.isPrivate(field.getModifiers()) && field.getType().equals(int.class)) {
                 try {
                     if (Selection.branch.equals(getString(R.string.CS))) {
+                        bt.setBackgroundColor(this.getResources().getColor(R.color.CS));
                         if (field.getName().startsWith("CS_")) {
                             int id = field.getInt(null);
                             //String s = getApplicationContext().getString(id);
@@ -72,6 +91,7 @@ public class NotesFragment extends Fragment {
                             }
                         }
                     } else if (Selection.branch.equals(getString(R.string.Mech))) {
+                        bt.setBackgroundColor(this.getResources().getColor(R.color.Mech));
                         if (field.getName().startsWith("Mech_")) {
                             int id = field.getInt(null);
                             String s = getActivity().getString(id);
@@ -80,6 +100,7 @@ public class NotesFragment extends Fragment {
                             }
                         }
                     } else if (Selection.branch.equals(getString(R.string.EE))) {
+                        bt.setBackgroundColor(this.getResources().getColor(R.color.EE));
                         if (field.getName().startsWith("EE_")) {
                             int id = field.getInt(null);
                             String s = getActivity().getString(id);
@@ -88,6 +109,7 @@ public class NotesFragment extends Fragment {
                             }
                         }
                     } else if (Selection.branch.equals(getString(R.string.EC))) {
+                        bt.setBackgroundColor(this.getResources().getColor(R.color.EC));
                         if (field.getName().startsWith("EC_")) {
                             int id = field.getInt(null);
                             String s = getActivity().getString(id);
@@ -96,6 +118,7 @@ public class NotesFragment extends Fragment {
                             }
                         }
                     } else if (Selection.branch.equals(getString(R.string.Civil))) {
+                        bt.setBackgroundColor(this.getResources().getColor(R.color.Civil));
                         if (field.getName().startsWith("Civil_")) {
                             int id = field.getInt(null);
                             String s = getActivity().getString(id);
@@ -169,6 +192,8 @@ public class NotesFragment extends Fragment {
         //TextView textView = (TextView) rootView.findViewById(R.id.test);
         //textView.setText("Java file is parsed");
         //textView.setText(getString(R.string.section_format, getArguments().getInt(ARG_SECTION_NUMBER)));
+
+
         return rootView;
     }
 }
